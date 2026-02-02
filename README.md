@@ -21,18 +21,3 @@ A curated collection of skills for the pi coding agent / Codex / Claude Code and
 | [test-driven-development](test-driven-development/SKILL.md)         | TDD workflow: write tests first for any feature or fix.                                         |
 | [xlsx](xlsx/SKILL.md)                                               | Comprehensive spreadsheet creation, editing, and analysis with formulas, formatting, and charts.|
 
-## Structure
-
-```
-skill-name/
-  SKILL.md
-  scripts/       # optional
-  references/    # optional
-  assets/        # optional
-```
-
-## Usage
-
-1. Pick a skill directory.
-2. Read `SKILL.md` for triggers and workflow.
-3. Load the skill with your agent's skill manager.

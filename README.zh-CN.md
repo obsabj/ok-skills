@@ -21,18 +21,3 @@
 | [test-driven-development](test-driven-development/SKILL.md)         | TDD 流程指引：任何功能或修复先写测试。                              |
 | [xlsx](xlsx/SKILL.md)                                               | 覆盖表格创建、编辑与分析，支持公式、格式和可视化图表。              |
 
-## 结构
-
-```
-skill-name/
-  SKILL.md
-  scripts/       # 可选
-  references/    # 可选
-  assets/        # 可选
-```
-
-## 使用方式
-
-1. 选择一个技能目录。
-2. 阅读 `SKILL.md` 了解触发条件与流程。
-3. 通过你的 agent/skill 管理器加载该技能。
