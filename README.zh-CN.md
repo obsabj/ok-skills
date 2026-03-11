@@ -24,6 +24,7 @@
 | 技能                                                                | 说明                                                                |
 | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | [agent-browser](agent-browser/SKILL.md)                             | 自动化浏览器操作，用于网页测试、表单填写、截图与数据提取。          |
+| [ai-elements](ai-elements/SKILL.md)                                 | 为 ai-elements 组件库创建新的 AI 聊天界面组件，遵循可组合模式与 shadcn/ui 约定。 |
 | [brainstorming](brainstorming/SKILL.md)                             | 在任何创造性工作前使用，用于澄清意图、需求与设计。                  |
 | [ctx7-cli](ctx7-cli/SKILL.md)                                       | 使用官方 Context7 CLI 完成文档查询、skills 管理和 MCP 配置。        |
 | [dogfood](dogfood/SKILL.md)                                         | 系统化测试 Web 应用并产出可复现的问题报告，附步骤截图与录屏证据。   |
@@ -37,6 +38,7 @@
 | [skill-creator](skill-creator/SKILL.md)                             | 创建或更新技能，聚焦专业知识、工作流与工具集成。                    |
 | [taste-skill](taste-skill/SKILL.md)                                 | 面向高质量前端界面设计的 UI/UX 工程技能，强调有意图的视觉与实现。   |
 | [test-driven-development](test-driven-development/SKILL.md)         | TDD 流程指引：任何功能或修复先写测试。                              |
+| [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | 来自 Vercel Engineering 的 React / Next.js 性能优化实践，适用于编写、审查和重构前端代码。 |
 | [xlsx](xlsx/SKILL.md)                                               | 覆盖表格创建、编辑与分析，支持公式、格式和可视化图表。              |
 
 ## 目录结构

@@ -24,6 +24,7 @@ No build step is required.
 | Skill                                                               | Description                                                                                     |
 | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | [agent-browser](agent-browser/SKILL.md)                             | Automates browser interactions for web testing, form filling, screenshots, and data extraction. |
+| [ai-elements](ai-elements/SKILL.md)                                 | Create new AI chat interface components for the ai-elements library with composable patterns and shadcn/ui conventions. |
 | [brainstorming](brainstorming/SKILL.md)                             | Use before any creative work to clarify intent, requirements, and design.                       |
 | [ctx7-cli](ctx7-cli/SKILL.md)                                       | Use the official Context7 CLI for docs lookup, skill management, and MCP setup.                 |
 | [dogfood](dogfood/SKILL.md)                                         | Systematically test web apps and deliver reproducible issue reports with screenshots/videos.     |
@@ -37,6 +38,7 @@ No build step is required.
 | [skill-creator](skill-creator/SKILL.md)                             | Guide for creating or updating skills with specialized knowledge, workflows, and tool integrations. |
 | [taste-skill](taste-skill/SKILL.md)                                 | Senior UI/UX engineering skill for intentional, high-quality frontend design decisions.         |
 | [test-driven-development](test-driven-development/SKILL.md)         | TDD workflow: write tests first for any feature or fix.                                         |
+| [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | React and Next.js performance optimization guidelines from Vercel Engineering for writing, reviewing, and refactoring frontend code. |
 | [xlsx](xlsx/SKILL.md)                                               | Comprehensive spreadsheet creation, editing, and analysis with formulas, formatting, and charts.|
 
 ## Structure
