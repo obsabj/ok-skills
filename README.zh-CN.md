@@ -35,6 +35,7 @@
 | [gh-fix-ci](gh-fix-ci/SKILL.md)                                     | 检查 GitHub Actions 失败项，提取日志并制定修复方案。                |
 | [planning-with-files](planning-with-files/SKILL.md)                 | 面向复杂任务的文件化规划（task_plan/findings/progress）。           |
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | 高级提示工程方法，提升生产环境的可靠性与可控性。                    |
+| [remotion-best-practices](remotion-best-practices/SKILL.md)         | Remotion 最佳实践：在 React 中创建视频。                           |
 | [skill-creator](skill-creator/SKILL.md)                             | 创建或更新技能，聚焦专业知识、工作流与工具集成。                    |
 | [taste-skill](taste-skill/SKILL.md)                                 | 面向高质量前端界面设计的 UI/UX 工程技能，强调有意图的视觉与实现。   |
 | [test-driven-development](test-driven-development/SKILL.md)         | TDD 流程指引：任何功能或修复先写测试。                              |

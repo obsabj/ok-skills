@@ -35,6 +35,7 @@ No build step is required.
 | [gh-fix-ci](gh-fix-ci/SKILL.md)                                     | Inspect failing GitHub Actions checks, summarize logs, and plan fixes.                          |
 | [planning-with-files](planning-with-files/SKILL.md)                 | File-based planning for complex tasks using task_plan/findings/progress.                        |
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | Advanced prompt engineering patterns for reliable, production LLMs.                             |
+| [remotion-best-practices](remotion-best-practices/SKILL.md)         | Best practices for Remotion - Video creation in React.                                       |
 | [skill-creator](skill-creator/SKILL.md)                             | Guide for creating or updating skills with specialized knowledge, workflows, and tool integrations. |
 | [taste-skill](taste-skill/SKILL.md)                                 | Senior UI/UX engineering skill for intentional, high-quality frontend design decisions.         |
 | [test-driven-development](test-driven-development/SKILL.md)         | TDD workflow: write tests first for any feature or fix.                                         |
