@@ -33,6 +33,7 @@
 | [find-skills](find-skills/SKILL.md)                                 | 当用户需要特定能力时，用于发现和安装现成技能。                      |
 | [gh-address-comments](gh-address-comments/SKILL.md)                 | 使用 gh CLI 处理当前分支 PR 的评审/issue 评论，并先验证登录状态。   |
 | [gh-fix-ci](gh-fix-ci/SKILL.md)                                     | 检查 GitHub Actions 失败项，提取日志并制定修复方案。                |
+| [pdf](pdf/SKILL.md)                                                 | 处理 PDF 的读取、生成与审查，强调渲染后的视觉检查和 Python PDF 工具链。 |
 | [planning-with-files](planning-with-files/SKILL.md)                 | 面向复杂任务的文件化规划（task_plan/findings/progress）。           |
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | 高级提示工程方法，提升生产环境的可靠性与可控性。                    |
 | [remotion-best-practices](remotion-best-practices/SKILL.md)         | Remotion 最佳实践：在 React 中创建视频。                           |

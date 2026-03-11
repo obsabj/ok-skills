@@ -33,6 +33,7 @@ No build step is required.
 | [find-skills](find-skills/SKILL.md)                                 | Discover and install existing skills when users ask for specialized capabilities.               |
 | [gh-address-comments](gh-address-comments/SKILL.md)                 | Address PR review/issue comments with gh CLI after verifying auth.                              |
 | [gh-fix-ci](gh-fix-ci/SKILL.md)                                     | Inspect failing GitHub Actions checks, summarize logs, and plan fixes.                          |
+| [pdf](pdf/SKILL.md)                                                 | Read, create, and review PDF files with visual rendering checks and Python PDF tooling.         |
 | [planning-with-files](planning-with-files/SKILL.md)                 | File-based planning for complex tasks using task_plan/findings/progress.                        |
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | Advanced prompt engineering patterns for reliable, production LLMs.                             |
 | [remotion-best-practices](remotion-best-practices/SKILL.md)         | Best practices for Remotion - Video creation in React.                                       |
