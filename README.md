@@ -38,7 +38,7 @@ No build step is required.
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | Advanced prompt engineering patterns for reliable, production LLMs.                             |
 | [remotion-best-practices](remotion-best-practices/SKILL.md)         | Best practices for Remotion - Video creation in React.                                       |
 | [skill-creator](skill-creator/SKILL.md)                             | Guide for creating or updating skills with specialized knowledge, workflows, and tool integrations. |
-| [taste-skill](taste-skill/SKILL.md)                                 | Senior UI/UX engineering skill for intentional, high-quality frontend design decisions.         |
+| [design-taste-frontend](design-taste-frontend/SKILL.md)             | Senior UI/UX engineering skill for intentional, high-quality frontend design decisions.         |
 | [test-driven-development](test-driven-development/SKILL.md)         | TDD workflow: write tests first for any feature or fix.                                         |
 | [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | React and Next.js performance optimization guidelines from Vercel Engineering for writing, reviewing, and refactoring frontend code. |
 | [xlsx](xlsx/SKILL.md)                                               | Comprehensive spreadsheet creation, editing, and analysis with formulas, formatting, and charts.|

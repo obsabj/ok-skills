@@ -29,7 +29,7 @@ You MUST create a task for each of these items and complete them in order:
 6. **Write design doc** — save to `docs/superpowers/specs/YYYY-MM-DD-<topic>-design.md` and commit
 7. **Spec review loop** — dispatch spec-document-reviewer subagent; fix issues and re-dispatch until approved (max 5 iterations, then surface to human)
 8. **User reviews written spec** — ask user to review the spec file before proceeding
-9. **Transition to implementation** — invoke writing-plans skill to create implementation plan
+9. **Transition to implementation** — invoke planning-with-files skill to create/edit the implementation plan files
 
 ## Process Flow
 
@@ -46,7 +46,7 @@ digraph brainstorming {
     "Spec review loop" [shape=box];
     "Spec review passed?" [shape=diamond];
     "User reviews spec?" [shape=diamond];
-    "Invoke writing-plans skill" [shape=doublecircle];
+    "Invoke planning-with-files skill" [shape=doublecircle];
 
     "Explore project context" -> "Visual questions ahead?";
     "Visual questions ahead?" -> "Offer Visual Companion\n(own message, no other content)" [label="yes"];
@@ -62,11 +62,11 @@ digraph brainstorming {
     "Spec review passed?" -> "Spec review loop" [label="issues found,\nfix and re-dispatch"];
     "Spec review passed?" -> "User reviews spec?" [label="approved"];
     "User reviews spec?" -> "Write design doc" [label="changes requested"];
-    "User reviews spec?" -> "Invoke writing-plans skill" [label="approved"];
+    "User reviews spec?" -> "Invoke planning-with-files skill" [label="approved"];
 }
 ```
 
-**The terminal state is invoking writing-plans.** Do NOT invoke frontend-design, mcp-builder, or any other implementation skill. The ONLY skill you invoke after brainstorming is writing-plans.
+**The terminal state is invoking planning-with-files.** Do NOT invoke frontend-design, mcp-builder, or any other implementation skill. The ONLY skill you invoke after brainstorming is planning-with-files.
 
 ## The Process
 
@@ -132,8 +132,8 @@ Wait for the user's response. If they request changes, make them and re-run the 
 
 **Implementation:**
 
-- Invoke the writing-plans skill to create a detailed implementation plan
-- Do NOT invoke any other skill. writing-plans is the next step.
+- Invoke the planning-with-files skill to create the detailed implementation plan files
+- Do NOT invoke any other skill. planning-with-files is the next step.
 
 ## Key Principles
 
@@ -149,6 +149,7 @@ Wait for the user's response. If they request changes, make them and re-run the 
 A browser-based companion for showing mockups, diagrams, and visual options during brainstorming. Available as a tool — not a mode. Accepting the companion means it's available for questions that benefit from visual treatment; it does NOT mean every question goes through the browser.
 
 **Offering the companion:** When you anticipate that upcoming questions will involve visual content (mockups, layouts, diagrams), offer it once for consent:
+
 > "Some of what we're working on might be easier to explain if I can show it to you in a web browser. I can put together mockups, diagrams, comparisons, and other visuals as we go. This feature is still new and can be token-intensive. Want to try it? (Requires opening a local URL)"
 
 **This offer MUST be its own message.** Do not combine it with clarifying questions, context summaries, or any other content. The message should contain ONLY the offer above and nothing else. Wait for the user's response before continuing. If they decline, proceed with text-only brainstorming.

@@ -38,7 +38,7 @@
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | 高级提示工程方法，提升生产环境的可靠性与可控性。                    |
 | [remotion-best-practices](remotion-best-practices/SKILL.md)         | Remotion 最佳实践：在 React 中创建视频。                           |
 | [skill-creator](skill-creator/SKILL.md)                             | 创建或更新技能，聚焦专业知识、工作流与工具集成。                    |
-| [taste-skill](taste-skill/SKILL.md)                                 | 面向高质量前端界面设计的 UI/UX 工程技能，强调有意图的视觉与实现。   |
+| [design-taste-frontend](design-taste-frontend/SKILL.md)             | 面向高质量前端界面设计的 UI/UX 工程技能，强调有意图的视觉与实现。   |
 | [test-driven-development](test-driven-development/SKILL.md)         | TDD 流程指引：任何功能或修复先写测试。                              |
 | [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | 来自 Vercel Engineering 的 React / Next.js 性能优化实践，适用于编写、审查和重构前端代码。 |
 | [xlsx](xlsx/SKILL.md)                                               | 覆盖表格创建、编辑与分析，支持公式、格式和可视化图表。              |
