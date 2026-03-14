@@ -4,20 +4,20 @@ English | [简体中文](README.zh-CN.md)
 
 Curated AI coding agent skills and AGENTS.md playbooks for Codex, Claude Code, Cursor, Trae, and other SKILL.md-compatible tools.
 
-This repo currently bundles **43 reusable skills**: **25 top-level skills** maintained directly in this repo, plus **18 vendored design skills** under [`impeccable/`](impeccable/README.md). The repository layout already matches the skills convention, so you can clone it directly into `~/.agents/skills` and trigger skills from `AGENTS.md`.
+This repo currently bundles **45 reusable skills**: **27 top-level skills** maintained directly in this repo, plus **18 vendored design skills** under [`impeccable/`](impeccable/README.md). Clone it into `~/.agents/skills/ok-skills`; the directories inside already match the layout expected by `AGENTS.md`-driven workflows.
 
 ## Who This Repo Is For
 
 - You use Codex, Claude Code, Cursor, Trae, or another AI coding agent and want reusable skills instead of ad-hoc prompts.
 - You maintain `AGENTS.md` / `SKILL.md` workflows and want portable instructions that work across projects.
-- You need battle-tested skills for docs lookup, browser automation, GitHub workflow, planning, prompt engineering, frontend design, PDF, and spreadsheets.
+- You need battle-tested skills for docs lookup, browser automation, GitHub workflow, planning, prompt engineering, frontend design, PDFs, Office documents, slide decks, and spreadsheets.
 
 ## Start Here
 
 If you only install a few skills first, start with these:
 
 - [planning-with-files](planning-with-files/SKILL.md): file-based planning for complex tasks, research, and long-running work.
-- [ctx7-cli](ctx7-cli/SKILL.md): fetch current library docs and Context7-backed references.
+- [context7-cli](context7-cli/SKILL.md): fetch current library docs and Context7-backed references.
 - [agent-browser](agent-browser/SKILL.md): browser automation for screenshots, forms, scraping, and web QA.
 - [gh-fix-ci](gh-fix-ci/SKILL.md): inspect failing GitHub Actions checks and turn logs into a fix plan.
 - [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md): production-oriented prompt patterns for more reliable LLM workflows.
@@ -26,16 +26,18 @@ If you only install a few skills first, start with these:
 ## 1-Minute Quick Start
 
 ```bash
-git clone https://github.com/mxyhi/ok-skills.git ~/.agents/skills
+mkdir -p ~/.agents/skills
+cd ~/.agents/skills
+git clone https://github.com/mxyhi/ok-skills.git ok-skills
 ```
 
-This works because the repo root already follows the expected layout:
+After cloning, the repo lives at `~/.agents/skills/ok-skills`, and the directories inside already follow the expected layout:
 
 ```text
-~/.agents/skills/
+~/.agents/skills/ok-skills/
   planning-with-files/
     SKILL.md
-  ctx7-cli/
+  context7-cli/
     SKILL.md
   agent-browser/
     SKILL.md
@@ -47,21 +49,21 @@ Add simple trigger rules to your `AGENTS.md`:
 ```md
 ## Skills
 - planning-with-files: Use for complex tasks, research, or anything that will take 5+ tool calls.
-- ctx7-cli: Use when you need current library docs, API references, or Context7-backed examples.
+- context7-cli: Use when you need current library docs, API references, or Context7-backed examples.
 - agent-browser: Use for browser automation, screenshots, scraping, web testing, or form filling.
 ```
 
 Then ask naturally:
 
 - `Use planning-with-files before refactoring this module.`
-- `Use ctx7-cli to fetch the latest docs for this SDK.`
+- `Use context7-cli to fetch the latest docs for this SDK.`
 - `Use agent-browser to reproduce this UI bug.`
 
 ## Browse Skills by Use Case
 
 ### Research & Docs
 
-- [ctx7-cli](ctx7-cli/SKILL.md): official Context7 CLI workflow for docs lookup, skill management, and MCP setup.
+- [context7-cli](context7-cli/SKILL.md): official Context7 CLI workflow for docs lookup, skill management, and MCP setup.
 - [exa-search](exa-search/SKILL.md): web, code, and company research with Exa search tools.
 - [get-api-docs](get-api-docs/SKILL.md): fetch current third-party API and SDK documentation before coding.
 - [find-skills](find-skills/SKILL.md): discover existing skills when a user asks for a capability.
@@ -99,7 +101,9 @@ Then ask naturally:
 
 ### Utilities & Authoring
 
+- [docx](docx/SKILL.md): create, read, edit, and manipulate Word documents with formatting, comments, and tracked changes.
 - [pdf](pdf/SKILL.md): read, create, and review PDFs with rendering-aware checks.
+- [pptx](pptx/SKILL.md): create, read, edit, and manipulate slide decks, templates, and presentation content.
 - [xlsx](xlsx/SKILL.md): spreadsheet creation, editing, formulas, and analysis.
 - [skill-creator](skill-creator/SKILL.md): create or update skills with stronger structure and tool integrations.
 
@@ -132,8 +136,9 @@ Attribution and legal files are preserved in [`impeccable/NOTICE.md`](impeccable
 | [agent-browser](agent-browser/SKILL.md) | Browser automation CLI for AI agents: navigation, form filling, screenshots, extraction, and web testing. | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/agent-browser) |
 | [ai-elements](ai-elements/SKILL.md) | Create new AI chat interface components for the ai-elements library with composable patterns and shadcn/ui conventions. | [vercel/ai-elements](https://github.com/vercel/ai-elements/tree/main/skills/ai-elements) |
 | [brainstorming](brainstorming/SKILL.md) | Clarify intent, requirements, and design before implementation work. | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/brainstorming) |
-| [ctx7-cli](ctx7-cli/SKILL.md) | Use the Context7 CLI for docs lookup, skill management, and MCP setup. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/ctx7-cli) |
+| [context7-cli](context7-cli/SKILL.md) | Use the Context7 CLI for docs lookup, skill management, and MCP setup. | [upstash/context7](https://github.com/upstash/context7/tree/master/skills/context7-cli) |
 | [design-taste-frontend](design-taste-frontend/SKILL.md) | Senior UI/UX engineering guidance for intentional, high-quality frontend design. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/design-taste-frontend) |
+| [docx](docx/SKILL.md) | Create, read, edit, and manipulate Word documents with formatting, comments, tracked changes, and image updates. | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/docx) |
 | [dogfood](dogfood/SKILL.md) | Systematically test web apps and produce reproducible issue reports with screenshots and videos. | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/dogfood) |
 | [electron](electron/SKILL.md) | Automate Electron desktop apps through agent-browser and Chrome DevTools Protocol. | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/electron) |
 | [exa-search](exa-search/SKILL.md) | Use Exa for web, code, and company research. | Custom |
@@ -145,6 +150,7 @@ Attribution and legal files are preserved in [`impeccable/NOTICE.md`](impeccable
 | [pdf](pdf/SKILL.md) | Read, create, and review PDF files with rendering checks and Python tooling. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/pdf) |
 | [pinchtab](pinchtab/SKILL.md) | Control a headless or headed Chrome browser via Pinchtab's HTTP API for web automation, scraping, form filling, navigation, screenshots, and extraction with stable accessibility refs. | [pinchtab/pinchtab](https://github.com/pinchtab/pinchtab/tree/main/skill/pinchtab) |
 | [planning-with-files](planning-with-files/SKILL.md) | File-based planning for complex tasks using `task_plan.md`, `findings.md`, and `progress.md`. | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/.agent/skills/planning-with-files) |
+| [pptx](pptx/SKILL.md) | Create, read, edit, and manipulate PowerPoint presentations, templates, layouts, notes, and slide content. | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/pptx) |
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | Advanced prompt engineering patterns for reliable, production LLM workflows. | [wshobson/agents](https://github.com/wshobson/agents/tree/main/plugins/llm-application-dev/skills/prompt-engineering-patterns) |
 | [redesign-skill](redesign-skill/SKILL.md) | Upgrades existing websites and apps to premium quality. Audits current design, identifies generic AI patterns, and applies high-end design standards without breaking functionality. | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/tree/main/redesign-skill) |
 | [remotion-best-practices](remotion-best-practices/SKILL.md) | Best practices for building videos in React with Remotion. | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion) |
@@ -152,7 +158,7 @@ Attribution and legal files are preserved in [`impeccable/NOTICE.md`](impeccable
 | [taste-skill](taste-skill/SKILL.md) | Senior UI/UX Engineer. Architect digital interfaces overriding default LLM biases. Enforces metric-based rules, strict component architecture, CSS hardware acceleration, and balanced design engineering. | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/tree/main/taste-skill) |
 | [test-driven-development](test-driven-development/SKILL.md) | Use before implementing any feature or bugfix. | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) |
 | [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | React and Next.js performance optimization guidance from Vercel Engineering. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/vercel-react-best-practices) |
-| [xlsx](xlsx/SKILL.md) | Spreadsheet creation, editing, formulas, formatting, and analysis. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/xlsx) |
+| [xlsx](xlsx/SKILL.md) | Spreadsheet creation, editing, formulas, formatting, and analysis. | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/xlsx) |
 | [yeet](yeet/SKILL.md) | Use only when the user explicitly asks to stage, commit, push, and open a GitHub pull request in one flow using `gh`. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/yeet) |
 
 ### Vendored `impeccable/` Skills
@@ -191,4 +197,4 @@ Contributions are welcome for new skills or improvements to existing ones.
 
 This repository is licensed under [LICENSE](LICENSE).
 
-Some skills include additional license files or notices for skill-specific assets and attribution, including [`impeccable/`](impeccable/README.md), [`skill-creator/`](skill-creator/), and [`xlsx/`](xlsx/).
+Some skills include additional license files or notices for skill-specific assets and attribution, including [`docx/`](docx/), [`pptx/`](pptx/), [`impeccable/`](impeccable/README.md), [`skill-creator/`](skill-creator/), and [`xlsx/`](xlsx/).

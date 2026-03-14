@@ -4,20 +4,20 @@
 
 这是一个面向 Codex、Claude Code、Cursor、Trae 以及其他兼容 `SKILL.md` / `AGENTS.md` 工作流工具的技能仓库。
 
-当前仓库共收录 **43 个可复用技能**：其中 **25 个顶层技能** 由本仓直接维护，另有 **18 个前端设计技能** 以 vendored bundle 形式放在 [`impeccable/`](impeccable/README.md) 下。仓库目录本身就符合 skills 规范，因此可以直接 `git clone` 到 `~/.agents/skills`，再通过 `AGENTS.md` 定义触发规则。
+当前仓库共收录 **45 个可复用技能**：其中 **27 个顶层技能** 由本仓直接维护，另有 **18 个前端设计技能** 以 vendored bundle 形式放在 [`impeccable/`](impeccable/README.md) 下。把它 clone 到 `~/.agents/skills/ok-skills` 即可，仓库内部目录已经符合 `AGENTS.md` 所需的 skills 规范。
 
 ## 适合谁
 
 - 你在用 Codex、Claude Code、Cursor、Trae 或其他 AI coding agent，希望复用技能而不是每次临时写 prompt。
 - 你在维护 `AGENTS.md` / `SKILL.md` 体系，希望不同项目之间可以迁移同一套工作流。
-- 你需要现成的文档查询、浏览器自动化、GitHub 工作流、规划、提示工程、前端设计、PDF、表格类技能。
+- 你需要现成的文档查询、浏览器自动化、GitHub 工作流、规划、提示工程、前端设计、PDF、Office 文档、演示文稿和表格类技能。
 
 ## 建议先装这几个
 
 如果你第一次用这个仓库，优先从下面几个技能开始：
 
 - [planning-with-files](planning-with-files/SKILL.md)：复杂任务、调研任务、多轮推进任务的文件化规划。
-- [ctx7-cli](ctx7-cli/SKILL.md)：查询最新库文档、Context7 资料和 MCP 相关内容。
+- [context7-cli](context7-cli/SKILL.md)：查询最新库文档、Context7 资料和 MCP 相关内容。
 - [agent-browser](agent-browser/SKILL.md)：浏览器自动化、截图、抓取、表单填写、Web QA。
 - [gh-fix-ci](gh-fix-ci/SKILL.md)：读取 GitHub Actions 失败日志并产出修复方案。
 - [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md)：更稳定、可控的生产级提示工程模式。
@@ -26,16 +26,18 @@
 ## 1 分钟快速开始
 
 ```bash
-git clone https://github.com/mxyhi/ok-skills.git ~/.agents/skills
+mkdir -p ~/.agents/skills
+cd ~/.agents/skills
+git clone https://github.com/mxyhi/ok-skills.git ok-skills
 ```
 
-这样可行，是因为仓库根目录已经符合预期布局：
+clone 后仓库位于 `~/.agents/skills/ok-skills`，其内部目录已经符合预期布局：
 
 ```text
-~/.agents/skills/
+~/.agents/skills/ok-skills/
   planning-with-files/
     SKILL.md
-  ctx7-cli/
+  context7-cli/
     SKILL.md
   agent-browser/
     SKILL.md
@@ -47,21 +49,21 @@ git clone https://github.com/mxyhi/ok-skills.git ~/.agents/skills
 ```md
 ## Skills
 - planning-with-files: 复杂任务、调研任务、或者预计会有 5 次以上工具调用时使用。
-- ctx7-cli: 需要最新库文档、API 参考或 Context7 示例时使用。
+- context7-cli: 需要最新库文档、API 参考或 Context7 示例时使用。
 - agent-browser: 需要浏览器自动化、截图、抓取、网页测试或表单填写时使用。
 ```
 
 之后就可以自然触发：
 
 - `在重构这个模块之前先用 planning-with-files。`
-- `用 ctx7-cli 查一下这个 SDK 的最新文档。`
+- `用 context7-cli 查一下这个 SDK 的最新文档。`
 - `用 agent-browser 复现这个 UI 问题。`
 
 ## 按场景浏览技能
 
 ### 调研与文档
 
-- [ctx7-cli](ctx7-cli/SKILL.md)：官方 Context7 CLI 的文档查询、skill 管理与 MCP 配置工作流。
+- [context7-cli](context7-cli/SKILL.md)：官方 Context7 CLI 的文档查询、skill 管理与 MCP 配置工作流。
 - [exa-search](exa-search/SKILL.md)：用 Exa 做网页、代码、公司调研。
 - [get-api-docs](get-api-docs/SKILL.md)：写第三方 API / SDK 代码前先拉当前文档。
 - [find-skills](find-skills/SKILL.md)：当用户提出能力诉求时，先查有没有现成 skill 可用。
@@ -99,7 +101,9 @@ git clone https://github.com/mxyhi/ok-skills.git ~/.agents/skills
 
 ### 工具与内容生产
 
+- [docx](docx/SKILL.md)：创建、读取、编辑和处理 Word 文档，覆盖格式、批注与修订。
 - [pdf](pdf/SKILL.md)：读取、生成、审查 PDF，强调渲染后的视觉检查。
+- [pptx](pptx/SKILL.md)：创建、读取、编辑和处理演示文稿、模板与幻灯片内容。
 - [xlsx](xlsx/SKILL.md)：表格创建、编辑、公式、格式和分析。
 - [skill-creator](skill-creator/SKILL.md)：创建或更新技能，补齐结构、文档和工具集成。
 
@@ -132,8 +136,9 @@ git clone https://github.com/mxyhi/ok-skills.git ~/.agents/skills
 | [agent-browser](agent-browser/SKILL.md) | 面向 AI agents 的浏览器自动化：导航、表单、截图、数据提取、网页测试。 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/agent-browser) |
 | [ai-elements](ai-elements/SKILL.md) | 为 ai-elements 组件库创建新的 AI 聊天界面组件，遵循可组合模式与 shadcn/ui 约定。 | [vercel/ai-elements](https://github.com/vercel/ai-elements/tree/main/skills/ai-elements) |
 | [brainstorming](brainstorming/SKILL.md) | 在任何实现前先澄清意图、需求与设计。 | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/brainstorming) |
-| [ctx7-cli](ctx7-cli/SKILL.md) | 使用 Context7 CLI 完成文档查询、skill 管理和 MCP 配置。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/ctx7-cli) |
+| [context7-cli](context7-cli/SKILL.md) | 使用 Context7 CLI 完成文档查询、skill 管理和 MCP 配置。 | [upstash/context7](https://github.com/upstash/context7/tree/master/skills/context7-cli) |
 | [design-taste-frontend](design-taste-frontend/SKILL.md) | 面向高质量前端界面设计的 UI/UX 工程技能。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/design-taste-frontend) |
+| [docx](docx/SKILL.md) | 创建、读取、编辑和处理 Word 文档，覆盖格式、批注、修订和图片替换。 | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/docx) |
 | [dogfood](dogfood/SKILL.md) | 系统化测试 Web 应用，并产出附截图和录屏的问题报告。 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/dogfood) |
 | [electron](electron/SKILL.md) | 通过 agent-browser 和 Chrome DevTools Protocol 自动化 Electron 桌面应用。 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/electron) |
 | [exa-search](exa-search/SKILL.md) | 使用 Exa 做网页、代码和公司调研。 | 自制 |
@@ -145,6 +150,7 @@ git clone https://github.com/mxyhi/ok-skills.git ~/.agents/skills
 | [pdf](pdf/SKILL.md) | 处理 PDF 的读取、生成与审查，强调渲染后的视觉检查。 | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/pdf) |
 | [pinchtab](pinchtab/SKILL.md) | 通过 Pinchtab 的 HTTP API 控制 headless 或 headed Chrome，用于网页自动化、抓取、表单填写、导航、截图和基于稳定 accessibility refs 的内容提取。 | [pinchtab/pinchtab](https://github.com/pinchtab/pinchtab/tree/main/skill/pinchtab) |
 | [planning-with-files](planning-with-files/SKILL.md) | 用 `task_plan.md`、`findings.md`、`progress.md` 管理复杂任务。 | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/.agent/skills/planning-with-files) |
+| [pptx](pptx/SKILL.md) | 创建、读取、编辑和处理 PowerPoint 演示文稿，覆盖模板、布局、备注和幻灯片内容。 | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/pptx) |
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | 面向生产环境的高级提示工程模式。 | [wshobson/agents](https://github.com/wshobson/agents/tree/main/plugins/llm-application-dev/skills/prompt-engineering-patterns) |
 | [redesign-skill](redesign-skill/SKILL.md) | 升级现有网站和应用到更高设计质量；先审计现状，识别通用 AI 痕迹，再在不破坏功能的前提下做高端化改造。 | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/tree/main/redesign-skill) |
 | [remotion-best-practices](remotion-best-practices/SKILL.md) | 用于 React + Remotion 视频开发的最佳实践。 | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion) |
@@ -152,7 +158,7 @@ git clone https://github.com/mxyhi/ok-skills.git ~/.agents/skills
 | [taste-skill](taste-skill/SKILL.md) | 高级 UI/UX 工程技能，专注于打破默认 LLM 设计偏差，强调量化规则、组件架构、CSS 硬件加速与平衡的设计工程。 | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/tree/main/taste-skill) |
 | [test-driven-development](test-driven-development/SKILL.md) | 实现任何功能或修复前先使用。 | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) |
 | [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | 来自 Vercel Engineering 的 React / Next.js 性能优化实践。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/vercel-react-best-practices) |
-| [xlsx](xlsx/SKILL.md) | 覆盖表格创建、编辑、公式、格式和分析。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/xlsx) |
+| [xlsx](xlsx/SKILL.md) | 覆盖表格创建、编辑、公式、格式和分析。 | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/xlsx) |
 | [yeet](yeet/SKILL.md) | 仅在用户明确要求用 `gh` 一次性完成 stage、commit、push 并创建 GitHub PR 时使用。 | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/yeet) |
 
 ### Vendored `impeccable/` 技能
@@ -191,4 +197,4 @@ git clone https://github.com/mxyhi/ok-skills.git ~/.agents/skills
 
 本仓库主许可证见 [LICENSE](LICENSE)。
 
-部分技能目录包含额外许可证或归属说明文件，包括 [`impeccable/`](impeccable/README.md)、[`skill-creator/`](skill-creator/) 和 [`xlsx/`](xlsx/)。
+部分技能目录包含额外许可证或归属说明文件，包括 [`docx/`](docx/)、[`pptx/`](pptx/)、[`impeccable/`](impeccable/README.md)、[`skill-creator/`](skill-creator/) 和 [`xlsx/`](xlsx/)。
