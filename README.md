@@ -126,13 +126,13 @@ Attribution and legal files are preserved in [`impeccable/NOTICE.md`](impeccable
 
 | Skill | Description | Source URL |
 | --- | --- | --- |
-| [agent-browser](agent-browser/SKILL.md) | Browser automation CLI for AI agents: navigation, form filling, screenshots, extraction, and web testing. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/agent-browser) |
+| [agent-browser](agent-browser/SKILL.md) | Browser automation CLI for AI agents: navigation, form filling, screenshots, extraction, and web testing. | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/agent-browser) |
 | [ai-elements](ai-elements/SKILL.md) | Create new AI chat interface components for the ai-elements library with composable patterns and shadcn/ui conventions. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/ai-elements) |
 | [brainstorming](brainstorming/SKILL.md) | Clarify intent, requirements, and design before implementation work. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/brainstorming) |
 | [ctx7-cli](ctx7-cli/SKILL.md) | Use the Context7 CLI for docs lookup, skill management, and MCP setup. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/ctx7-cli) |
 | [design-taste-frontend](design-taste-frontend/SKILL.md) | Senior UI/UX engineering guidance for intentional, high-quality frontend design. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/design-taste-frontend) |
-| [dogfood](dogfood/SKILL.md) | Systematically test web apps and produce reproducible issue reports with screenshots and videos. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/dogfood) |
-| [electron](electron/SKILL.md) | Automate Electron desktop apps through agent-browser and Chrome DevTools Protocol. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/electron) |
+| [dogfood](dogfood/SKILL.md) | Systematically test web apps and produce reproducible issue reports with screenshots and videos. | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/dogfood) |
+| [electron](electron/SKILL.md) | Automate Electron desktop apps through agent-browser and Chrome DevTools Protocol. | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/electron) |
 | [exa-search](exa-search/SKILL.md) | Use Exa for web, code, and company research. | Custom |
 | [find-skills](find-skills/SKILL.md) | Discover existing skills when users need specialized capabilities. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/find-skills) |
 | [get-api-docs](get-api-docs/SKILL.md) | Fetch current third-party API or SDK docs before writing code. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/get-api-docs) |

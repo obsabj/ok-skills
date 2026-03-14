@@ -126,13 +126,13 @@ git clone https://github.com/mxyhi/ok-skills.git ~/.agents/skills
 
 | 技能 | 说明 | Source URL |
 | --- | --- | --- |
-| [agent-browser](agent-browser/SKILL.md) | 面向 AI agents 的浏览器自动化：导航、表单、截图、数据提取、网页测试。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/agent-browser) |
+| [agent-browser](agent-browser/SKILL.md) | 面向 AI agents 的浏览器自动化：导航、表单、截图、数据提取、网页测试。 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/agent-browser) |
 | [ai-elements](ai-elements/SKILL.md) | 为 ai-elements 组件库创建新的 AI 聊天界面组件，遵循可组合模式与 shadcn/ui 约定。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/ai-elements) |
 | [brainstorming](brainstorming/SKILL.md) | 在任何实现前先澄清意图、需求与设计。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/brainstorming) |
 | [ctx7-cli](ctx7-cli/SKILL.md) | 使用 Context7 CLI 完成文档查询、skill 管理和 MCP 配置。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/ctx7-cli) |
 | [design-taste-frontend](design-taste-frontend/SKILL.md) | 面向高质量前端界面设计的 UI/UX 工程技能。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/design-taste-frontend) |
-| [dogfood](dogfood/SKILL.md) | 系统化测试 Web 应用，并产出附截图和录屏的问题报告。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/dogfood) |
-| [electron](electron/SKILL.md) | 通过 agent-browser 和 Chrome DevTools Protocol 自动化 Electron 桌面应用。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/electron) |
+| [dogfood](dogfood/SKILL.md) | 系统化测试 Web 应用，并产出附截图和录屏的问题报告。 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/dogfood) |
+| [electron](electron/SKILL.md) | 通过 agent-browser 和 Chrome DevTools Protocol 自动化 Electron 桌面应用。 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/electron) |
 | [exa-search](exa-search/SKILL.md) | 使用 Exa 做网页、代码和公司调研。 | 自制 |
 | [find-skills](find-skills/SKILL.md) | 当用户需要特定能力时，发现已有技能。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/find-skills) |
 | [get-api-docs](get-api-docs/SKILL.md) | 在写第三方 API / SDK 代码前先抓当前文档。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/get-api-docs) |
