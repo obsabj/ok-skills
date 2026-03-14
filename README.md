@@ -120,55 +120,57 @@ Attribution and legal files are preserved in [`impeccable/NOTICE.md`](impeccable
 
 ## Full Skill Index
 
+`Source URL` points to the canonical upstream when a skill is vendored/imported; otherwise it points to the skill directory in this repository.
+
 ### Top-Level Skills
 
-| Skill | Description |
-| --- | --- |
-| [agent-browser](agent-browser/SKILL.md) | Browser automation CLI for AI agents: navigation, form filling, screenshots, extraction, and web testing. |
-| [ai-elements](ai-elements/SKILL.md) | Create new AI chat interface components for the ai-elements library with composable patterns and shadcn/ui conventions. |
-| [brainstorming](brainstorming/SKILL.md) | Clarify intent, requirements, and design before implementation work. |
-| [ctx7-cli](ctx7-cli/SKILL.md) | Use the Context7 CLI for docs lookup, skill management, and MCP setup. |
-| [design-taste-frontend](design-taste-frontend/SKILL.md) | Senior UI/UX engineering guidance for intentional, high-quality frontend design. |
-| [dogfood](dogfood/SKILL.md) | Systematically test web apps and produce reproducible issue reports with screenshots and videos. |
-| [electron](electron/SKILL.md) | Automate Electron desktop apps through agent-browser and Chrome DevTools Protocol. |
-| [exa-search](exa-search/SKILL.md) | Use Exa for web, code, and company research. |
-| [find-skills](find-skills/SKILL.md) | Discover existing skills when users need specialized capabilities. |
-| [get-api-docs](get-api-docs/SKILL.md) | Fetch current third-party API or SDK docs before writing code. |
-| [gh-address-comments](gh-address-comments/SKILL.md) | Address PR review and issue comments on the current branch with `gh`. |
-| [gh-fix-ci](gh-fix-ci/SKILL.md) | Inspect failing GitHub Actions checks, pull logs, and plan fixes. |
-| [pdf](pdf/SKILL.md) | Read, create, and review PDF files with rendering checks and Python tooling. |
-| [pinchtab](pinchtab/SKILL.md) | Control a headless or headed Chrome browser via Pinchtab's HTTP API for web automation, scraping, form filling, navigation, screenshots, and extraction with stable accessibility refs. |
-| [planning-with-files](planning-with-files/SKILL.md) | File-based planning for complex tasks using `task_plan.md`, `findings.md`, and `progress.md`. |
-| [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | Advanced prompt engineering patterns for reliable, production LLM workflows. |
-| [remotion-best-practices](remotion-best-practices/SKILL.md) | Best practices for building videos in React with Remotion. |
-| [skill-creator](skill-creator/SKILL.md) | Guide for creating or updating skills with specialized knowledge and tool integrations. |
-| [test-driven-development](test-driven-development/SKILL.md) | Use before implementing any feature or bugfix. |
-| [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | React and Next.js performance optimization guidance from Vercel Engineering. |
-| [xlsx](xlsx/SKILL.md) | Spreadsheet creation, editing, formulas, formatting, and analysis. |
-| [yeet](yeet/SKILL.md) | Use only when the user explicitly asks to stage, commit, push, and open a GitHub pull request in one flow using `gh`. |
+| Skill | Description | Source URL |
+| --- | --- | --- |
+| [agent-browser](agent-browser/SKILL.md) | Browser automation CLI for AI agents: navigation, form filling, screenshots, extraction, and web testing. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/agent-browser) |
+| [ai-elements](ai-elements/SKILL.md) | Create new AI chat interface components for the ai-elements library with composable patterns and shadcn/ui conventions. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/ai-elements) |
+| [brainstorming](brainstorming/SKILL.md) | Clarify intent, requirements, and design before implementation work. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/brainstorming) |
+| [ctx7-cli](ctx7-cli/SKILL.md) | Use the Context7 CLI for docs lookup, skill management, and MCP setup. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/ctx7-cli) |
+| [design-taste-frontend](design-taste-frontend/SKILL.md) | Senior UI/UX engineering guidance for intentional, high-quality frontend design. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/design-taste-frontend) |
+| [dogfood](dogfood/SKILL.md) | Systematically test web apps and produce reproducible issue reports with screenshots and videos. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/dogfood) |
+| [electron](electron/SKILL.md) | Automate Electron desktop apps through agent-browser and Chrome DevTools Protocol. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/electron) |
+| [exa-search](exa-search/SKILL.md) | Use Exa for web, code, and company research. | Custom |
+| [find-skills](find-skills/SKILL.md) | Discover existing skills when users need specialized capabilities. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/find-skills) |
+| [get-api-docs](get-api-docs/SKILL.md) | Fetch current third-party API or SDK docs before writing code. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/get-api-docs) |
+| [gh-address-comments](gh-address-comments/SKILL.md) | Address PR review and issue comments on the current branch with `gh`. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/gh-address-comments) |
+| [gh-fix-ci](gh-fix-ci/SKILL.md) | Inspect failing GitHub Actions checks, pull logs, and plan fixes. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/gh-fix-ci) |
+| [pdf](pdf/SKILL.md) | Read, create, and review PDF files with rendering checks and Python tooling. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/pdf) |
+| [pinchtab](pinchtab/SKILL.md) | Control a headless or headed Chrome browser via Pinchtab's HTTP API for web automation, scraping, form filling, navigation, screenshots, and extraction with stable accessibility refs. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/pinchtab) |
+| [planning-with-files](planning-with-files/SKILL.md) | File-based planning for complex tasks using `task_plan.md`, `findings.md`, and `progress.md`. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/planning-with-files) |
+| [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | Advanced prompt engineering patterns for reliable, production LLM workflows. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/prompt-engineering-patterns) |
+| [remotion-best-practices](remotion-best-practices/SKILL.md) | Best practices for building videos in React with Remotion. | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion) |
+| [skill-creator](skill-creator/SKILL.md) | Guide for creating or updating skills with specialized knowledge and tool integrations. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/skill-creator) |
+| [test-driven-development](test-driven-development/SKILL.md) | Use before implementing any feature or bugfix. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/test-driven-development) |
+| [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | React and Next.js performance optimization guidance from Vercel Engineering. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/vercel-react-best-practices) |
+| [xlsx](xlsx/SKILL.md) | Spreadsheet creation, editing, formulas, formatting, and analysis. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/xlsx) |
+| [yeet](yeet/SKILL.md) | Use only when the user explicitly asks to stage, commit, push, and open a GitHub pull request in one flow using `gh`. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/yeet) |
 
 ### Vendored `impeccable/` Skills
 
-| Skill | Description |
-| --- | --- |
-| [frontend-design](impeccable/frontend-design/SKILL.md) | Create distinctive, production-grade frontend interfaces with high design quality. |
-| [adapt](impeccable/adapt/SKILL.md) | Adapt designs across screen sizes, devices, and contexts. |
-| [animate](impeccable/animate/SKILL.md) | Add purposeful motion and micro-interactions. |
-| [audit](impeccable/audit/SKILL.md) | Audit interface quality across accessibility, performance, theming, and responsive design. |
-| [bolder](impeccable/bolder/SKILL.md) | Make safe or boring designs more visually interesting. |
-| [clarify](impeccable/clarify/SKILL.md) | Improve unclear UX copy and instructions. |
-| [colorize](impeccable/colorize/SKILL.md) | Add strategic color to overly monochrome features. |
-| [critique](impeccable/critique/SKILL.md) | Evaluate design effectiveness from a UX perspective. |
-| [delight](impeccable/delight/SKILL.md) | Add personality and memorable moments to interfaces. |
-| [distill](impeccable/distill/SKILL.md) | Strip designs down to their essential form. |
-| [extract](impeccable/extract/SKILL.md) | Consolidate reusable components, tokens, and patterns into a design system. |
-| [harden](impeccable/harden/SKILL.md) | Improve resilience around errors, i18n, overflow, and edge cases. |
-| [normalize](impeccable/normalize/SKILL.md) | Normalize a feature to match a design system. |
-| [onboard](impeccable/onboard/SKILL.md) | Design or improve onboarding and first-time user experience. |
-| [optimize](impeccable/optimize/SKILL.md) | Improve frontend performance, rendering, motion, and bundle efficiency. |
-| [polish](impeccable/polish/SKILL.md) | Final quality pass for alignment, spacing, consistency, and detail. |
-| [quieter](impeccable/quieter/SKILL.md) | Reduce visual aggression while preserving design quality. |
-| [teach-impeccable](impeccable/teach-impeccable/SKILL.md) | Gather design context and save it as persistent guidance for future work. |
+| Skill | Description | Source URL |
+| --- | --- | --- |
+| [frontend-design](impeccable/frontend-design/SKILL.md) | Create distinctive, production-grade frontend interfaces with high design quality. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [adapt](impeccable/adapt/SKILL.md) | Adapt designs across screen sizes, devices, and contexts. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [animate](impeccable/animate/SKILL.md) | Add purposeful motion and micro-interactions. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [audit](impeccable/audit/SKILL.md) | Audit interface quality across accessibility, performance, theming, and responsive design. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [bolder](impeccable/bolder/SKILL.md) | Make safe or boring designs more visually interesting. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [clarify](impeccable/clarify/SKILL.md) | Improve unclear UX copy and instructions. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [colorize](impeccable/colorize/SKILL.md) | Add strategic color to overly monochrome features. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [critique](impeccable/critique/SKILL.md) | Evaluate design effectiveness from a UX perspective. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [delight](impeccable/delight/SKILL.md) | Add personality and memorable moments to interfaces. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [distill](impeccable/distill/SKILL.md) | Strip designs down to their essential form. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [extract](impeccable/extract/SKILL.md) | Consolidate reusable components, tokens, and patterns into a design system. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [harden](impeccable/harden/SKILL.md) | Improve resilience around errors, i18n, overflow, and edge cases. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [normalize](impeccable/normalize/SKILL.md) | Normalize a feature to match a design system. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [onboard](impeccable/onboard/SKILL.md) | Design or improve onboarding and first-time user experience. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [optimize](impeccable/optimize/SKILL.md) | Improve frontend performance, rendering, motion, and bundle efficiency. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [polish](impeccable/polish/SKILL.md) | Final quality pass for alignment, spacing, consistency, and detail. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [quieter](impeccable/quieter/SKILL.md) | Reduce visual aggression while preserving design quality. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [teach-impeccable](impeccable/teach-impeccable/SKILL.md) | Gather design context and save it as persistent guidance for future work. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
 
 ## Contributing
 

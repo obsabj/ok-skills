@@ -120,55 +120,57 @@ git clone https://github.com/mxyhi/ok-skills.git ~/.agents/skills
 
 ## 完整技能索引
 
+`Source URL` 列优先指向技能的 canonical upstream；如果没有单独上游，则指向当前仓库内该技能目录的 GitHub 地址。
+
 ### 顶层技能
 
-| 技能 | 说明 |
-| --- | --- |
-| [agent-browser](agent-browser/SKILL.md) | 面向 AI agents 的浏览器自动化：导航、表单、截图、数据提取、网页测试。 |
-| [ai-elements](ai-elements/SKILL.md) | 为 ai-elements 组件库创建新的 AI 聊天界面组件，遵循可组合模式与 shadcn/ui 约定。 |
-| [brainstorming](brainstorming/SKILL.md) | 在任何实现前先澄清意图、需求与设计。 |
-| [ctx7-cli](ctx7-cli/SKILL.md) | 使用 Context7 CLI 完成文档查询、skill 管理和 MCP 配置。 |
-| [design-taste-frontend](design-taste-frontend/SKILL.md) | 面向高质量前端界面设计的 UI/UX 工程技能。 |
-| [dogfood](dogfood/SKILL.md) | 系统化测试 Web 应用，并产出附截图和录屏的问题报告。 |
-| [electron](electron/SKILL.md) | 通过 agent-browser 和 Chrome DevTools Protocol 自动化 Electron 桌面应用。 |
-| [exa-search](exa-search/SKILL.md) | 使用 Exa 做网页、代码和公司调研。 |
-| [find-skills](find-skills/SKILL.md) | 当用户需要特定能力时，发现已有技能。 |
-| [get-api-docs](get-api-docs/SKILL.md) | 在写第三方 API / SDK 代码前先抓当前文档。 |
-| [gh-address-comments](gh-address-comments/SKILL.md) | 用 `gh` 处理当前分支 PR 的评审和 issue 评论。 |
-| [gh-fix-ci](gh-fix-ci/SKILL.md) | 检查 GitHub Actions 失败项、提取日志并制定修复方案。 |
-| [pdf](pdf/SKILL.md) | 处理 PDF 的读取、生成与审查，强调渲染后的视觉检查。 |
-| [pinchtab](pinchtab/SKILL.md) | 通过 Pinchtab 的 HTTP API 控制 headless 或 headed Chrome，用于网页自动化、抓取、表单填写、导航、截图和基于稳定 accessibility refs 的内容提取。 |
-| [planning-with-files](planning-with-files/SKILL.md) | 用 `task_plan.md`、`findings.md`、`progress.md` 管理复杂任务。 |
-| [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | 面向生产环境的高级提示工程模式。 |
-| [remotion-best-practices](remotion-best-practices/SKILL.md) | 用于 React + Remotion 视频开发的最佳实践。 |
-| [skill-creator](skill-creator/SKILL.md) | 创建或更新技能，补齐专业知识、工作流与工具集成。 |
-| [test-driven-development](test-driven-development/SKILL.md) | 实现任何功能或修复前先使用。 |
-| [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | 来自 Vercel Engineering 的 React / Next.js 性能优化实践。 |
-| [xlsx](xlsx/SKILL.md) | 覆盖表格创建、编辑、公式、格式和分析。 |
-| [yeet](yeet/SKILL.md) | 仅在用户明确要求用 `gh` 一次性完成 stage、commit、push 并创建 GitHub PR 时使用。 |
+| 技能 | 说明 | Source URL |
+| --- | --- | --- |
+| [agent-browser](agent-browser/SKILL.md) | 面向 AI agents 的浏览器自动化：导航、表单、截图、数据提取、网页测试。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/agent-browser) |
+| [ai-elements](ai-elements/SKILL.md) | 为 ai-elements 组件库创建新的 AI 聊天界面组件，遵循可组合模式与 shadcn/ui 约定。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/ai-elements) |
+| [brainstorming](brainstorming/SKILL.md) | 在任何实现前先澄清意图、需求与设计。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/brainstorming) |
+| [ctx7-cli](ctx7-cli/SKILL.md) | 使用 Context7 CLI 完成文档查询、skill 管理和 MCP 配置。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/ctx7-cli) |
+| [design-taste-frontend](design-taste-frontend/SKILL.md) | 面向高质量前端界面设计的 UI/UX 工程技能。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/design-taste-frontend) |
+| [dogfood](dogfood/SKILL.md) | 系统化测试 Web 应用，并产出附截图和录屏的问题报告。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/dogfood) |
+| [electron](electron/SKILL.md) | 通过 agent-browser 和 Chrome DevTools Protocol 自动化 Electron 桌面应用。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/electron) |
+| [exa-search](exa-search/SKILL.md) | 使用 Exa 做网页、代码和公司调研。 | 自制 |
+| [find-skills](find-skills/SKILL.md) | 当用户需要特定能力时，发现已有技能。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/find-skills) |
+| [get-api-docs](get-api-docs/SKILL.md) | 在写第三方 API / SDK 代码前先抓当前文档。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/get-api-docs) |
+| [gh-address-comments](gh-address-comments/SKILL.md) | 用 `gh` 处理当前分支 PR 的评审和 issue 评论。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/gh-address-comments) |
+| [gh-fix-ci](gh-fix-ci/SKILL.md) | 检查 GitHub Actions 失败项、提取日志并制定修复方案。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/gh-fix-ci) |
+| [pdf](pdf/SKILL.md) | 处理 PDF 的读取、生成与审查，强调渲染后的视觉检查。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/pdf) |
+| [pinchtab](pinchtab/SKILL.md) | 通过 Pinchtab 的 HTTP API 控制 headless 或 headed Chrome，用于网页自动化、抓取、表单填写、导航、截图和基于稳定 accessibility refs 的内容提取。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/pinchtab) |
+| [planning-with-files](planning-with-files/SKILL.md) | 用 `task_plan.md`、`findings.md`、`progress.md` 管理复杂任务。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/planning-with-files) |
+| [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | 面向生产环境的高级提示工程模式。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/prompt-engineering-patterns) |
+| [remotion-best-practices](remotion-best-practices/SKILL.md) | 用于 React + Remotion 视频开发的最佳实践。 | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion) |
+| [skill-creator](skill-creator/SKILL.md) | 创建或更新技能，补齐专业知识、工作流与工具集成。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/skill-creator) |
+| [test-driven-development](test-driven-development/SKILL.md) | 实现任何功能或修复前先使用。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/test-driven-development) |
+| [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | 来自 Vercel Engineering 的 React / Next.js 性能优化实践。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/vercel-react-best-practices) |
+| [xlsx](xlsx/SKILL.md) | 覆盖表格创建、编辑、公式、格式和分析。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/xlsx) |
+| [yeet](yeet/SKILL.md) | 仅在用户明确要求用 `gh` 一次性完成 stage、commit、push 并创建 GitHub PR 时使用。 | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/yeet) |
 
 ### Vendored `impeccable/` 技能
 
-| 技能 | 说明 |
-| --- | --- |
-| [frontend-design](impeccable/frontend-design/SKILL.md) | 创建有辨识度、生产级的高质量前端界面。 |
-| [adapt](impeccable/adapt/SKILL.md) | 让设计适配不同屏幕尺寸、设备和上下文。 |
-| [animate](impeccable/animate/SKILL.md) | 用有目的的动画和微交互增强界面。 |
-| [audit](impeccable/audit/SKILL.md) | 审计界面的可访问性、性能、主题与响应式表现。 |
-| [bolder](impeccable/bolder/SKILL.md) | 让过于保守或平淡的设计更有张力。 |
-| [clarify](impeccable/clarify/SKILL.md) | 改善不清晰的 UX 文案与说明。 |
-| [colorize](impeccable/colorize/SKILL.md) | 为过于单色的界面加入策略性色彩。 |
-| [critique](impeccable/critique/SKILL.md) | 从 UX 视角评估设计效果。 |
-| [delight](impeccable/delight/SKILL.md) | 为界面加入个性和让人记住的细节。 |
-| [distill](impeccable/distill/SKILL.md) | 把设计提炼到本质，去掉多余复杂度。 |
-| [extract](impeccable/extract/SKILL.md) | 抽取并整合可复用组件、tokens 和模式。 |
-| [harden](impeccable/harden/SKILL.md) | 提升错误处理、i18n、溢出和边界情况的韧性。 |
-| [normalize](impeccable/normalize/SKILL.md) | 让功能对齐到设计系统并保持一致性。 |
-| [onboard](impeccable/onboard/SKILL.md) | 改进引导流程、空状态和首次使用体验。 |
-| [optimize](impeccable/optimize/SKILL.md) | 优化加载、渲染、动画、图片和包体积。 |
-| [polish](impeccable/polish/SKILL.md) | 上线前打磨对齐、间距、一致性和细节。 |
-| [quieter](impeccable/quieter/SKILL.md) | 降低过强的视觉攻击性，同时保持质量。 |
-| [teach-impeccable](impeccable/teach-impeccable/SKILL.md) | 收集设计上下文并保存为后续工作的长期指导。 |
+| 技能 | 说明 | Source URL |
+| --- | --- | --- |
+| [frontend-design](impeccable/frontend-design/SKILL.md) | 创建有辨识度、生产级的高质量前端界面。 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [adapt](impeccable/adapt/SKILL.md) | 让设计适配不同屏幕尺寸、设备和上下文。 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [animate](impeccable/animate/SKILL.md) | 用有目的的动画和微交互增强界面。 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [audit](impeccable/audit/SKILL.md) | 审计界面的可访问性、性能、主题与响应式表现。 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [bolder](impeccable/bolder/SKILL.md) | 让过于保守或平淡的设计更有张力。 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [clarify](impeccable/clarify/SKILL.md) | 改善不清晰的 UX 文案与说明。 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [colorize](impeccable/colorize/SKILL.md) | 为过于单色的界面加入策略性色彩。 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [critique](impeccable/critique/SKILL.md) | 从 UX 视角评估设计效果。 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [delight](impeccable/delight/SKILL.md) | 为界面加入个性和让人记住的细节。 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [distill](impeccable/distill/SKILL.md) | 把设计提炼到本质，去掉多余复杂度。 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [extract](impeccable/extract/SKILL.md) | 抽取并整合可复用组件、tokens 和模式。 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [harden](impeccable/harden/SKILL.md) | 提升错误处理、i18n、溢出和边界情况的韧性。 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [normalize](impeccable/normalize/SKILL.md) | 让功能对齐到设计系统并保持一致性。 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [onboard](impeccable/onboard/SKILL.md) | 改进引导流程、空状态和首次使用体验。 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [optimize](impeccable/optimize/SKILL.md) | 优化加载、渲染、动画、图片和包体积。 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [polish](impeccable/polish/SKILL.md) | 上线前打磨对齐、间距、一致性和细节。 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [quieter](impeccable/quieter/SKILL.md) | 降低过强的视觉攻击性，同时保持质量。 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
+| [teach-impeccable](impeccable/teach-impeccable/SKILL.md) | 收集设计上下文并保存为后续工作的长期指导。 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) |
 
 ## 贡献
 
