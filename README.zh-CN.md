@@ -1,10 +1,14 @@
 # OK Skills：面向 Codex、Claude Code、Cursor、OpenClaw 等工具的 AI Agent Skills 集合
 
-简体中文 | [English](README.md)
+[English](README.md) | 简体中文 | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Español](README.es.md) | [Tiếng Việt](README.vi.md) | [Русский](README.ru.md) | [हिन्दी](README.hi.md)
 
 这是一个面向 Codex、Claude Code、Cursor、OpenClaw、Trae 以及其他兼容 `SKILL.md` / `AGENTS.md` 工作流工具的技能仓库。
 
 当前仓库共收录 **44 个可复用技能**：其中 **26 个顶层技能** 由本仓直接维护，另有 **18 个前端设计技能** 以 vendored bundle 形式放在 [`impeccable/`](impeccable/README.md) 下。把它 clone 到 `~/.agents/skills/ok-skills` 即可，仓库内部目录已经符合 `AGENTS.md` 所需的 skills 规范。
+
+如果你在找 **Codex skills**、**Claude Code skills**、**Cursor skills**、**OpenClaw skills**、可复用的 **AGENTS.md** 模板，或者一套能直接落地的 **SKILL.md** 示例仓库，这个项目就是为搜索可发现性和开箱即用而整理的。
+
+**高频使用场景：** 最新文档查询、浏览器自动化、GitHub Actions 排障、提示工程、复杂任务规划、前端设计，以及 PDF / Word / PPTX / XLSX 内容处理。
 
 ## 适合谁
 
@@ -189,7 +193,7 @@ clone 后仓库位于 `~/.agents/skills/ok-skills`，其内部目录已经符合
 1. 触发条件要明确且可验证。
 2. 示例尽量简洁，强调可执行性。
 3. 若依赖外部工具，请在 `SKILL.md` 中明确标注依赖。
-4. 新增或重命名技能时，请同步更新 `README.md` 与 `README.zh-CN.md`。
+4. 新增或重命名技能时，请同步更新 `README.md` 与 `README.zh-CN.md`；如果公开技能索引发生变化，也请一并刷新其他翻译版 README。
 
 ## 许可证
 
