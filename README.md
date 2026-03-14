@@ -4,7 +4,7 @@ English | [简体中文](README.zh-CN.md)
 
 Curated AI coding agent skills and AGENTS.md playbooks for Codex, Claude Code, Cursor, Trae, and other SKILL.md-compatible tools.
 
-This repo currently bundles **45 reusable skills**: **27 top-level skills** maintained directly in this repo, plus **18 vendored design skills** under [`impeccable/`](impeccable/README.md). Clone it into `~/.agents/skills/ok-skills`; the directories inside already match the layout expected by `AGENTS.md`-driven workflows.
+This repo currently bundles **44 reusable skills**: **26 top-level skills** maintained directly in this repo, plus **18 vendored design skills** under [`impeccable/`](impeccable/README.md). Clone it into `~/.agents/skills/ok-skills`; the directories inside already match the layout expected by `AGENTS.md`-driven workflows.
 
 ## Who This Repo Is For
 
@@ -92,7 +92,6 @@ Then ask naturally:
 ### Frontend & Design
 
 - [ai-elements](ai-elements/SKILL.md): build AI chat UI components for the `ai-elements` library.
-- [design-taste-frontend](design-taste-frontend/SKILL.md): senior frontend design guidance for intentional interfaces.
 - [redesign-skill](redesign-skill/SKILL.md): upgrade existing websites and apps to premium quality without rewriting from scratch.
 - [vercel-react-best-practices](vercel-react-best-practices/SKILL.md): React and Next.js performance guidance from Vercel Engineering.
 - [taste-skill](taste-skill/SKILL.md): senior UI/UX design skill for high-agency frontend output with stronger design systems and motion.
@@ -137,7 +136,6 @@ Attribution and legal files are preserved in [`impeccable/NOTICE.md`](impeccable
 | [ai-elements](ai-elements/SKILL.md) | Create new AI chat interface components for the ai-elements library with composable patterns and shadcn/ui conventions. | [vercel/ai-elements](https://github.com/vercel/ai-elements/tree/main/skills/ai-elements) |
 | [brainstorming](brainstorming/SKILL.md) | Clarify intent, requirements, and design before implementation work. | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/brainstorming) |
 | [context7-cli](context7-cli/SKILL.md) | Use the Context7 CLI for docs lookup, skill management, and MCP setup. | [upstash/context7](https://github.com/upstash/context7/tree/master/skills/context7-cli) |
-| [design-taste-frontend](design-taste-frontend/SKILL.md) | Senior UI/UX engineering guidance for intentional, high-quality frontend design. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/design-taste-frontend) |
 | [docx](docx/SKILL.md) | Create, read, edit, and manipulate Word documents with formatting, comments, tracked changes, and image updates. | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/docx) |
 | [dogfood](dogfood/SKILL.md) | Systematically test web apps and produce reproducible issue reports with screenshots and videos. | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/dogfood) |
 | [electron](electron/SKILL.md) | Automate Electron desktop apps through agent-browser and Chrome DevTools Protocol. | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/electron) |
@@ -157,7 +155,7 @@ Attribution and legal files are preserved in [`impeccable/NOTICE.md`](impeccable
 | [skill-creator](skill-creator/SKILL.md) | Guide for creating or updating skills with specialized knowledge and tool integrations. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.system/skill-creator) |
 | [taste-skill](taste-skill/SKILL.md) | Senior UI/UX Engineer. Architect digital interfaces overriding default LLM biases. Enforces metric-based rules, strict component architecture, CSS hardware acceleration, and balanced design engineering. | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/tree/main/taste-skill) |
 | [test-driven-development](test-driven-development/SKILL.md) | Use before implementing any feature or bugfix. | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) |
-| [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | React and Next.js performance optimization guidance from Vercel Engineering. | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/vercel-react-best-practices) |
+| [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | React and Next.js performance optimization guidance from Vercel Engineering. | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices) |
 | [xlsx](xlsx/SKILL.md) | Spreadsheet creation, editing, formulas, formatting, and analysis. | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/xlsx) |
 | [yeet](yeet/SKILL.md) | Use only when the user explicitly asks to stage, commit, push, and open a GitHub pull request in one flow using `gh`. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/yeet) |
 

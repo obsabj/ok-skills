@@ -4,7 +4,7 @@
 
 这是一个面向 Codex、Claude Code、Cursor、Trae 以及其他兼容 `SKILL.md` / `AGENTS.md` 工作流工具的技能仓库。
 
-当前仓库共收录 **45 个可复用技能**：其中 **27 个顶层技能** 由本仓直接维护，另有 **18 个前端设计技能** 以 vendored bundle 形式放在 [`impeccable/`](impeccable/README.md) 下。把它 clone 到 `~/.agents/skills/ok-skills` 即可，仓库内部目录已经符合 `AGENTS.md` 所需的 skills 规范。
+当前仓库共收录 **44 个可复用技能**：其中 **26 个顶层技能** 由本仓直接维护，另有 **18 个前端设计技能** 以 vendored bundle 形式放在 [`impeccable/`](impeccable/README.md) 下。把它 clone 到 `~/.agents/skills/ok-skills` 即可，仓库内部目录已经符合 `AGENTS.md` 所需的 skills 规范。
 
 ## 适合谁
 
@@ -92,7 +92,6 @@ clone 后仓库位于 `~/.agents/skills/ok-skills`，其内部目录已经符合
 ### 前端与设计
 
 - [ai-elements](ai-elements/SKILL.md)：为 `ai-elements` 组件库创建 AI 聊天界面组件。
-- [design-taste-frontend](design-taste-frontend/SKILL.md)：强调有意图视觉表达的前端设计工程技能。
 - [redesign-skill](redesign-skill/SKILL.md)：升级现有网站或应用的设计质量，不从零重写。
 - [vercel-react-best-practices](vercel-react-best-practices/SKILL.md)：来自 Vercel Engineering 的 React / Next.js 性能实践。
 - [taste-skill](taste-skill/SKILL.md)：面向高质量前端输出的高级 UI/UX 设计技能，强调设计系统、动效与工程约束。
@@ -137,7 +136,6 @@ clone 后仓库位于 `~/.agents/skills/ok-skills`，其内部目录已经符合
 | [ai-elements](ai-elements/SKILL.md) | 为 ai-elements 组件库创建新的 AI 聊天界面组件，遵循可组合模式与 shadcn/ui 约定。 | [vercel/ai-elements](https://github.com/vercel/ai-elements/tree/main/skills/ai-elements) |
 | [brainstorming](brainstorming/SKILL.md) | 在任何实现前先澄清意图、需求与设计。 | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/brainstorming) |
 | [context7-cli](context7-cli/SKILL.md) | 使用 Context7 CLI 完成文档查询、skill 管理和 MCP 配置。 | [upstash/context7](https://github.com/upstash/context7/tree/master/skills/context7-cli) |
-| [design-taste-frontend](design-taste-frontend/SKILL.md) | 面向高质量前端界面设计的 UI/UX 工程技能。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/design-taste-frontend) |
 | [docx](docx/SKILL.md) | 创建、读取、编辑和处理 Word 文档，覆盖格式、批注、修订和图片替换。 | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/docx) |
 | [dogfood](dogfood/SKILL.md) | 系统化测试 Web 应用，并产出附截图和录屏的问题报告。 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/dogfood) |
 | [electron](electron/SKILL.md) | 通过 agent-browser 和 Chrome DevTools Protocol 自动化 Electron 桌面应用。 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/electron) |
@@ -157,7 +155,7 @@ clone 后仓库位于 `~/.agents/skills/ok-skills`，其内部目录已经符合
 | [skill-creator](skill-creator/SKILL.md) | 创建或更新技能，补齐专业知识、工作流与工具集成。 | [openai/skills](https://github.com/openai/skills/tree/main/skills/.system/skill-creator) |
 | [taste-skill](taste-skill/SKILL.md) | 高级 UI/UX 工程技能，专注于打破默认 LLM 设计偏差，强调量化规则、组件架构、CSS 硬件加速与平衡的设计工程。 | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/tree/main/taste-skill) |
 | [test-driven-development](test-driven-development/SKILL.md) | 实现任何功能或修复前先使用。 | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) |
-| [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | 来自 Vercel Engineering 的 React / Next.js 性能优化实践。 | [mxyhi/ok-skills](https://github.com/mxyhi/ok-skills/tree/main/vercel-react-best-practices) |
+| [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | 来自 Vercel Engineering 的 React / Next.js 性能优化实践。 | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices) |
 | [xlsx](xlsx/SKILL.md) | 覆盖表格创建、编辑、公式、格式和分析。 | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/xlsx) |
 | [yeet](yeet/SKILL.md) | 仅在用户明确要求用 `gh` 一次性完成 stage、commit、push 并创建 GitHub PR 时使用。 | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/yeet) |
 
