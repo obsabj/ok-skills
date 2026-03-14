@@ -109,7 +109,7 @@ clone 이후 저장소 경로는 `~/.agents/skills/ok-skills`가 되며, 내부 
 
 ## 벤더링된 스킬 팩
 
-[`impeccable/`](impeccable/README.md)에는 [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable)에서 가져온 디자인 중심 번들이 포함되어 있으며, 기준 커밋은 `0df1ba59dc80b8b1891ee42eed0ef4e03d7ef165`입니다.
+[`impeccable/`](impeccable/README.md)에는 [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable)에서 가져온 디자인 중심 번들이 포함되어 있으며, 기준 커밋은 `15332dd293986e0a310fa54c103025d21142c3dd`입니다.
 
 포함된 항목:
 

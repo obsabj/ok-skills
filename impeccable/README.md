@@ -1,6 +1,6 @@
 # Impeccable Skills Bundle
 
-Vendored from `pbakaus/impeccable` at commit `0df1ba59dc80b8b1891ee42eed0ef4e03d7ef165`.
+Vendored from `pbakaus/impeccable` at commit `15332dd293986e0a310fa54c103025d21142c3dd`.
 
 ## Source
 

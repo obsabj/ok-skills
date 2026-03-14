@@ -109,7 +109,7 @@ git clone https://github.com/mxyhi/ok-skills.git ok-skills
 
 ## Vendored Skill Packs
 
-[`impeccable/`](impeccable/README.md) содержит vendored design-focused bundle из [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable) на коммите `0df1ba59dc80b8b1891ee42eed0ef4e03d7ef165`.
+[`impeccable/`](impeccable/README.md) содержит vendored design-focused bundle из [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable) на коммите `15332dd293986e0a310fa54c103025d21142c3dd`.
 
 В него входят:
 

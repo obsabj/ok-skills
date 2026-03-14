@@ -29,7 +29,6 @@ npx ai-elements@latest add message
 
 
 
-
 ## Usage with AI SDK
 
 Build a simple chat UI where the user can copy or regenerate the most recent message.
@@ -37,35 +36,38 @@ Build a simple chat UI where the user can copy or regenerate the most recent mes
 Add the following component to your frontend:
 
 ```tsx title="app/page.tsx"
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { MessageActions, MessageAction } from '@/components/ai-elements/message';
-import { Message, MessageContent } from '@/components/ai-elements/message';
+import { useState } from "react";
+import {
+  MessageActions,
+  MessageAction,
+} from "@/components/ai-elements/message";
+import { Message, MessageContent } from "@/components/ai-elements/message";
 import {
   Conversation,
   ConversationContent,
   ConversationScrollButton,
-} from '@/components/ai-elements/conversation';
+} from "@/components/ai-elements/conversation";
 import {
-  Input,
+  PromptInput,
+  type PromptInputMessage,
   PromptInputTextarea,
   PromptInputSubmit,
-} from '@/components/ai-elements/prompt-input';
-import { MessageResponse } from '@/components/ai-elements/message';
-import { RefreshCcwIcon, CopyIcon } from 'lucide-react';
-import { useChat } from '@ai-sdk/react';
-import { Fragment } from 'react';
+} from "@/components/ai-elements/prompt-input";
+import { MessageResponse } from "@/components/ai-elements/message";
+import { RefreshCcwIcon, CopyIcon } from "lucide-react";
+import { useChat } from "@ai-sdk/react";
+import { Fragment } from "react";
 
 const ActionsDemo = () => {
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
   const { messages, sendMessage, status, regenerate } = useChat();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (input.trim()) {
-      sendMessage({ text: input });
-      setInput('');
+  const handleSubmit = (message: PromptInputMessage) => {
+    if (message.text.trim()) {
+      sendMessage({ text: message.text });
+      setInput("");
     }
   };
 
@@ -78,7 +80,7 @@ const ActionsDemo = () => {
               <Fragment key={message.id}>
                 {message.parts.map((part, i) => {
                   switch (part.type) {
-                    case 'text':
+                    case "text":
                       const isLastMessage =
                         messageIndex === messages.length - 1;
 
@@ -89,7 +91,7 @@ const ActionsDemo = () => {
                               <MessageResponse>{part.text}</MessageResponse>
                             </MessageContent>
                           </Message>
-                          {message.role === 'assistant' && isLastMessage && (
+                          {message.role === "assistant" && isLastMessage && (
                             <MessageActions>
                               <MessageAction
                                 onClick={() => regenerate()}
@@ -119,7 +121,7 @@ const ActionsDemo = () => {
           <ConversationScrollButton />
         </Conversation>
 
-        <Input
+        <PromptInput
           onSubmit={handleSubmit}
           className="mt-4 w-full max-w-2xl mx-auto relative"
         >
@@ -130,11 +132,11 @@ const ActionsDemo = () => {
             className="pr-12"
           />
           <PromptInputSubmit
-            status={status === 'streaming' ? 'streaming' : 'ready'}
+            status={status === "streaming" ? "streaming" : "ready"}
             disabled={!input.trim()}
             className="absolute bottom-1 right-1"
           />
-        </Input>
+        </PromptInput>
       </div>
     </div>
   );
@@ -205,8 +207,7 @@ export default ActionsDemo;
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `from` | `UIMessage[` | - | Aligns the selector for user, assistant or system messages. |
-| `...props` | `React.HTMLAttributes<HTMLDivElement>` | - | Any other props are spread to the selector container. |
+| `...props` | `React.ComponentProps<typeof ButtonGroup>` | - | Any other props are spread to the underlying ButtonGroup component. |
 
 ### `<MessageBranchPrevious />`
 
@@ -226,45 +227,11 @@ export default ActionsDemo;
 |------|------|---------|-------------|
 | `...props` | `React.HTMLAttributes<HTMLSpanElement>` | - | Any other props are spread to the underlying span element. |
 
-### `<MessageAttachments />`
+### `<MessageToolbar />`
 
-A container component for displaying file attachments in a message. Automatically positions attachments at the end of the message with proper spacing and alignment.
+A container for placing actions and branch selectors below a message. Lays out children in a horizontal row with space-between alignment.
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `children` | `ReactNode` | - | MessageAttachment components to render. Returns null if no children provided. |
 | `...props` | `React.ComponentProps<` | - | Any other props are spread to the root div. |
-
-**Example:**
-
-```tsx
-<MessageAttachments className="mb-2">
-  {files.map((attachment) => (
-    <MessageAttachment data={attachment} key={attachment.url} />
-  ))}
-</MessageAttachments>
-```
-
-### `<MessageAttachment />`
-
-Displays a single file attachment. Images are shown as thumbnails (96px × 96px) with rounded corners. Non-image files show a paperclip icon with the filename.
-
-| Prop | Type | Default | Description |
-|------|------|---------|-------------|
-| `data` | `FileUIPart` | - | The file data to display. Must include url and mediaType. |
-| `onRemove` | `() => void` | - | Optional callback fired when the remove button is clicked. If provided, a remove button will appear on hover. |
-| `...props` | `React.HTMLAttributes<HTMLDivElement>` | - | Any other props are spread to the root div. |
-
-**Example:**
-
-```tsx
-<MessageAttachment
-  data={{
-    type: "file",
-    url: "https://example.com/image.jpg",
-    mediaType: "image/jpeg",
-    filename: "image.jpg"
-  }}
-  onRemove={() => console.log("Remove clicked")}
-/>
 ```

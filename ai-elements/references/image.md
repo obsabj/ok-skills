@@ -25,39 +25,39 @@ npm i @ai-sdk/openai
 Add the following component to your frontend:
 
 ```tsx title="app/page.tsx"
-'use client';
+"use client";
 
-import { Image } from '@/components/ai-elements/image';
+import { Image } from "@/components/ai-elements/image";
 import {
-  Input,
+  PromptInput,
+  type PromptInputMessage,
   PromptInputTextarea,
   PromptInputSubmit,
-} from '@/components/ai-elements/prompt-input';
-import { useState } from 'react';
-import { Spinner } from '@/components/ui/spinner';
+} from "@/components/ai-elements/prompt-input";
+import { useState } from "react";
+import { Spinner } from "@/components/ui/spinner";
 
 const ImageDemo = () => {
-  const [prompt, setPrompt] = useState('A futuristic cityscape at sunset');
+  const [prompt, setPrompt] = useState("A futuristic cityscape at sunset");
   const [imageData, setImageData] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!prompt.trim()) return;
-    setPrompt('');
+  const handleSubmit = async (message: PromptInputMessage) => {
+    if (!message.text.trim()) return;
+    setPrompt("");
 
     setIsLoading(true);
     try {
-      const response = await fetch('/api/image', {
-        method: 'POST',
-        body: JSON.stringify({ prompt: prompt.trim() }),
+      const response = await fetch("/api/image", {
+        method: "POST",
+        body: JSON.stringify({ prompt: message.text.trim() }),
       });
 
       const data = await response.json();
 
       setImageData(data);
     } catch (error) {
-      console.error('Error generating image:', error);
+      console.error("Error generating image:", error);
     } finally {
       setIsLoading(false);
     }
@@ -79,7 +79,7 @@ const ImageDemo = () => {
           {isLoading && <Spinner />}
         </div>
 
-        <Input
+        <PromptInput
           onSubmit={handleSubmit}
           className="mt-4 w-full max-w-2xl mx-auto relative"
         >
@@ -90,11 +90,11 @@ const ImageDemo = () => {
             className="pr-12"
           />
           <PromptInputSubmit
-            status={isLoading ? 'submitted' : 'ready'}
+            status={isLoading ? "submitted" : "ready"}
             disabled={!prompt.trim()}
             className="absolute bottom-1 right-1"
           />
-        </Input>
+        </PromptInput>
       </div>
     </div>
   );
@@ -106,16 +106,16 @@ export default ImageDemo;
 Add the following route to your backend:
 
 ```ts title="app/api/image/route.ts"
-import { openai } from '@ai-sdk/openai';
-import { experimental_generateImage } from 'ai';
+import { openai } from "@ai-sdk/openai";
+import { experimental_generateImage } from "ai";
 
 export async function POST(req: Request) {
   const { prompt }: { prompt: string } = await req.json();
 
   const { image } = await experimental_generateImage({
-    model: openai.image('dall-e-3'),
+    model: openai.image("dall-e-3"),
     prompt: prompt,
-    size: '1024x1024',
+    size: "1024x1024",
   });
 
   return Response.json({

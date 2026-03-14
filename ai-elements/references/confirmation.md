@@ -19,22 +19,23 @@ Build a chat UI with tool approval workflow where dangerous tools require user c
 Add the following component to your frontend:
 
 ```tsx title="app/page.tsx"
-'use client';
+"use client";
 
-import { useChat } from '@ai-sdk/react';
-import { DefaultChatTransport, type ToolUIPart } from 'ai';
-import { useState } from 'react';
-import { CheckIcon, XIcon } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { useChat } from "@ai-sdk/react";
+import { DefaultChatTransport, type ToolUIPart } from "ai";
+import { useState } from "react";
+import { CheckIcon, XIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import {
   Confirmation,
+  ConfirmationTitle,
   ConfirmationRequest,
   ConfirmationAccepted,
   ConfirmationRejected,
   ConfirmationActions,
   ConfirmationAction,
-} from '@/components/ai-elements/confirmation';
-import { MessageResponse } from '@/components/ai-elements/message';
+} from "@/components/ai-elements/confirmation";
+import { MessageResponse } from "@/components/ai-elements/message";
 
 type DeleteFileInput = {
   filePath: string;
@@ -51,30 +52,31 @@ type DeleteFileToolUIPart = ToolUIPart<{
 const Example = () => {
   const { messages, sendMessage, status, addToolApprovalResponse } = useChat({
     transport: new DefaultChatTransport({
-      api: '/api/chat',
+      api: "/api/chat",
     }),
   });
 
   const handleDeleteFile = () => {
-    sendMessage({ text: 'Delete the file at /tmp/example.txt' });
+    sendMessage({ text: "Delete the file at /tmp/example.txt" });
   };
 
   const latestMessage = messages[messages.length - 1];
   const deleteTool = latestMessage?.parts?.find(
-    (part) => part.type === 'tool-delete_file'
+    (part) => part.type === "tool-delete_file"
   ) as DeleteFileToolUIPart | undefined;
 
   return (
     <div className="max-w-4xl mx-auto p-6 relative size-full rounded-lg border h-[600px]">
       <div className="flex flex-col h-full space-y-4">
-        <Button onClick={handleDeleteFile} disabled={status !== 'ready'}>
+        <Button onClick={handleDeleteFile} disabled={status !== "ready"}>
           Delete Example File
         </Button>
 
         {deleteTool?.approval && (
           <Confirmation approval={deleteTool.approval} state={deleteTool.state}>
             <ConfirmationRequest>
-              This tool wants to delete: <code>{deleteTool.input?.filePath}</code>
+              This tool wants to delete:{" "}
+              <code>{deleteTool.input?.filePath}</code>
               <br />
               Do you approve this action?
             </ConfirmationRequest>
@@ -131,8 +133,8 @@ export default Example;
 Add the following route to your backend:
 
 ```ts title="app/api/chat/route.tsx"
-import { streamText, UIMessage, convertToModelMessages } from 'ai';
-import { z } from 'zod';
+import { streamText, UIMessage, convertToModelMessages } from "ai";
+import { z } from "zod";
 
 // Allow streaming responses up to 30 seconds
 export const maxDuration = 30;
@@ -141,24 +143,24 @@ export async function POST(req: Request) {
   const { messages }: { messages: UIMessage[] } = await req.json();
 
   const result = streamText({
-    model: 'openai/gpt-4o',
+    model: "openai/gpt-4o",
     messages: await convertToModelMessages(messages),
     tools: {
       delete_file: {
-        description: 'Delete a file from the file system',
+        description: "Delete a file from the file system",
         parameters: z.object({
-          filePath: z.string().describe('The path to the file to delete'),
+          filePath: z.string().describe("The path to the file to delete"),
           confirm: z
             .boolean()
             .default(false)
-            .describe('Confirmation that the user wants to delete the file'),
+            .describe("Confirmation that the user wants to delete the file"),
         }),
         requireApproval: true, // Enable approval workflow
         execute: async ({ filePath, confirm }) => {
           if (!confirm) {
             return {
               success: false,
-              message: 'Deletion not confirmed',
+              message: "Deletion not confirmed",
             };
           }
 
@@ -219,6 +221,14 @@ See `scripts/confirmation-rejected.tsx` for this example.
 | `state` | `ToolUIPart[` | - | The current state of the tool (input-streaming, input-available, approval-requested, approval-responded, output-denied, or output-available). Will not render for input-streaming or input-available states. |
 | `className` | `string` | - | Additional CSS classes to apply to the Alert component. |
 | `...props` | `React.ComponentProps<typeof Alert>` | - | Any other props are spread to the Alert component. |
+
+### `<ConfirmationTitle />`
+
+A styled description element for displaying a title or label within the confirmation alert.
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `...props` | `React.ComponentProps<typeof AlertDescription>` | - | Any other props are spread to the underlying AlertDescription component. |
 
 ### `<ConfirmationRequest />`
 

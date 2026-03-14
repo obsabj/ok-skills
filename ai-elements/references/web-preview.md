@@ -25,45 +25,45 @@ npm i v0-sdk
 Add the following component to your frontend:
 
 ```tsx title="app/page.tsx"
-'use client';
+"use client";
 
 import {
   WebPreview,
   WebPreviewBody,
   WebPreviewNavigation,
   WebPreviewUrl,
-} from '@/components/ai-elements/web-preview';
-import { useState } from 'react';
+} from "@/components/ai-elements/web-preview";
+import { useState } from "react";
 import {
-  Input,
+  PromptInput,
+  type PromptInputMessage,
   PromptInputTextarea,
   PromptInputSubmit,
-} from '@/components/ai-elements/prompt-input';
-import { Spinner } from '@/components/ui/spinner';
+} from "@/components/ai-elements/prompt-input";
+import { Spinner } from "@/components/ui/spinner";
 
 const WebPreviewDemo = () => {
-  const [previewUrl, setPreviewUrl] = useState('');
-  const [prompt, setPrompt] = useState('');
+  const [previewUrl, setPreviewUrl] = useState("");
+  const [prompt, setPrompt] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!prompt.trim()) return;
-    setPrompt('');
+  const handleSubmit = async (message: PromptInputMessage) => {
+    if (!message.text.trim()) return;
+    setPrompt("");
 
     setIsGenerating(true);
     try {
-      const response = await fetch('/api/v0', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ prompt }),
+      const response = await fetch("/api/v0", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ prompt: message.text }),
       });
 
       const data = await response.json();
-      setPreviewUrl(data.demo || '/');
-      console.log('Generation finished:', data);
+      setPreviewUrl(data.demo || "/");
+      console.log("Generation finished:", data);
     } catch (error) {
-      console.error('Generation failed:', error);
+      console.error("Generation failed:", error);
     } finally {
       setIsGenerating(false);
     }
@@ -94,7 +94,7 @@ const WebPreviewDemo = () => {
           )}
         </div>
 
-        <Input
+        <PromptInput
           onSubmit={handleSubmit}
           className="w-full max-w-2xl mx-auto relative"
         >
@@ -105,11 +105,11 @@ const WebPreviewDemo = () => {
             className="pr-12 min-h-[60px]"
           />
           <PromptInputSubmit
-            status={isGenerating ? 'streaming' : 'ready'}
+            status={isGenerating ? "streaming" : "ready"}
             disabled={!prompt.trim()}
             className="absolute bottom-1 right-1"
           />
-        </Input>
+        </PromptInput>
       </div>
     </div>
   );
@@ -121,16 +121,16 @@ export default WebPreviewDemo;
 Add the following route to your backend:
 
 ```ts title="app/api/v0/route.ts"
-import { v0 } from 'v0-sdk';
+import { v0 } from "v0-sdk";
 
 export async function POST(req: Request) {
   const { prompt }: { prompt: string } = await req.json();
 
   const result = await v0.chats.create({
-    system: 'You are an expert coder',
+    system: "You are an expert coder",
     message: prompt,
     modelConfiguration: {
-      modelId: 'v0-1.5-sm',
+      modelId: "v0-1.5-sm",
       imageGenerations: false,
       thinking: false,
     },

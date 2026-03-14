@@ -109,7 +109,7 @@ clone 後，倉庫會位於 `~/.agents/skills/ok-skills`，其內部目錄已符
 
 ## Vendored Skill Packs
 
-[`impeccable/`](impeccable/README.md) 目錄收錄了來自 [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable) 的前端設計技能包，目前同步基於提交 `0df1ba59dc80b8b1891ee42eed0ef4e03d7ef165`。
+[`impeccable/`](impeccable/README.md) 目錄收錄了來自 [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable) 的前端設計技能包，目前同步基於提交 `15332dd293986e0a310fa54c103025d21142c3dd`。
 
 其中包括：
 

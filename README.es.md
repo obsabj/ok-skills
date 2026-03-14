@@ -109,7 +109,7 @@ Despues puedes pedirlo de forma natural:
 
 ## Paquetes De Skills Vendorizados
 
-[`impeccable/`](impeccable/README.md) contiene un paquete centrado en diseno, vendorizado desde [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable) en el commit `0df1ba59dc80b8b1891ee42eed0ef4e03d7ef165`.
+[`impeccable/`](impeccable/README.md) contiene un paquete centrado en diseno, vendorizado desde [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable) en el commit `15332dd293986e0a310fa54c103025d21142c3dd`.
 
 Incluye:
 

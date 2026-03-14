@@ -28,9 +28,9 @@ const Example = () => {
       const base64 = Buffer.from(arrayBuffer).toString("base64");
 
       const newData: SpeechResult["audio"] = {
-        mediaType: "audio/mpeg",
         base64,
         format: "mp3",
+        mediaType: "audio/mpeg",
         uint8Array: new Uint8Array(arrayBuffer),
       };
 

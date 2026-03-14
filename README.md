@@ -109,7 +109,7 @@ Then ask naturally:
 
 ## Vendored Skill Packs
 
-[`impeccable/`](impeccable/README.md) contains a vendored design-focused bundle from [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable) at commit `0df1ba59dc80b8b1891ee42eed0ef4e03d7ef165`.
+[`impeccable/`](impeccable/README.md) contains a vendored design-focused bundle from [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable) at commit `15332dd293986e0a310fa54c103025d21142c3dd`.
 
 It includes:
 

@@ -20,14 +20,20 @@ import type { ToolUIPart } from "ai";
 import { CheckIcon, XIcon } from "lucide-react";
 import { nanoid } from "nanoid";
 
+const handleReject = () => {
+  // In production, call addConfirmationResponse
+};
+
+const handleAccept = () => {
+  // In production, call addConfirmationResponse
+};
+
 const toolCall: ToolUIPart = {
-  type: "tool-database_query" as const,
-  toolCallId: nanoid(),
-  state: "output-available" as const,
+  errorText: undefined,
   input: {
-    query: "SELECT COUNT(*) FROM users WHERE created_at >= ?",
-    params: ["2024-01-01"],
     database: "analytics",
+    params: ["2024-01-01"],
+    query: "SELECT COUNT(*) FROM users WHERE created_at >= ?",
   },
   output: `| User ID | Name | Email | Created At |
 |---------|------|-------|------------|
@@ -36,7 +42,9 @@ const toolCall: ToolUIPart = {
 | 3 | Bob Wilson | bob@example.com | 2024-02-01 |
 | 4 | Alice Brown | alice@example.com | 2024-02-10 |
 | 5 | Charlie Davis | charlie@example.com | 2024-02-15 |`,
-  errorText: undefined,
+  state: "output-available" as const,
+  toolCallId: nanoid(),
+  type: "tool-database_query" as const,
 };
 
 const Example = () => (
@@ -77,20 +85,10 @@ const Example = () => (
             </ConfirmationRejected>
           </ConfirmationTitle>
           <ConfirmationActions>
-            <ConfirmationAction
-              onClick={() => {
-                // In production, call addConfirmationResponse
-              }}
-              variant="outline"
-            >
+            <ConfirmationAction onClick={handleReject} variant="outline">
               Reject
             </ConfirmationAction>
-            <ConfirmationAction
-              onClick={() => {
-                // In production, call addConfirmationResponse
-              }}
-              variant="default"
-            >
+            <ConfirmationAction onClick={handleAccept} variant="default">
               Accept
             </ConfirmationAction>
           </ConfirmationActions>
@@ -108,7 +106,7 @@ const Example = () => (
       <ToolContent>
         <ToolInput input={toolCall.input} />
         <Confirmation
-          approval={{ id: nanoid(), approved: true }}
+          approval={{ approved: true, id: nanoid() }}
           state="approval-responded"
         >
           <ConfirmationTitle>
@@ -146,7 +144,7 @@ const Example = () => (
       <ToolContent>
         <ToolInput input={toolCall.input} />
         <Confirmation
-          approval={{ id: nanoid(), approved: true }}
+          approval={{ approved: true, id: nanoid() }}
           state="output-available"
         >
           <ConfirmationTitle>
@@ -196,8 +194,8 @@ const Example = () => (
         <ToolInput input={toolCall.input} />
         <Confirmation
           approval={{
-            id: nanoid(),
             approved: false,
+            id: nanoid(),
             reason: "Query could impact production performance",
           }}
           state="output-denied"

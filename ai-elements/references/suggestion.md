@@ -19,32 +19,32 @@ Build a simple input with suggestions users can click to send a message to the L
 Add the following component to your frontend:
 
 ```tsx title="app/page.tsx"
-'use client';
+"use client";
 
 import {
-  Input,
+  PromptInput,
+  type PromptInputMessage,
   PromptInputTextarea,
   PromptInputSubmit,
-} from '@/components/ai-elements/prompt-input';
-import { Suggestion, Suggestions } from '@/components/ai-elements/suggestion';
-import { useState } from 'react';
-import { useChat } from '@ai-sdk/react';
+} from "@/components/ai-elements/prompt-input";
+import { Suggestion, Suggestions } from "@/components/ai-elements/suggestion";
+import { useState } from "react";
+import { useChat } from "@ai-sdk/react";
 
 const suggestions = [
-  'Can you explain how to play tennis?',
-  'What is the weather in Tokyo?',
-  'How do I make a really good fish taco?',
+  "Can you explain how to play tennis?",
+  "What is the weather in Tokyo?",
+  "How do I make a really good fish taco?",
 ];
 
 const SuggestionDemo = () => {
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
   const { sendMessage, status } = useChat();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (input.trim()) {
-      sendMessage({ text: input });
-      setInput('');
+  const handleSubmit = (message: PromptInputMessage) => {
+    if (message.text.trim()) {
+      sendMessage({ text: message.text });
+      setInput("");
     }
   };
 
@@ -65,7 +65,7 @@ const SuggestionDemo = () => {
               />
             ))}
           </Suggestions>
-          <Input
+          <PromptInput
             onSubmit={handleSubmit}
             className="mt-4 w-full max-w-2xl mx-auto relative"
           >
@@ -76,11 +76,11 @@ const SuggestionDemo = () => {
               className="pr-12"
             />
             <PromptInputSubmit
-              status={status === 'streaming' ? 'streaming' : 'ready'}
+              status={status === "streaming" ? "streaming" : "ready"}
               disabled={!input.trim()}
               className="absolute bottom-1 right-1"
             />
-          </Input>
+          </PromptInput>
         </div>
       </div>
     </div>

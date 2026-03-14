@@ -125,6 +125,8 @@ For the full HTTP API (curl examples, download, upload, cookies, stealth, batch 
 
 **Validated Feb 2026**: Testing with AI agents revealed a critical pattern for reliable, token-efficient scraping.
 
+**See the full guide:** [docs/agent-optimization.md](../../docs/agent-optimization.md)
+
 ### Quick Summary
 
 **The 3-second pattern** — wait after navigate before snapshot:
@@ -138,6 +140,8 @@ curl http://localhost:9867/snapshot | jq '.nodes[] | select(.name | length > 15)
 ```
 
 **Token savings:** 93% reduction (3,842 → 272 tokens) when using prescriptive instructions vs. exploratory agent approach.
+
+For detailed findings, system prompt templates, and site-specific notes, see [docs/agent-optimization.md](../../docs/agent-optimization.md).
 
 ## Tips
 
