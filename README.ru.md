@@ -4,7 +4,7 @@
 
 Кураторская коллекция AI coding agent skills и playbook-файлов `AGENTS.md` для Codex, Claude Code, Cursor, OpenClaw, Trae и других инструментов, совместимых с `SKILL.md`.
 
-Сейчас в этом репозитории собрано **42 переиспользуемых skills**: **24 skills верхнего уровня**, которые поддерживаются прямо здесь, и еще **18 vendored design skills** в каталоге [`impeccable/`](impeccable/README.md). Достаточно клонировать репозиторий в `~/.agents/skills/ok-skills`; внутренняя структура уже соответствует layout, который ожидают workflows на базе `AGENTS.md`.
+Сейчас в этом репозитории собрано **43 переиспользуемых skills**: **25 skills верхнего уровня**, которые поддерживаются прямо здесь, и еще **18 vendored design skills** в каталоге [`impeccable/`](impeccable/README.md). Достаточно клонировать репозиторий в `~/.agents/skills/ok-skills`; внутренняя структура уже соответствует layout, который ожидают workflows на базе `AGENTS.md`.
 
 Если вы ищете **Codex skills**, **Claude Code skills**, **Cursor skills**, **OpenClaw skills**, переиспользуемые playbook-файлы **AGENTS.md** или практичные примеры **SKILL.md**, этот репозиторий специально оформлен так, чтобы его было легко найти и сразу использовать.
 
@@ -90,6 +90,7 @@ git clone https://github.com/mxyhi/ok-skills.git ok-skills
 - [agent-browser](agent-browser/SKILL.md): browser automation для навигации, форм, скриншотов и scraping.
 - [pinchtab](pinchtab/SKILL.md): управление Chrome через локальный HTTP API Pinchtab со стабильными accessibility refs.
 - [electron](electron/SKILL.md): автоматизация Electron desktop apps через Chrome DevTools Protocol.
+- [opencli](opencli/SKILL.md): превращать сайты в CLI-команды за счет повторного использования браузерной сессии, public API и AI-generated adapters.
 - [dogfood](dogfood/SKILL.md): структурированное exploratory testing с воспроизводимыми артефактами.
 
 ### Frontend & Design
@@ -147,6 +148,7 @@ git clone https://github.com/mxyhi/ok-skills.git ok-skills
 | [get-api-docs](get-api-docs/SKILL.md) | Fetch current third-party API or SDK docs before writing code. | [andrewyng/context-hub](https://github.com/andrewyng/context-hub/tree/main/cli/skills/get-api-docs) |
 | [gh-address-comments](gh-address-comments/SKILL.md) | Address PR review and issue comments on the current branch with `gh`. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/gh-address-comments) |
 | [gh-fix-ci](gh-fix-ci/SKILL.md) | Inspect failing GitHub Actions checks, pull logs, and plan fixes. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/gh-fix-ci) |
+| [opencli](opencli/SKILL.md) | Превращает сайты в CLI-команды за счет повторного использования браузерной сессии, public API и AI-generated adapters. | [jackwener/opencli](https://github.com/jackwener/opencli) |
 | [pdf](pdf/SKILL.md) | Read, create, and review PDF files with rendering checks and Python tooling. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/pdf) |
 | [pinchtab](pinchtab/SKILL.md) | Control a headless or headed Chrome browser via Pinchtab's HTTP API for web automation, scraping, form filling, navigation, screenshots, and extraction with stable accessibility refs. | [pinchtab/pinchtab](https://github.com/pinchtab/pinchtab/tree/main/skill/pinchtab) |
 | [planning-with-files](planning-with-files/SKILL.md) | File-based planning for complex tasks using `task_plan.md`, `findings.md`, and `progress.md`. | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/.agent/skills/planning-with-files) |

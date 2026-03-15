@@ -4,7 +4,7 @@
 
 這是一個面向 Codex、Claude Code、Cursor、OpenClaw、Trae 以及其他相容 `SKILL.md` / `AGENTS.md` 工作流工具的 AI coding agent skills 倉庫。
 
-目前倉庫共收錄 **42 個可重用技能**：其中 **24 個頂層技能** 由本倉直接維護，另有 **18 個前端設計技能** 以 vendored bundle 形式放在 [`impeccable/`](impeccable/README.md) 目錄下。將它 clone 到 `~/.agents/skills/ok-skills` 即可，倉庫內部目錄已符合 `AGENTS.md` 所需的 skills 佈局。
+目前倉庫共收錄 **43 個可重用技能**：其中 **25 個頂層技能** 由本倉直接維護，另有 **18 個前端設計技能** 以 vendored bundle 形式放在 [`impeccable/`](impeccable/README.md) 目錄下。將它 clone 到 `~/.agents/skills/ok-skills` 即可，倉庫內部目錄已符合 `AGENTS.md` 所需的 skills 佈局。
 
 如果你正在找 **Codex skills**、**Claude Code skills**、**Cursor skills**、**OpenClaw skills**、可重用的 **AGENTS.md** 範本，或一套能直接落地的 **SKILL.md** 範例倉庫，這個專案就是為了搜尋可發現性與開箱即用而整理的。
 
@@ -90,6 +90,7 @@ clone 後，倉庫會位於 `~/.agents/skills/ok-skills`，其內部目錄已符
 - [agent-browser](agent-browser/SKILL.md)：瀏覽器導覽、表單、截圖、抓取與網頁測試。
 - [pinchtab](pinchtab/SKILL.md)：透過 Pinchtab 的本地 HTTP API 控制 Chrome，利用穩定的 accessibility refs 進行自動化與擷取。
 - [electron](electron/SKILL.md)：透過 Chrome DevTools Protocol 自動化 Electron 桌面應用。
+- [opencli](opencli/SKILL.md)：將網站變成 CLI，重用瀏覽器登入狀態，支援公開 API 存取與 AI 生成適配器。
 - [dogfood](dogfood/SKILL.md)：系統化探索測試，並輸出可重現的證據。
 
 ### 前端與設計
@@ -147,6 +148,7 @@ clone 後，倉庫會位於 `~/.agents/skills/ok-skills`，其內部目錄已符
 | [get-api-docs](get-api-docs/SKILL.md) | 在撰寫第三方 API / SDK 程式碼前先抓取當前文件。 | [andrewyng/context-hub](https://github.com/andrewyng/context-hub/tree/main/cli/skills/get-api-docs) |
 | [gh-address-comments](gh-address-comments/SKILL.md) | 使用 `gh` 處理目前分支 PR 的評審與 issue 留言。 | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/gh-address-comments) |
 | [gh-fix-ci](gh-fix-ci/SKILL.md) | 檢查 GitHub Actions 失敗項、提取日誌並制定修復計畫。 | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/gh-fix-ci) |
+| [opencli](opencli/SKILL.md) | 將網站變成 CLI，重用瀏覽器登入狀態，支援公開 API 存取與 AI 生成適配器。 | [jackwener/opencli](https://github.com/jackwener/opencli) |
 | [pdf](pdf/SKILL.md) | 處理 PDF 的讀取、產生與審查，強調渲染後的視覺檢查。 | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/pdf) |
 | [pinchtab](pinchtab/SKILL.md) | 透過 Pinchtab 的 HTTP API 控制 headless 或 headed Chrome，用於網頁自動化、抓取、表單填寫、導覽、截圖與基於穩定 accessibility refs 的內容擷取。 | [pinchtab/pinchtab](https://github.com/pinchtab/pinchtab/tree/main/skill/pinchtab) |
 | [planning-with-files](planning-with-files/SKILL.md) | 使用 `task_plan.md`、`findings.md`、`progress.md` 管理複雜任務。 | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/.agent/skills/planning-with-files) |

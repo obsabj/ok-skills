@@ -4,7 +4,7 @@
 
 Bộ sưu tập AI coding agent skills và playbook `AGENTS.md` được tuyển chọn cho Codex, Claude Code, Cursor, OpenClaw, Trae và các công cụ khác tương thích với `SKILL.md`.
 
-Kho này hiện gồm **42 skill có thể tái sử dụng**: **24 skill cấp cao nhất** được duy trì trực tiếp trong repo này, cùng với **18 skill thiết kế được vendored** dưới [`impeccable/`](impeccable/README.md). Chỉ cần clone vào `~/.agents/skills/ok-skills`; các thư mục bên trong đã khớp với bố cục mà workflow dựa trên `AGENTS.md` mong đợi.
+Kho này hiện gồm **43 skill có thể tái sử dụng**: **25 skill cấp cao nhất** được duy trì trực tiếp trong repo này, cùng với **18 skill thiết kế được vendored** dưới [`impeccable/`](impeccable/README.md). Chỉ cần clone vào `~/.agents/skills/ok-skills`; các thư mục bên trong đã khớp với bố cục mà workflow dựa trên `AGENTS.md` mong đợi.
 
 Nếu bạn đang tìm **Codex skills**, **Claude Code skills**, **Cursor skills**, **OpenClaw skills**, các playbook **AGENTS.md** có thể tái dùng, hoặc các ví dụ **SKILL.md** thực dụng, repo này được tổ chức để vừa dễ tìm kiếm vừa có thể dùng ngay.
 
@@ -90,6 +90,7 @@ Sau đó bạn có thể yêu cầu một cách tự nhiên:
 - [agent-browser](agent-browser/SKILL.md): tự động hóa trình duyệt cho điều hướng, biểu mẫu, ảnh chụp màn hình và scraping.
 - [pinchtab](pinchtab/SKILL.md): điều khiển Chrome qua HTTP API cục bộ của Pinchtab bằng các accessibility ref ổn định.
 - [electron](electron/SKILL.md): tự động hóa ứng dụng Electron desktop qua Chrome DevTools Protocol.
+- [opencli](opencli/SKILL.md): biến website thành lệnh CLI bằng cách tái sử dụng phiên đăng nhập trình duyệt, truy cập API công khai và sinh adapter bằng AI.
 - [dogfood](dogfood/SKILL.md): exploratory testing có cấu trúc cùng bằng chứng có thể tái hiện.
 
 ### Frontend và thiết kế
@@ -147,6 +148,7 @@ Cột `Source URL` trỏ tới upstream chính thức khi một skill được v
 | [get-api-docs](get-api-docs/SKILL.md) | Lấy tài liệu API hoặc SDK bên thứ ba hiện tại trước khi viết code. | [andrewyng/context-hub](https://github.com/andrewyng/context-hub/tree/main/cli/skills/get-api-docs) |
 | [gh-address-comments](gh-address-comments/SKILL.md) | Xử lý comment review PR và issue trên nhánh hiện tại bằng `gh`. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/gh-address-comments) |
 | [gh-fix-ci](gh-fix-ci/SKILL.md) | Kiểm tra các check GitHub Actions thất bại, kéo log và lập kế hoạch sửa. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/gh-fix-ci) |
+| [opencli](opencli/SKILL.md) | Biến website thành lệnh CLI bằng cách tái sử dụng phiên đăng nhập trình duyệt, truy cập API công khai và sinh adapter bằng AI. | [jackwener/opencli](https://github.com/jackwener/opencli) |
 | [pdf](pdf/SKILL.md) | Đọc, tạo và rà soát PDF với kiểm tra render và công cụ Python. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/pdf) |
 | [pinchtab](pinchtab/SKILL.md) | Điều khiển Chrome headless hoặc headed qua HTTP API của Pinchtab cho tự động hóa web, scraping, điền biểu mẫu, điều hướng, ảnh chụp màn hình và trích xuất bằng accessibility ref ổn định. | [pinchtab/pinchtab](https://github.com/pinchtab/pinchtab/tree/main/skill/pinchtab) |
 | [planning-with-files](planning-with-files/SKILL.md) | Lập kế hoạch dựa trên file cho các tác vụ phức tạp bằng `task_plan.md`, `findings.md` và `progress.md`. | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/.agent/skills/planning-with-files) |
