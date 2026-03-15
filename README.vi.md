@@ -4,7 +4,7 @@
 
 Bộ sưu tập AI coding agent skills và playbook `AGENTS.md` được tuyển chọn cho Codex, Claude Code, Cursor, OpenClaw, Trae và các công cụ khác tương thích với `SKILL.md`.
 
-Kho này hiện gồm **43 skill có thể tái sử dụng**: **25 skill cấp cao nhất** được duy trì trực tiếp trong repo này, cùng với **18 skill thiết kế được vendored** dưới [`impeccable/`](impeccable/README.md). Chỉ cần clone vào `~/.agents/skills/ok-skills`; các thư mục bên trong đã khớp với bố cục mà workflow dựa trên `AGENTS.md` mong đợi.
+Kho này hiện gồm **44 skill có thể tái sử dụng**: **26 skill cấp cao nhất** được duy trì trực tiếp trong repo này, cùng với **18 skill thiết kế được vendored** dưới [`impeccable/`](impeccable/README.md). Chỉ cần clone vào `~/.agents/skills/ok-skills`; các thư mục bên trong đã khớp với bố cục mà workflow dựa trên `AGENTS.md` mong đợi.
 
 Nếu bạn đang tìm **Codex skills**, **Claude Code skills**, **Cursor skills**, **OpenClaw skills**, các playbook **AGENTS.md** có thể tái dùng, hoặc các ví dụ **SKILL.md** thực dụng, repo này được tổ chức để vừa dễ tìm kiếm vừa có thể dùng ngay.
 
@@ -88,6 +88,7 @@ Sau đó bạn có thể yêu cầu một cách tự nhiên:
 ### Tự động hóa và QA
 
 - [agent-browser](agent-browser/SKILL.md): tự động hóa trình duyệt cho điều hướng, biểu mẫu, ảnh chụp màn hình và scraping.
+- [bb-browser](bb-browser/SKILL.md): thu thập thông tin và tự động hóa trình duyệt bằng trình duyệt thật cùng trạng thái đăng nhập của người dùng.
 - [pinchtab](pinchtab/SKILL.md): điều khiển Chrome qua HTTP API cục bộ của Pinchtab bằng các accessibility ref ổn định.
 - [electron](electron/SKILL.md): tự động hóa ứng dụng Electron desktop qua Chrome DevTools Protocol.
 - [opencli](opencli/SKILL.md): biến website thành lệnh CLI bằng cách tái sử dụng phiên đăng nhập trình duyệt, truy cập API công khai và sinh adapter bằng AI.
@@ -137,6 +138,7 @@ Cột `Source URL` trỏ tới upstream chính thức khi một skill được v
 | --- | --- | --- |
 | [agent-browser](agent-browser/SKILL.md) | CLI tự động hóa trình duyệt cho AI agents: điều hướng, điền biểu mẫu, chụp màn hình, trích xuất và kiểm thử web. | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/agent-browser) |
 | [ai-elements](ai-elements/SKILL.md) | Tạo các thành phần giao diện chat AI mới cho thư viện ai-elements với mô hình composable và quy ước shadcn/ui. | [vercel/ai-elements](https://github.com/vercel/ai-elements/tree/main/skills/ai-elements) |
+| [bb-browser](bb-browser/SKILL.md) | Skill thu thập thông tin và tự động hóa trình duyệt bằng trình duyệt thật cùng trạng thái đăng nhập của người dùng, áp dụng cho trang công khai, hệ thống nội bộ và luồng sau đăng nhập. | [epiral/bb-browser](https://github.com/epiral/bb-browser/tree/main/skills/bb-browser) |
 | [better-icons](better-icons/SKILL.md) | Tìm trong hơn 200 bộ Iconify và lấy icon SVG qua CLI hoặc công cụ MCP. | [better-auth/better-icons](https://github.com/better-auth/better-icons/tree/main/skills) |
 | [brainstorming](brainstorming/SKILL.md) | Làm rõ ý định, yêu cầu và thiết kế trước khi triển khai. | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/brainstorming) |
 | [context7-cli](context7-cli/SKILL.md) | Dùng Context7 CLI để tra cứu tài liệu, quản lý skill và thiết lập MCP. | [upstash/context7](https://github.com/upstash/context7/tree/master/skills/context7-cli) |

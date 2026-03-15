@@ -4,7 +4,7 @@
 
 Kuratiertes Repository für AI Coding Agent Skills und `AGENTS.md`-Playbooks für Codex, Claude Code, Cursor, OpenClaw, Trae und andere Tools, die mit `SKILL.md`-Workflows kompatibel sind.
 
-Dieses Repository bündelt aktuell **43 wiederverwendbare Skills**: **25 Top-Level-Skills**, die direkt hier gepflegt werden, plus **18 vendorte Design-Skills** unter [`impeccable/`](impeccable/README.md). Klone es nach `~/.agents/skills/ok-skills`; die enthaltenen Verzeichnisse entsprechen bereits dem Layout, das `AGENTS.md`-gesteuerte Workflows erwarten.
+Dieses Repository bündelt aktuell **44 wiederverwendbare Skills**: **26 Top-Level-Skills**, die direkt hier gepflegt werden, plus **18 vendorte Design-Skills** unter [`impeccable/`](impeccable/README.md). Klone es nach `~/.agents/skills/ok-skills`; die enthaltenen Verzeichnisse entsprechen bereits dem Layout, das `AGENTS.md`-gesteuerte Workflows erwarten.
 
 Wenn du nach **Codex skills**, **Claude Code skills**, **Cursor skills**, **OpenClaw skills**, wiederverwendbaren **AGENTS.md**-Playbooks oder praxistauglichen **SKILL.md**-Beispielen suchst, ist dieses Repository bewusst auf Auffindbarkeit und sofortige Nutzbarkeit ausgelegt.
 
@@ -88,6 +88,7 @@ Danach kannst du natürlich formulieren:
 ### Automatisierung und QA
 
 - [agent-browser](agent-browser/SKILL.md): Browser-Automatisierung für Navigation, Formulare, Screenshots und Scraping.
+- [bb-browser](bb-browser/SKILL.md): Informationsgewinnung und Browser-Automatisierung über den echten Browser und den Login-Status des Nutzers.
 - [pinchtab](pinchtab/SKILL.md): Chrome über Pinchtabs lokale HTTP-API mit stabilen Accessibility-Referenzen steuern.
 - [electron](electron/SKILL.md): Electron-Desktop-Apps über das Chrome DevTools Protocol automatisieren.
 - [opencli](opencli/SKILL.md): Websites mit wiederverwendeter Browser-Session, Public APIs und KI-generierten Adaptern als CLI nutzen.
@@ -137,6 +138,7 @@ Attributionen und rechtliche Dateien bleiben in [`impeccable/NOTICE.md`](impecca
 | --- | --- | --- |
 | [agent-browser](agent-browser/SKILL.md) | Browser-Automatisierungs-CLI für AI Agents: Navigation, Formularausfüllung, Screenshots, Extraktion und Web-Tests. | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/agent-browser) |
 | [ai-elements](ai-elements/SKILL.md) | Neue AI-Chat-Oberflächenkomponenten für die ai-elements-Bibliothek mit komponierbaren Mustern und shadcn/ui-Konventionen erstellen. | [vercel/ai-elements](https://github.com/vercel/ai-elements/tree/main/skills/ai-elements) |
+| [bb-browser](bb-browser/SKILL.md) | Skill für Informationsgewinnung und Browser-Automatisierung über den echten Browser und den Login-Status des Nutzers, inklusive öffentlicher Seiten, interner Systeme und eingeloggter Abläufe. | [epiral/bb-browser](https://github.com/epiral/bb-browser/tree/main/skills/bb-browser) |
 | [better-icons](better-icons/SKILL.md) | Durchsuche über 200 Iconify-Bibliotheken und hole SVG-Icons per CLI oder MCP-Tools. | [better-auth/better-icons](https://github.com/better-auth/better-icons/tree/main/skills) |
 | [brainstorming](brainstorming/SKILL.md) | Absicht, Anforderungen und Design vor der Implementierungsarbeit klären. | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/brainstorming) |
 | [context7-cli](context7-cli/SKILL.md) | Die Context7 CLI für Dokumentationssuche, Skill-Management und MCP-Setup verwenden. | [upstash/context7](https://github.com/upstash/context7/tree/master/skills/context7-cli) |

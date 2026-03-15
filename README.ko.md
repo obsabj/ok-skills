@@ -4,7 +4,7 @@
 
 Codex, Claude Code, Cursor, OpenClaw, Trae 및 기타 `SKILL.md` 호환 도구를 위한 큐레이션된 AI 코딩 에이전트 스킬과 `AGENTS.md` 플레이북 저장소입니다.
 
-이 저장소에는 현재 **재사용 가능한 스킬 43개**가 포함되어 있습니다. 이 중 **25개는 루트 레벨 스킬**로 직접 관리되며, **18개의 벤더링된 디자인 스킬**은 [`impeccable/`](impeccable/README.md) 아래에 포함되어 있습니다. `~/.agents/skills/ok-skills`에 clone 하면 되고, 내부 디렉터리 구조는 이미 `AGENTS.md` 기반 워크플로가 기대하는 형태와 맞춰져 있습니다.
+이 저장소에는 현재 **재사용 가능한 스킬 44개**가 포함되어 있습니다. 이 중 **26개는 루트 레벨 스킬**로 직접 관리되며, **18개의 벤더링된 디자인 스킬**은 [`impeccable/`](impeccable/README.md) 아래에 포함되어 있습니다. `~/.agents/skills/ok-skills`에 clone 하면 되고, 내부 디렉터리 구조는 이미 `AGENTS.md` 기반 워크플로가 기대하는 형태와 맞춰져 있습니다.
 
 **Codex skills**, **Claude Code skills**, **Cursor skills**, **OpenClaw skills**, 재사용 가능한 **AGENTS.md** 플레이북, 바로 적용할 수 있는 **SKILL.md** 예제를 찾고 있다면 이 저장소는 검색성과 즉시 사용성을 모두 고려해 정리되어 있습니다.
 
@@ -88,6 +88,7 @@ clone 이후 저장소 경로는 `~/.agents/skills/ok-skills`가 되며, 내부 
 ### 자동화 및 QA
 
 - [agent-browser](agent-browser/SKILL.md): 탐색, 폼, 스크린샷, 스크래핑을 위한 브라우저 자동화.
+- [bb-browser](bb-browser/SKILL.md): 사용자의 실제 브라우저와 로그인 상태를 활용한 정보 수집 및 브라우저 자동화.
 - [pinchtab](pinchtab/SKILL.md): 안정적인 접근성 참조를 사용해 Pinchtab의 로컬 HTTP API로 Chrome 제어.
 - [electron](electron/SKILL.md): Chrome DevTools Protocol 기반으로 Electron 데스크톱 앱 자동화.
 - [opencli](opencli/SKILL.md): 브라우저 로그인 상태 재사용, 공개 API 접근, AI 생성 어댑터로 웹사이트를 CLI처럼 다룹니다.
@@ -137,6 +138,7 @@ clone 이후 저장소 경로는 `~/.agents/skills/ok-skills`가 되며, 내부 
 | --- | --- | --- |
 | [agent-browser](agent-browser/SKILL.md) | AI 에이전트를 위한 브라우저 자동화 CLI: 탐색, 폼 입력, 스크린샷, 추출, 웹 테스트. | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/agent-browser) |
 | [ai-elements](ai-elements/SKILL.md) | 조합형 패턴과 shadcn/ui 관례를 따라 ai-elements 라이브러리용 AI 채팅 UI 컴포넌트를 생성. | [vercel/ai-elements](https://github.com/vercel/ai-elements/tree/main/skills/ai-elements) |
+| [bb-browser](bb-browser/SKILL.md) | 사용자의 실제 브라우저와 로그인 상태를 통해 공개 페이지, 내부 시스템, 로그인 후 워크플로까지 다루는 정보 수집 및 브라우저 자동화 스킬입니다. | [epiral/bb-browser](https://github.com/epiral/bb-browser/tree/main/skills/bb-browser) |
 | [better-icons](better-icons/SKILL.md) | CLI 또는 MCP 도구로 200개 이상의 Iconify 아이콘 라이브러리를 검색하고 SVG 아이콘을 가져옵니다. | [better-auth/better-icons](https://github.com/better-auth/better-icons/tree/main/skills) |
 | [brainstorming](brainstorming/SKILL.md) | 구현 전에 의도, 요구사항, 설계를 명확히 한다. | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/brainstorming) |
 | [context7-cli](context7-cli/SKILL.md) | Context7 CLI를 사용해 문서 조회, 스킬 관리, MCP 설정을 수행. | [upstash/context7](https://github.com/upstash/context7/tree/master/skills/context7-cli) |
