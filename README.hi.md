@@ -4,7 +4,7 @@
 
 Codex, Claude Code, Cursor, OpenClaw, Trae और अन्य `SKILL.md`-compatible टूल्स के लिए चुनी हुई AI coding agent skills और `AGENTS.md` playbooks का यह curated repository है।
 
-इस repo में अभी **44 reusable skills** शामिल हैं: **26 top-level skills** सीधे इसी repo में maintain की जाती हैं, और [`impeccable/`](impeccable/README.md) के अंतर्गत **18 vendored design skills** शामिल हैं। इसे `~/.agents/skills/ok-skills` में clone करें; अंदर की directories पहले से ही `AGENTS.md`-driven workflows के अपेक्षित layout के अनुसार हैं।
+इस repo में अभी **45 reusable skills** शामिल हैं: **27 top-level skills** सीधे इसी repo में maintain की जाती हैं, और [`impeccable/`](impeccable/README.md) के अंतर्गत **18 vendored design skills** शामिल हैं। इसे `~/.agents/skills/ok-skills` में clone करें; अंदर की directories पहले से ही `AGENTS.md`-driven workflows के अपेक्षित layout के अनुसार हैं।
 
 अगर आप **Codex skills**, **Claude Code skills**, **Cursor skills**, **OpenClaw skills**, reusable **AGENTS.md** playbooks, या practical **SKILL.md** examples खोज रहे हैं, तो यह repository खोजने में आसान और clone करते ही उपयोग योग्य होने के लिए व्यवस्थित की गई है।
 
@@ -88,6 +88,7 @@ Clone करने के बाद repo `~/.agents/skills/ok-skills` पर र
 ### Automation & QA
 
 - [agent-browser](agent-browser/SKILL.md): navigation, forms, screenshots, और scraping के लिए browser automation.
+- [chrome-cdp](chrome-cdp/SKILL.md): CDP के जरिए पहले से खुले local Chrome session से जुड़कर हल्का page inspection और interaction करें।
 - [bb-browser](bb-browser/SKILL.md): उपयोगकर्ता के वास्तविक browser और login session का उपयोग करके information retrieval और browser automation.
 - [pinchtab](pinchtab/SKILL.md): stable accessibility refs के साथ Pinchtab के local HTTP API द्वारा Chrome control करें।
 - [electron](electron/SKILL.md): Chrome DevTools Protocol के माध्यम से Electron desktop apps automate करें।
@@ -141,6 +142,7 @@ Attribution और legal files [`impeccable/NOTICE.md`](impeccable/NOTICE.md) �
 | [bb-browser](bb-browser/SKILL.md) | उपयोगकर्ता के वास्तविक browser और login session के जरिए public pages, internal systems, और authenticated workflows के लिए information retrieval और browser automation skill. | [epiral/bb-browser](https://github.com/epiral/bb-browser/tree/main/skills/bb-browser) |
 | [better-icons](better-icons/SKILL.md) | CLI या MCP tools के जरिए 200+ Iconify libraries खोजें और SVG icons प्राप्त करें। | [better-auth/better-icons](https://github.com/better-auth/better-icons/tree/main/skills) |
 | [brainstorming](brainstorming/SKILL.md) | implementation work से पहले intent, requirements, और design स्पष्ट करें। | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/brainstorming) |
+| [chrome-cdp](chrome-cdp/SKILL.md) | CDP के जरिए पहले से खुले local Chrome session से जुड़कर हल्का tab inspection, screenshots, DOM access, input, और navigation करें। | [pasky/chrome-cdp-skill](https://github.com/pasky/chrome-cdp-skill/tree/main/skills/chrome-cdp) |
 | [context7-cli](context7-cli/SKILL.md) | docs lookup, skill management, और MCP setup के लिए Context7 CLI का उपयोग करें। | [upstash/context7](https://github.com/upstash/context7/tree/master/skills/context7-cli) |
 | [docx](docx/SKILL.md) | formatting, comments, tracked changes, और image updates के साथ Word documents create, read, edit, और manipulate करें। | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/docx) |
 | [dogfood](dogfood/SKILL.md) | screenshots और videos के साथ reproducible issue reports तैयार करने के लिए web apps का systematic परीक्षण करें। | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/dogfood) |
