@@ -4,7 +4,7 @@
 
 Kuratiertes Repository für AI Coding Agent Skills und `AGENTS.md`-Playbooks für Codex, Claude Code, Cursor, OpenClaw, Trae und andere Tools, die mit `SKILL.md`-Workflows kompatibel sind.
 
-Dieses Repository bündelt aktuell **45 wiederverwendbare Skills**: **27 Top-Level-Skills**, die direkt hier gepflegt werden, plus **18 vendorte Design-Skills** unter [`impeccable/`](impeccable/README.md). Klone es nach `~/.agents/skills/ok-skills`; die enthaltenen Verzeichnisse entsprechen bereits dem Layout, das `AGENTS.md`-gesteuerte Workflows erwarten.
+Dieses Repository bündelt aktuell **46 wiederverwendbare Skills**: **28 Top-Level-Skills**, die direkt hier gepflegt werden, plus **18 vendorte Design-Skills** unter [`impeccable/`](impeccable/README.md). Klone es nach `~/.agents/skills/ok-skills`; die enthaltenen Verzeichnisse entsprechen bereits dem Layout, das `AGENTS.md`-gesteuerte Workflows erwarten.
 
 Wenn du nach **Codex skills**, **Claude Code skills**, **Cursor skills**, **OpenClaw skills**, wiederverwendbaren **AGENTS.md**-Playbooks oder praxistauglichen **SKILL.md**-Beispielen suchst, ist dieses Repository bewusst auf Auffindbarkeit und sofortige Nutzbarkeit ausgelegt.
 
@@ -77,6 +77,7 @@ Danach kannst du natürlich formulieren:
 - [brainstorming](brainstorming/SKILL.md): Absicht, Anforderungen und Design vor der Implementierung klären.
 - [planning-with-files](planning-with-files/SKILL.md): persistente Markdown-Planung mit `task_plan.md`, `findings.md` und `progress.md`.
 - [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md): fortgeschrittene Prompt-Design-Muster für produktive LLM-Systeme.
+- [subagent-driven-development](subagent-driven-development/SKILL.md): Implementierungspläne mit unabhängigen Aufgaben in der aktuellen Sitzung mit frischen Subagents und gestuften Reviews ausführen.
 - [test-driven-development](test-driven-development/SKILL.md): Tests vor der Implementierungsarbeit durchsetzen.
 
 ### GitHub-Workflow
@@ -160,6 +161,7 @@ Attributionen und rechtliche Dateien bleiben in [`impeccable/NOTICE.md`](impecca
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | Fortgeschrittene Prompt-Engineering-Muster für verlässliche, produktive LLM-Workflows. | [wshobson/agents](https://github.com/wshobson/agents/tree/main/plugins/llm-application-dev/skills/prompt-engineering-patterns) |
 | [remotion-best-practices](remotion-best-practices/SKILL.md) | Best Practices für das Erstellen von Videos in React mit Remotion. | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion) |
 | [skill-creator](skill-creator/SKILL.md) | Leitfaden zum Erstellen oder Aktualisieren von Skills mit spezialisiertem Wissen und Tool-Integrationen. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.system/skill-creator) |
+| [subagent-driven-development](subagent-driven-development/SKILL.md) | Implementierungspläne mit unabhängigen Aufgaben in der aktuellen Sitzung mit frischen Subagents und gestuften Reviews ausführen. | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/subagent-driven-development) |
 | [test-driven-development](test-driven-development/SKILL.md) | Vor jeder neuen Funktion oder Fehlerbehebung verwenden. | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) |
 | [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | React- und Next.js-Leitlinien zur Performance-Optimierung von Vercel Engineering. | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices) |
 | [xlsx](xlsx/SKILL.md) | Erstellung, Bearbeitung, Formeln, Formatierung und Analyse von Tabellenkalkulationen. | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/xlsx) |

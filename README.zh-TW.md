@@ -4,7 +4,7 @@
 
 這是一個面向 Codex、Claude Code、Cursor、OpenClaw、Trae 以及其他相容 `SKILL.md` / `AGENTS.md` 工作流工具的 AI coding agent skills 倉庫。
 
-目前倉庫共收錄 **45 個可重用技能**：其中 **27 個頂層技能** 由本倉直接維護，另有 **18 個前端設計技能** 以 vendored bundle 形式放在 [`impeccable/`](impeccable/README.md) 目錄下。將它 clone 到 `~/.agents/skills/ok-skills` 即可，倉庫內部目錄已符合 `AGENTS.md` 所需的 skills 佈局。
+目前倉庫共收錄 **46 個可重用技能**：其中 **28 個頂層技能** 由本倉直接維護，另有 **18 個前端設計技能** 以 vendored bundle 形式放在 [`impeccable/`](impeccable/README.md) 目錄下。將它 clone 到 `~/.agents/skills/ok-skills` 即可，倉庫內部目錄已符合 `AGENTS.md` 所需的 skills 佈局。
 
 如果你正在找 **Codex skills**、**Claude Code skills**、**Cursor skills**、**OpenClaw skills**、可重用的 **AGENTS.md** 範本，或一套能直接落地的 **SKILL.md** 範例倉庫，這個專案就是為了搜尋可發現性與開箱即用而整理的。
 
@@ -77,6 +77,7 @@ clone 後，倉庫會位於 `~/.agents/skills/ok-skills`，其內部目錄已符
 - [brainstorming](brainstorming/SKILL.md)：在實作前先釐清意圖、需求與設計。
 - [planning-with-files](planning-with-files/SKILL.md)：透過 `task_plan.md`、`findings.md`、`progress.md` 管理複雜任務。
 - [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md)：面向生產環境的進階提示工程模式。
+- [subagent-driven-development](subagent-driven-development/SKILL.md)：在目前會話中執行彼此獨立的實作任務，使用全新 subagent 與分階段審查推進計畫。
 - [test-driven-development](test-driven-development/SKILL.md)：任何功能或修復都先寫測試。
 
 ### GitHub 工作流
@@ -160,6 +161,7 @@ clone 後，倉庫會位於 `~/.agents/skills/ok-skills`，其內部目錄已符
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | 面向生產環境的進階提示工程模式。 | [wshobson/agents](https://github.com/wshobson/agents/tree/main/plugins/llm-application-dev/skills/prompt-engineering-patterns) |
 | [remotion-best-practices](remotion-best-practices/SKILL.md) | 用於 React + Remotion 影片開發的最佳實踐。 | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion) |
 | [skill-creator](skill-creator/SKILL.md) | 建立或更新技能，補齊專業知識、工作流與工具整合。 | [openai/skills](https://github.com/openai/skills/tree/main/skills/.system/skill-creator) |
+| [subagent-driven-development](subagent-driven-development/SKILL.md) | 在目前會話中執行包含獨立任務的實作計畫，使用全新 subagent 與分階段審查。 | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/subagent-driven-development) |
 | [test-driven-development](test-driven-development/SKILL.md) | 實作任何功能或修復前先使用。 | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) |
 | [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | 來自 Vercel Engineering 的 React / Next.js 效能最佳實踐。 | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices) |
 | [xlsx](xlsx/SKILL.md) | 涵蓋試算表建立、編輯、公式、格式與分析。 | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/xlsx) |

@@ -4,7 +4,7 @@
 
 Codex, Claude Code, Cursor, OpenClaw, Trae 및 기타 `SKILL.md` 호환 도구를 위한 큐레이션된 AI 코딩 에이전트 스킬과 `AGENTS.md` 플레이북 저장소입니다.
 
-이 저장소에는 현재 **재사용 가능한 스킬 45개**가 포함되어 있습니다. 이 중 **27개는 루트 레벨 스킬**로 직접 관리되며, **18개의 벤더링된 디자인 스킬**은 [`impeccable/`](impeccable/README.md) 아래에 포함되어 있습니다. `~/.agents/skills/ok-skills`에 clone 하면 되고, 내부 디렉터리 구조는 이미 `AGENTS.md` 기반 워크플로가 기대하는 형태와 맞춰져 있습니다.
+이 저장소에는 현재 **재사용 가능한 스킬 46개**가 포함되어 있습니다. 이 중 **28개는 루트 레벨 스킬**로 직접 관리되며, **18개의 벤더링된 디자인 스킬**은 [`impeccable/`](impeccable/README.md) 아래에 포함되어 있습니다. `~/.agents/skills/ok-skills`에 clone 하면 되고, 내부 디렉터리 구조는 이미 `AGENTS.md` 기반 워크플로가 기대하는 형태와 맞춰져 있습니다.
 
 **Codex skills**, **Claude Code skills**, **Cursor skills**, **OpenClaw skills**, 재사용 가능한 **AGENTS.md** 플레이북, 바로 적용할 수 있는 **SKILL.md** 예제를 찾고 있다면 이 저장소는 검색성과 즉시 사용성을 모두 고려해 정리되어 있습니다.
 
@@ -77,6 +77,7 @@ clone 이후 저장소 경로는 `~/.agents/skills/ok-skills`가 되며, 내부 
 - [brainstorming](brainstorming/SKILL.md): 구현 전에 의도, 요구사항, 설계를 명확히 함.
 - [planning-with-files](planning-with-files/SKILL.md): `task_plan.md`, `findings.md`, `progress.md`를 사용하는 지속형 마크다운 계획 수립.
 - [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md): 프로덕션 LLM 시스템을 위한 고급 프롬프트 설계 패턴.
+- [subagent-driven-development](subagent-driven-development/SKILL.md): 현재 세션에서 서로 독립적인 구현 작업 계획을 새 subagent와 단계별 리뷰로 실행.
 - [test-driven-development](test-driven-development/SKILL.md): 구현 전에 테스트부터 작성하도록 강제.
 
 ### GitHub 워크플로
@@ -160,6 +161,7 @@ clone 이후 저장소 경로는 `~/.agents/skills/ok-skills`가 되며, 내부 
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | 안정적인 프로덕션 LLM 워크플로를 위한 고급 프롬프트 엔지니어링 패턴. | [wshobson/agents](https://github.com/wshobson/agents/tree/main/plugins/llm-application-dev/skills/prompt-engineering-patterns) |
 | [remotion-best-practices](remotion-best-practices/SKILL.md) | React와 Remotion으로 영상을 만들기 위한 모범 사례. | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion) |
 | [skill-creator](skill-creator/SKILL.md) | 전문 지식과 도구 연동을 갖춘 스킬을 만들거나 업데이트하는 가이드. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.system/skill-creator) |
+| [subagent-driven-development](subagent-driven-development/SKILL.md) | 현재 세션에서 독립적인 작업으로 구성된 구현 계획을 새 subagent와 단계별 리뷰로 실행. | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/subagent-driven-development) |
 | [test-driven-development](test-driven-development/SKILL.md) | 기능이나 버그 수정을 구현하기 전에 사용. | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) |
 | [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | Vercel Engineering이 정리한 React / Next.js 성능 최적화 가이드. | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices) |
 | [xlsx](xlsx/SKILL.md) | 스프레드시트 생성, 편집, 수식, 서식, 분석. | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/xlsx) |

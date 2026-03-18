@@ -4,7 +4,7 @@
 
 Bộ sưu tập AI coding agent skills và playbook `AGENTS.md` được tuyển chọn cho Codex, Claude Code, Cursor, OpenClaw, Trae và các công cụ khác tương thích với `SKILL.md`.
 
-Kho này hiện gồm **45 skill có thể tái sử dụng**: **27 skill cấp cao nhất** được duy trì trực tiếp trong repo này, cùng với **18 skill thiết kế được vendored** dưới [`impeccable/`](impeccable/README.md). Chỉ cần clone vào `~/.agents/skills/ok-skills`; các thư mục bên trong đã khớp với bố cục mà workflow dựa trên `AGENTS.md` mong đợi.
+Kho này hiện gồm **46 skill có thể tái sử dụng**: **28 skill cấp cao nhất** được duy trì trực tiếp trong repo này, cùng với **18 skill thiết kế được vendored** dưới [`impeccable/`](impeccable/README.md). Chỉ cần clone vào `~/.agents/skills/ok-skills`; các thư mục bên trong đã khớp với bố cục mà workflow dựa trên `AGENTS.md` mong đợi.
 
 Nếu bạn đang tìm **Codex skills**, **Claude Code skills**, **Cursor skills**, **OpenClaw skills**, các playbook **AGENTS.md** có thể tái dùng, hoặc các ví dụ **SKILL.md** thực dụng, repo này được tổ chức để vừa dễ tìm kiếm vừa có thể dùng ngay.
 
@@ -77,6 +77,7 @@ Sau đó bạn có thể yêu cầu một cách tự nhiên:
 - [brainstorming](brainstorming/SKILL.md): làm rõ ý định, yêu cầu và thiết kế trước khi triển khai.
 - [planning-with-files](planning-with-files/SKILL.md): lập kế hoạch Markdown bền vững với `task_plan.md`, `findings.md` và `progress.md`.
 - [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md): các mẫu thiết kế prompt nâng cao cho hệ thống LLM production.
+- [subagent-driven-development](subagent-driven-development/SKILL.md): thực thi kế hoạch triển khai với các tác vụ độc lập trong phiên hiện tại bằng subagent mới và các vòng review theo giai đoạn.
 - [test-driven-development](test-driven-development/SKILL.md): buộc viết test trước khi triển khai.
 
 ### Workflow GitHub
@@ -160,6 +161,7 @@ Cột `Source URL` trỏ tới upstream chính thức khi một skill được v
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | Các mẫu prompt engineering nâng cao cho workflow LLM đáng tin cậy trong production. | [wshobson/agents](https://github.com/wshobson/agents/tree/main/plugins/llm-application-dev/skills/prompt-engineering-patterns) |
 | [remotion-best-practices](remotion-best-practices/SKILL.md) | Best practices để xây dựng video trong React với Remotion. | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion) |
 | [skill-creator](skill-creator/SKILL.md) | Hướng dẫn tạo mới hoặc cập nhật skill với tri thức chuyên biệt và tích hợp công cụ. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.system/skill-creator) |
+| [subagent-driven-development](subagent-driven-development/SKILL.md) | Thực thi kế hoạch triển khai với các tác vụ độc lập trong phiên hiện tại bằng subagent mới và các vòng review theo giai đoạn. | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/subagent-driven-development) |
 | [test-driven-development](test-driven-development/SKILL.md) | Dùng trước khi triển khai bất kỳ tính năng hay bugfix nào. | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) |
 | [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | Hướng dẫn tối ưu hiệu năng React và Next.js từ Vercel Engineering. | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices) |
 | [xlsx](xlsx/SKILL.md) | Tạo và chỉnh sửa bảng tính, công thức, định dạng và phân tích. | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/xlsx) |
