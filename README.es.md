@@ -114,7 +114,7 @@ Despues puedes pedirlo de forma natural:
 
 ## Paquetes De Skills Vendorizados
 
-[`impeccable/`](impeccable/README.md) contiene un paquete centrado en diseno, vendorizado desde [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable) en el commit `b5af865d84bc1ba1b8bc7104488bc7db50977029`.
+[`impeccable/`](impeccable/README.md) contiene un paquete centrado en diseno, vendorizado desde [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable) en el commit `d6b1a56bc5b79e9375be0f8508b4daa1678fb058`.
 
 Incluye:
 
@@ -155,8 +155,8 @@ La atribucion y los archivos legales se conservan en [`impeccable/NOTICE.md`](im
 | [gh-fix-ci](gh-fix-ci/SKILL.md) | Inspecciona fallos de GitHub Actions, descarga logs y prepara un plan de correccion. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/gh-fix-ci) |
 | [opencli](opencli/SKILL.md) | Convierte sitios web en comandos CLI con reutilizacion de sesion del navegador, APIs publicas y adaptadores generados por IA. | [jackwener/opencli](https://github.com/jackwener/opencli) |
 | [pdf](pdf/SKILL.md) | Lee, crea y revisa archivos PDF con comprobaciones de renderizado y herramientas en Python. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/pdf) |
-| [pinchtab](pinchtab/SKILL.md) | Controla Chrome en modo headless o con interfaz mediante la API HTTP de Pinchtab para automatizacion web, scraping, formularios, navegacion, capturas y extraccion basada en referencias de accesibilidad estables. | [pinchtab/pinchtab](https://github.com/pinchtab/pinchtab/tree/main/skill/pinchtab) |
-| [planning-with-files](planning-with-files/SKILL.md) | Planificacion basada en archivos para tareas complejas mediante `task_plan.md`, `findings.md` y `progress.md`. | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/.agent/skills/planning-with-files) |
+| [pinchtab](pinchtab/SKILL.md) | Controla Chrome en modo headless o con interfaz mediante la API HTTP de Pinchtab para automatizacion web, scraping, formularios, navegacion, capturas y extraccion basada en referencias de accesibilidad estables. | [pinchtab/pinchtab](https://github.com/pinchtab/pinchtab/tree/main/skills/pinchtab) |
+| [planning-with-files](planning-with-files/SKILL.md) | Planificacion basada en archivos para tareas complejas mediante `task_plan.md`, `findings.md` y `progress.md`. | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/skills/planning-with-files) |
 | [pptx](pptx/SKILL.md) | Crea, lee, edita y manipula presentaciones de PowerPoint, plantillas, layouts, notas y contenido de diapositivas. | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/pptx) |
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | Patrones avanzados de prompt engineering para flujos LLM fiables y orientados a produccion. | [wshobson/agents](https://github.com/wshobson/agents/tree/main/plugins/llm-application-dev/skills/prompt-engineering-patterns) |
 | [remotion-best-practices](remotion-best-practices/SKILL.md) | Buenas practicas para crear videos en React con Remotion. | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion) |

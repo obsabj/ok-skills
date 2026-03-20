@@ -1,6 +1,6 @@
 # CLI-EXPLORER — 适配器探索式开发完全指南
 
-> 本文档教你（或 AI Agent）如何为 OpenCLI 添加一个新网站的命令。  
+> 本文档教你（或 AI Agent）如何为 OpenCLI 添加一个新网站的命令。
 > 从零到发布，覆盖 API 发现、方案选择、适配器编写、测试验证全流程。
 
 > [!TIP]
@@ -9,12 +9,12 @@
 
 ---
 
-## AI Agent 开发者必读：用 Playwright MCP Bridge 探索
+## AI Agent 开发者必读：用浏览器探索
 
 > [!CAUTION]
-> **你（AI Agent）必须通过 Playwright MCP Bridge 打开浏览器去访问目标网站！**  
-> 不要只靠 `opencli explore` 命令或静态分析来发现 API。  
-> 你拥有 Playwright MCP 工具，必须主动用它们浏览网页、观察网络请求、模拟用户交互。
+> **你（AI Agent）必须通过浏览器打开目标网站去探索！**
+> 不要只靠 `opencli explore` 命令或静态分析来发现 API。
+> 你拥有浏览器工具，必须主动用它们浏览网页、观察网络请求、模拟用户交互。
 
 ### 为什么？
 
@@ -36,7 +36,7 @@
 
 | ❌ 错误做法 | ✅ 正确做法 |
 |------------|------------|
-| 只用 `opencli explore` 命令，等结果自动出来 | 用 MCP Bridge 打开浏览器，主动浏览页面 |
+| 只用 `opencli explore` 命令，等结果自动出来 | 用浏览器工具打开页面，主动浏览 |
 | 直接在代码里 `fetch(url)`，不看浏览器实际请求 | 先在浏览器中确认 API 可用，再写代码 |
 | 页面打开后直接抓包，期望所有 API 都出现 | 模拟点击交互（展开评论/切换标签/加载更多） |
 | 遇到 HTTP 200 但空数据就放弃 | 检查是否需要 Wbi 签名或 Cookie 鉴权 |
@@ -425,7 +425,7 @@ pipeline:
   - limit: ${{ args.limit | default(20) }}
 ```
 
-> **`tap` 步骤自动完成**：注入 fetch+XHR 双拦截 → 查找 Pinia/Vuex store → 调用 action → 捕获匹配 URL 的响应 → 清理拦截。  
+> **`tap` 步骤自动完成**：注入 fetch+XHR 双拦截 → 查找 Pinia/Vuex store → 调用 action → 捕获匹配 URL 的响应 → 清理拦截。
 > 如果 store 或 action 找不到，会返回 `hint` 列出所有可用的 store actions，方便调试。
 
 | tap 参数 | 必填 | 说明 |
@@ -540,7 +540,7 @@ cli({
 
 ## Step 4: 测试
 
-> **构建通过 ≠ 功能正常**。`npm run build` 只验证 TypeScript / YAML 语法，不验证运行时行为。  
+> **构建通过 ≠ 功能正常**。`npm run build` 只验证 TypeScript / YAML 语法，不验证运行时行为。
 > 每个新命令 **必须实际运行** 并确认输出正确后才算完成。
 
 ### 必做清单

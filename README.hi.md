@@ -114,7 +114,7 @@ Clone करने के बाद repo `~/.agents/skills/ok-skills` पर र
 
 ## Vendored Skill Packs
 
-[`impeccable/`](impeccable/README.md) में [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable) से लिया गया design-focused vendored bundle शामिल है, commit `b5af865d84bc1ba1b8bc7104488bc7db50977029` पर आधारित।
+[`impeccable/`](impeccable/README.md) में [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable) से लिया गया design-focused vendored bundle शामिल है, commit `d6b1a56bc5b79e9375be0f8508b4daa1678fb058` पर आधारित।
 
 इसमें शामिल हैं:
 
@@ -155,8 +155,8 @@ Attribution और legal files [`impeccable/NOTICE.md`](impeccable/NOTICE.md) �
 | [gh-fix-ci](gh-fix-ci/SKILL.md) | failing GitHub Actions checks inspect करें, logs pull करें, और fixes plan करें। | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/gh-fix-ci) |
 | [opencli](opencli/SKILL.md) | Browser login session reuse, public APIs, और AI-generated adapters के साथ websites को CLI commands में बदलने की skill. | [jackwener/opencli](https://github.com/jackwener/opencli) |
 | [pdf](pdf/SKILL.md) | rendering checks और Python tooling के साथ PDF files पढ़ें, बनाएं, और review करें। | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/pdf) |
-| [pinchtab](pinchtab/SKILL.md) | Pinchtab के HTTP API के जरिए headless या headed Chrome control करें, web automation, scraping, form filling, navigation, screenshots, और stable accessibility refs के साथ extraction के लिए। | [pinchtab/pinchtab](https://github.com/pinchtab/pinchtab/tree/main/skill/pinchtab) |
-| [planning-with-files](planning-with-files/SKILL.md) | `task_plan.md`, `findings.md`, और `progress.md` का उपयोग करके complex tasks के लिए file-based planning. | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/.agent/skills/planning-with-files) |
+| [pinchtab](pinchtab/SKILL.md) | Pinchtab के HTTP API के जरिए headless या headed Chrome control करें, web automation, scraping, form filling, navigation, screenshots, और stable accessibility refs के साथ extraction के लिए। | [pinchtab/pinchtab](https://github.com/pinchtab/pinchtab/tree/main/skills/pinchtab) |
+| [planning-with-files](planning-with-files/SKILL.md) | `task_plan.md`, `findings.md`, और `progress.md` का उपयोग करके complex tasks के लिए file-based planning. | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/skills/planning-with-files) |
 | [pptx](pptx/SKILL.md) | PowerPoint presentations, templates, layouts, notes, और slide content create, read, edit, और manipulate करें। | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/pptx) |
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | reliable, production LLM workflows के लिए advanced prompt engineering patterns. | [wshobson/agents](https://github.com/wshobson/agents/tree/main/plugins/llm-application-dev/skills/prompt-engineering-patterns) |
 | [remotion-best-practices](remotion-best-practices/SKILL.md) | React के साथ videos बनाने के लिए Remotion best practices. | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion) |

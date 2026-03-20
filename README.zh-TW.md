@@ -114,7 +114,7 @@ clone 後，倉庫會位於 `~/.agents/skills/ok-skills`，其內部目錄已符
 
 ## Vendored Skill Packs
 
-[`impeccable/`](impeccable/README.md) 目錄收錄了來自 [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable) 的前端設計技能包，目前同步基於提交 `b5af865d84bc1ba1b8bc7104488bc7db50977029`。
+[`impeccable/`](impeccable/README.md) 目錄收錄了來自 [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable) 的前端設計技能包，目前同步基於提交 `d6b1a56bc5b79e9375be0f8508b4daa1678fb058`。
 
 其中包括：
 
@@ -155,8 +155,8 @@ clone 後，倉庫會位於 `~/.agents/skills/ok-skills`，其內部目錄已符
 | [gh-fix-ci](gh-fix-ci/SKILL.md) | 檢查 GitHub Actions 失敗項、提取日誌並制定修復計畫。 | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/gh-fix-ci) |
 | [opencli](opencli/SKILL.md) | 將網站變成 CLI，重用瀏覽器登入狀態，支援公開 API 存取與 AI 生成適配器。 | [jackwener/opencli](https://github.com/jackwener/opencli) |
 | [pdf](pdf/SKILL.md) | 處理 PDF 的讀取、產生與審查，強調渲染後的視覺檢查。 | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/pdf) |
-| [pinchtab](pinchtab/SKILL.md) | 透過 Pinchtab 的 HTTP API 控制 headless 或 headed Chrome，用於網頁自動化、抓取、表單填寫、導覽、截圖與基於穩定 accessibility refs 的內容擷取。 | [pinchtab/pinchtab](https://github.com/pinchtab/pinchtab/tree/main/skill/pinchtab) |
-| [planning-with-files](planning-with-files/SKILL.md) | 使用 `task_plan.md`、`findings.md`、`progress.md` 管理複雜任務。 | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/.agent/skills/planning-with-files) |
+| [pinchtab](pinchtab/SKILL.md) | 透過 Pinchtab 的 HTTP API 控制 headless 或 headed Chrome，用於網頁自動化、抓取、表單填寫、導覽、截圖與基於穩定 accessibility refs 的內容擷取。 | [pinchtab/pinchtab](https://github.com/pinchtab/pinchtab/tree/main/skills/pinchtab) |
+| [planning-with-files](planning-with-files/SKILL.md) | 使用 `task_plan.md`、`findings.md`、`progress.md` 管理複雜任務。 | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/skills/planning-with-files) |
 | [pptx](pptx/SKILL.md) | 建立、讀取、編輯與處理 PowerPoint 簡報，涵蓋模板、版面、備註與投影片內容。 | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/pptx) |
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | 面向生產環境的進階提示工程模式。 | [wshobson/agents](https://github.com/wshobson/agents/tree/main/plugins/llm-application-dev/skills/prompt-engineering-patterns) |
 | [remotion-best-practices](remotion-best-practices/SKILL.md) | 用於 React + Remotion 影片開發的最佳實踐。 | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion) |

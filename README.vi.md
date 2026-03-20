@@ -114,7 +114,7 @@ Sau đó bạn có thể yêu cầu một cách tự nhiên:
 
 ## Gói skill vendored
 
-[`impeccable/`](impeccable/README.md) chứa một bundle thiên về thiết kế được vendored từ [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable) tại commit `b5af865d84bc1ba1b8bc7104488bc7db50977029`.
+[`impeccable/`](impeccable/README.md) chứa một bundle thiên về thiết kế được vendored từ [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable) tại commit `d6b1a56bc5b79e9375be0f8508b4daa1678fb058`.
 
 Gói này bao gồm:
 
@@ -155,8 +155,8 @@ Cột `Source URL` trỏ tới upstream chính thức khi một skill được v
 | [gh-fix-ci](gh-fix-ci/SKILL.md) | Kiểm tra các check GitHub Actions thất bại, kéo log và lập kế hoạch sửa. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/gh-fix-ci) |
 | [opencli](opencli/SKILL.md) | Biến website thành lệnh CLI bằng cách tái sử dụng phiên đăng nhập trình duyệt, truy cập API công khai và sinh adapter bằng AI. | [jackwener/opencli](https://github.com/jackwener/opencli) |
 | [pdf](pdf/SKILL.md) | Đọc, tạo và rà soát PDF với kiểm tra render và công cụ Python. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/pdf) |
-| [pinchtab](pinchtab/SKILL.md) | Điều khiển Chrome headless hoặc headed qua HTTP API của Pinchtab cho tự động hóa web, scraping, điền biểu mẫu, điều hướng, ảnh chụp màn hình và trích xuất bằng accessibility ref ổn định. | [pinchtab/pinchtab](https://github.com/pinchtab/pinchtab/tree/main/skill/pinchtab) |
-| [planning-with-files](planning-with-files/SKILL.md) | Lập kế hoạch dựa trên file cho các tác vụ phức tạp bằng `task_plan.md`, `findings.md` và `progress.md`. | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/.agent/skills/planning-with-files) |
+| [pinchtab](pinchtab/SKILL.md) | Điều khiển Chrome headless hoặc headed qua HTTP API của Pinchtab cho tự động hóa web, scraping, điền biểu mẫu, điều hướng, ảnh chụp màn hình và trích xuất bằng accessibility ref ổn định. | [pinchtab/pinchtab](https://github.com/pinchtab/pinchtab/tree/main/skills/pinchtab) |
+| [planning-with-files](planning-with-files/SKILL.md) | Lập kế hoạch dựa trên file cho các tác vụ phức tạp bằng `task_plan.md`, `findings.md` và `progress.md`. | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/skills/planning-with-files) |
 | [pptx](pptx/SKILL.md) | Tạo, đọc, chỉnh sửa và xử lý bản trình bày PowerPoint, template, layout, note và nội dung slide. | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/pptx) |
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | Các mẫu prompt engineering nâng cao cho workflow LLM đáng tin cậy trong production. | [wshobson/agents](https://github.com/wshobson/agents/tree/main/plugins/llm-application-dev/skills/prompt-engineering-patterns) |
 | [remotion-best-practices](remotion-best-practices/SKILL.md) | Best practices để xây dựng video trong React với Remotion. | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion) |

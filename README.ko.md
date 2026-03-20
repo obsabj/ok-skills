@@ -114,7 +114,7 @@ clone 이후 저장소 경로는 `~/.agents/skills/ok-skills`가 되며, 내부 
 
 ## 벤더링된 스킬 팩
 
-[`impeccable/`](impeccable/README.md)에는 [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable)에서 가져온 디자인 중심 번들이 포함되어 있으며, 기준 커밋은 `b5af865d84bc1ba1b8bc7104488bc7db50977029`입니다.
+[`impeccable/`](impeccable/README.md)에는 [`pbakaus/impeccable`](https://github.com/pbakaus/impeccable)에서 가져온 디자인 중심 번들이 포함되어 있으며, 기준 커밋은 `d6b1a56bc5b79e9375be0f8508b4daa1678fb058`입니다.
 
 포함된 항목:
 
@@ -155,8 +155,8 @@ clone 이후 저장소 경로는 `~/.agents/skills/ok-skills`가 되며, 내부 
 | [gh-fix-ci](gh-fix-ci/SKILL.md) | 실패한 GitHub Actions 체크를 확인하고 로그를 가져와 수정 계획을 세움. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/gh-fix-ci) |
 | [opencli](opencli/SKILL.md) | 브라우저 로그인 상태 재사용, 공개 API 접근, AI 생성 어댑터로 웹사이트를 CLI처럼 다루는 스킬입니다. | [jackwener/opencli](https://github.com/jackwener/opencli) |
 | [pdf](pdf/SKILL.md) | 렌더링 검토와 Python 도구를 포함해 PDF를 읽고, 생성하고, 검토. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/pdf) |
-| [pinchtab](pinchtab/SKILL.md) | 안정적인 접근성 참조를 사용해 Pinchtab의 HTTP API로 헤드리스/헤디드 Chrome을 제어하여 웹 자동화, 스크래핑, 폼 입력, 탐색, 스크린샷, 추출을 수행. | [pinchtab/pinchtab](https://github.com/pinchtab/pinchtab/tree/main/skill/pinchtab) |
-| [planning-with-files](planning-with-files/SKILL.md) | `task_plan.md`, `findings.md`, `progress.md`를 활용해 복잡한 작업을 파일 기반으로 계획. | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/.agent/skills/planning-with-files) |
+| [pinchtab](pinchtab/SKILL.md) | 안정적인 접근성 참조를 사용해 Pinchtab의 HTTP API로 헤드리스/헤디드 Chrome을 제어하여 웹 자동화, 스크래핑, 폼 입력, 탐색, 스크린샷, 추출을 수행. | [pinchtab/pinchtab](https://github.com/pinchtab/pinchtab/tree/main/skills/pinchtab) |
+| [planning-with-files](planning-with-files/SKILL.md) | `task_plan.md`, `findings.md`, `progress.md`를 활용해 복잡한 작업을 파일 기반으로 계획. | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/skills/planning-with-files) |
 | [pptx](pptx/SKILL.md) | PowerPoint 프레젠테이션, 템플릿, 레이아웃, 노트, 슬라이드 콘텐츠 생성/읽기/편집/조작. | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/pptx) |
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | 안정적인 프로덕션 LLM 워크플로를 위한 고급 프롬프트 엔지니어링 패턴. | [wshobson/agents](https://github.com/wshobson/agents/tree/main/plugins/llm-application-dev/skills/prompt-engineering-patterns) |
 | [remotion-best-practices](remotion-best-practices/SKILL.md) | React와 Remotion으로 영상을 만들기 위한 모범 사례. | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion) |
