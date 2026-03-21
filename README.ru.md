@@ -4,7 +4,7 @@
 
 Кураторская коллекция AI coding agent skills и playbook-файлов `AGENTS.md` для Codex, Claude Code, Cursor, OpenClaw, Trae и других инструментов, совместимых с `SKILL.md`.
 
-Сейчас в этом репозитории собрано **46 переиспользуемых skills**: **28 skills верхнего уровня**, которые поддерживаются прямо здесь, и еще **18 vendored design skills** в каталоге [`impeccable/`](impeccable/README.md). Достаточно клонировать репозиторий в `~/.agents/skills/ok-skills`; внутренняя структура уже соответствует layout, который ожидают workflows на базе `AGENTS.md`.
+Сейчас в этом репозитории собрано **47 переиспользуемых skills**: **29 skills верхнего уровня**, которые поддерживаются прямо здесь, и еще **18 vendored design skills** в каталоге [`impeccable/`](impeccable/README.md). Достаточно клонировать репозиторий в `~/.agents/skills/ok-skills`; внутренняя структура уже соответствует layout, который ожидают workflows на базе `AGENTS.md`.
 
 Если вы ищете **Codex skills**, **Claude Code skills**, **Cursor skills**, **OpenClaw skills**, переиспользуемые playbook-файлы **AGENTS.md** или практичные примеры **SKILL.md**, этот репозиторий специально оформлен так, чтобы его было легко найти и сразу использовать.
 
@@ -89,6 +89,7 @@ git clone https://github.com/mxyhi/ok-skills.git ok-skills
 ### Automation & QA
 
 - [agent-browser](agent-browser/SKILL.md): browser automation для навигации, форм, скриншотов и scraping.
+- [browser-use](browser-use/SKILL.md): Постоянно работающий CLI для браузерной автоматизации: навигация, проверка состояния страницы, заполнение форм, скриншоты и извлечение данных.
 - [chrome-cdp](chrome-cdp/SKILL.md): подключение к уже открытому локальному сеансу Chrome через CDP для легкой проверки и взаимодействия со страницей.
 - [bb-browser](bb-browser/SKILL.md): получение информации и автоматизация браузера через реальный браузер пользователя и его состояние входа.
 - [pinchtab](pinchtab/SKILL.md): управление Chrome через локальный HTTP API Pinchtab со стабильными accessibility refs.
@@ -143,6 +144,7 @@ git clone https://github.com/mxyhi/ok-skills.git ok-skills
 | [bb-browser](bb-browser/SKILL.md) | Навык для получения информации и автоматизации браузера через реальный браузер пользователя и его состояние входа, включая публичные страницы, внутренние системы и авторизованные сценарии. | [epiral/bb-browser](https://github.com/epiral/bb-browser/tree/main/skills/bb-browser) |
 | [better-icons](better-icons/SKILL.md) | Search 200+ Iconify libraries and retrieve SVG icons via CLI or MCP tools. | [better-auth/better-icons](https://github.com/better-auth/better-icons/tree/main/skills) |
 | [brainstorming](brainstorming/SKILL.md) | Clarify intent, requirements, and design before implementation work. | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/brainstorming) |
+| [browser-use](browser-use/SKILL.md) | Постоянно работающий CLI для браузерной автоматизации: навигация, проверка состояния страницы, заполнение форм, скриншоты и извлечение данных. | [browser-use/browser-use](https://github.com/browser-use/browser-use/tree/main/skills/browser-use) |
 | [chrome-cdp](chrome-cdp/SKILL.md) | Подключается через CDP к уже открытому локальному сеансу Chrome для легкой инспекции вкладок, скриншотов, доступа к DOM, ввода и навигации. | [pasky/chrome-cdp-skill](https://github.com/pasky/chrome-cdp-skill/tree/main/skills/chrome-cdp) |
 | [context7-cli](context7-cli/SKILL.md) | Use the Context7 CLI for docs lookup, skill management, and MCP setup. | [upstash/context7](https://github.com/upstash/context7/tree/master/skills/context7-cli) |
 | [docx](docx/SKILL.md) | Create, read, edit, and manipulate Word documents with formatting, comments, tracked changes, and image updates. | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/docx) |

@@ -4,7 +4,7 @@
 
 Kuratiertes Repository für AI Coding Agent Skills und `AGENTS.md`-Playbooks für Codex, Claude Code, Cursor, OpenClaw, Trae und andere Tools, die mit `SKILL.md`-Workflows kompatibel sind.
 
-Dieses Repository bündelt aktuell **46 wiederverwendbare Skills**: **28 Top-Level-Skills**, die direkt hier gepflegt werden, plus **18 vendorte Design-Skills** unter [`impeccable/`](impeccable/README.md). Klone es nach `~/.agents/skills/ok-skills`; die enthaltenen Verzeichnisse entsprechen bereits dem Layout, das `AGENTS.md`-gesteuerte Workflows erwarten.
+Dieses Repository bündelt aktuell **47 wiederverwendbare Skills**: **29 Top-Level-Skills**, die direkt hier gepflegt werden, plus **18 vendorte Design-Skills** unter [`impeccable/`](impeccable/README.md). Klone es nach `~/.agents/skills/ok-skills`; die enthaltenen Verzeichnisse entsprechen bereits dem Layout, das `AGENTS.md`-gesteuerte Workflows erwarten.
 
 Wenn du nach **Codex skills**, **Claude Code skills**, **Cursor skills**, **OpenClaw skills**, wiederverwendbaren **AGENTS.md**-Playbooks oder praxistauglichen **SKILL.md**-Beispielen suchst, ist dieses Repository bewusst auf Auffindbarkeit und sofortige Nutzbarkeit ausgelegt.
 
@@ -89,6 +89,7 @@ Danach kannst du natürlich formulieren:
 ### Automatisierung und QA
 
 - [agent-browser](agent-browser/SKILL.md): Browser-Automatisierung für Navigation, Formulare, Screenshots und Scraping.
+- [browser-use](browser-use/SKILL.md): Persistente Browser-Automatisierungs-CLI für Navigation, Statusprüfung, Formularausfüllung, Screenshots und Extraktion.
 - [chrome-cdp](chrome-cdp/SKILL.md): Verbindung zu einer bereits laufenden lokalen Chrome-Sitzung per CDP für leichte Seiteninspektion und Interaktion.
 - [bb-browser](bb-browser/SKILL.md): Informationsgewinnung und Browser-Automatisierung über den echten Browser und den Login-Status des Nutzers.
 - [pinchtab](pinchtab/SKILL.md): Chrome über Pinchtabs lokale HTTP-API mit stabilen Accessibility-Referenzen steuern.
@@ -143,6 +144,7 @@ Attributionen und rechtliche Dateien bleiben in [`impeccable/NOTICE.md`](impecca
 | [bb-browser](bb-browser/SKILL.md) | Skill für Informationsgewinnung und Browser-Automatisierung über den echten Browser und den Login-Status des Nutzers, inklusive öffentlicher Seiten, interner Systeme und eingeloggter Abläufe. | [epiral/bb-browser](https://github.com/epiral/bb-browser/tree/main/skills/bb-browser) |
 | [better-icons](better-icons/SKILL.md) | Durchsuche über 200 Iconify-Bibliotheken und hole SVG-Icons per CLI oder MCP-Tools. | [better-auth/better-icons](https://github.com/better-auth/better-icons/tree/main/skills) |
 | [brainstorming](brainstorming/SKILL.md) | Absicht, Anforderungen und Design vor der Implementierungsarbeit klären. | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/brainstorming) |
+| [browser-use](browser-use/SKILL.md) | Persistente Browser-Automatisierungs-CLI für Navigation, Statusprüfung, Formularausfüllung, Screenshots und Extraktion. | [browser-use/browser-use](https://github.com/browser-use/browser-use/tree/main/skills/browser-use) |
 | [chrome-cdp](chrome-cdp/SKILL.md) | Verbindet sich per CDP mit einer bereits laufenden lokalen Chrome-Sitzung für leichte Tab-Inspektion, Screenshots, DOM-Zugriff, Eingaben und Navigation. | [pasky/chrome-cdp-skill](https://github.com/pasky/chrome-cdp-skill/tree/main/skills/chrome-cdp) |
 | [context7-cli](context7-cli/SKILL.md) | Die Context7 CLI für Dokumentationssuche, Skill-Management und MCP-Setup verwenden. | [upstash/context7](https://github.com/upstash/context7/tree/master/skills/context7-cli) |
 | [docx](docx/SKILL.md) | Word-Dokumente mit Formatierung, Kommentaren, Änderungsverfolgung und Bildaktualisierungen erstellen, lesen, bearbeiten und manipulieren. | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/docx) |

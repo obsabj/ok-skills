@@ -4,7 +4,7 @@
 
 這是一個面向 Codex、Claude Code、Cursor、OpenClaw、Trae 以及其他相容 `SKILL.md` / `AGENTS.md` 工作流工具的 AI coding agent skills 倉庫。
 
-目前倉庫共收錄 **46 個可重用技能**：其中 **28 個頂層技能** 由本倉直接維護，另有 **18 個前端設計技能** 以 vendored bundle 形式放在 [`impeccable/`](impeccable/README.md) 目錄下。將它 clone 到 `~/.agents/skills/ok-skills` 即可，倉庫內部目錄已符合 `AGENTS.md` 所需的 skills 佈局。
+目前倉庫共收錄 **47 個可重用技能**：其中 **29 個頂層技能** 由本倉直接維護，另有 **18 個前端設計技能** 以 vendored bundle 形式放在 [`impeccable/`](impeccable/README.md) 目錄下。將它 clone 到 `~/.agents/skills/ok-skills` 即可，倉庫內部目錄已符合 `AGENTS.md` 所需的 skills 佈局。
 
 如果你正在找 **Codex skills**、**Claude Code skills**、**Cursor skills**、**OpenClaw skills**、可重用的 **AGENTS.md** 範本，或一套能直接落地的 **SKILL.md** 範例倉庫，這個專案就是為了搜尋可發現性與開箱即用而整理的。
 
@@ -89,6 +89,7 @@ clone 後，倉庫會位於 `~/.agents/skills/ok-skills`，其內部目錄已符
 ### 自動化與 QA
 
 - [agent-browser](agent-browser/SKILL.md)：瀏覽器導覽、表單、截圖、抓取與網頁測試。
+- [browser-use](browser-use/SKILL.md)：持久化瀏覽器自動化 CLI，用於導覽、頁面狀態檢查、表單填寫、截圖和資訊擷取。
 - [chrome-cdp](chrome-cdp/SKILL.md)：透過 CDP 連線到本機已開啟的 Chrome 工作階段，進行輕量頁面檢查與互動。
 - [bb-browser](bb-browser/SKILL.md)：透過使用者真實瀏覽器與登入狀態進行資訊擷取與瀏覽器自動化。
 - [pinchtab](pinchtab/SKILL.md)：透過 Pinchtab 的本地 HTTP API 控制 Chrome，利用穩定的 accessibility refs 進行自動化與擷取。
@@ -143,6 +144,7 @@ clone 後，倉庫會位於 `~/.agents/skills/ok-skills`，其內部目錄已符
 | [bb-browser](bb-browser/SKILL.md) | 透過使用者真實瀏覽器與登入狀態完成資訊擷取與瀏覽器自動化，涵蓋公開頁面、內部系統與登入後流程。 | [epiral/bb-browser](https://github.com/epiral/bb-browser/tree/main/skills/bb-browser) |
 | [better-icons](better-icons/SKILL.md) | 透過 CLI 或 MCP 工具搜尋 200+ Iconify 圖示庫並取得 SVG 圖示。 | [better-auth/better-icons](https://github.com/better-auth/better-icons/tree/main/skills) |
 | [brainstorming](brainstorming/SKILL.md) | 在任何實作前先釐清意圖、需求與設計。 | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/brainstorming) |
+| [browser-use](browser-use/SKILL.md) | 持久化瀏覽器自動化 CLI，用於導覽、頁面狀態檢查、表單填寫、截圖和資訊擷取。 | [browser-use/browser-use](https://github.com/browser-use/browser-use/tree/main/skills/browser-use) |
 | [chrome-cdp](chrome-cdp/SKILL.md) | 透過 CDP 連線到本機已開啟的 Chrome 工作階段，用於輕量的分頁檢查、截圖、DOM 存取、輸入與導覽。 | [pasky/chrome-cdp-skill](https://github.com/pasky/chrome-cdp-skill/tree/main/skills/chrome-cdp) |
 | [context7-cli](context7-cli/SKILL.md) | 使用 Context7 CLI 完成文件查詢、skill 管理與 MCP 設定。 | [upstash/context7](https://github.com/upstash/context7/tree/master/skills/context7-cli) |
 | [docx](docx/SKILL.md) | 建立、讀取、編輯與處理 Word 文件，涵蓋格式、批註、修訂與圖片替換。 | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/docx) |

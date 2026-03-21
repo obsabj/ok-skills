@@ -4,7 +4,7 @@
 
 Bộ sưu tập AI coding agent skills và playbook `AGENTS.md` được tuyển chọn cho Codex, Claude Code, Cursor, OpenClaw, Trae và các công cụ khác tương thích với `SKILL.md`.
 
-Kho này hiện gồm **46 skill có thể tái sử dụng**: **28 skill cấp cao nhất** được duy trì trực tiếp trong repo này, cùng với **18 skill thiết kế được vendored** dưới [`impeccable/`](impeccable/README.md). Chỉ cần clone vào `~/.agents/skills/ok-skills`; các thư mục bên trong đã khớp với bố cục mà workflow dựa trên `AGENTS.md` mong đợi.
+Kho này hiện gồm **47 skill có thể tái sử dụng**: **29 skill cấp cao nhất** được duy trì trực tiếp trong repo này, cùng với **18 skill thiết kế được vendored** dưới [`impeccable/`](impeccable/README.md). Chỉ cần clone vào `~/.agents/skills/ok-skills`; các thư mục bên trong đã khớp với bố cục mà workflow dựa trên `AGENTS.md` mong đợi.
 
 Nếu bạn đang tìm **Codex skills**, **Claude Code skills**, **Cursor skills**, **OpenClaw skills**, các playbook **AGENTS.md** có thể tái dùng, hoặc các ví dụ **SKILL.md** thực dụng, repo này được tổ chức để vừa dễ tìm kiếm vừa có thể dùng ngay.
 
@@ -89,6 +89,7 @@ Sau đó bạn có thể yêu cầu một cách tự nhiên:
 ### Tự động hóa và QA
 
 - [agent-browser](agent-browser/SKILL.md): tự động hóa trình duyệt cho điều hướng, biểu mẫu, ảnh chụp màn hình và scraping.
+- [browser-use](browser-use/SKILL.md): CLI tự động hóa trình duyệt dạng phiên bền vững để điều hướng, kiểm tra trạng thái trang, điền biểu mẫu, chụp màn hình và trích xuất dữ liệu.
 - [chrome-cdp](chrome-cdp/SKILL.md): kết nối tới phiên Chrome cục bộ đang mở qua CDP để kiểm tra và tương tác trang nhẹ.
 - [bb-browser](bb-browser/SKILL.md): thu thập thông tin và tự động hóa trình duyệt bằng trình duyệt thật cùng trạng thái đăng nhập của người dùng.
 - [pinchtab](pinchtab/SKILL.md): điều khiển Chrome qua HTTP API cục bộ của Pinchtab bằng các accessibility ref ổn định.
@@ -143,6 +144,7 @@ Cột `Source URL` trỏ tới upstream chính thức khi một skill được v
 | [bb-browser](bb-browser/SKILL.md) | Skill thu thập thông tin và tự động hóa trình duyệt bằng trình duyệt thật cùng trạng thái đăng nhập của người dùng, áp dụng cho trang công khai, hệ thống nội bộ và luồng sau đăng nhập. | [epiral/bb-browser](https://github.com/epiral/bb-browser/tree/main/skills/bb-browser) |
 | [better-icons](better-icons/SKILL.md) | Tìm trong hơn 200 bộ Iconify và lấy icon SVG qua CLI hoặc công cụ MCP. | [better-auth/better-icons](https://github.com/better-auth/better-icons/tree/main/skills) |
 | [brainstorming](brainstorming/SKILL.md) | Làm rõ ý định, yêu cầu và thiết kế trước khi triển khai. | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/brainstorming) |
+| [browser-use](browser-use/SKILL.md) | CLI tự động hóa trình duyệt dạng phiên bền vững để điều hướng, kiểm tra trạng thái trang, điền biểu mẫu, chụp màn hình và trích xuất dữ liệu. | [browser-use/browser-use](https://github.com/browser-use/browser-use/tree/main/skills/browser-use) |
 | [chrome-cdp](chrome-cdp/SKILL.md) | Kết nối tới phiên Chrome cục bộ đang mở qua CDP để kiểm tra tab nhẹ, chụp màn hình, truy cập DOM, nhập liệu và điều hướng. | [pasky/chrome-cdp-skill](https://github.com/pasky/chrome-cdp-skill/tree/main/skills/chrome-cdp) |
 | [context7-cli](context7-cli/SKILL.md) | Dùng Context7 CLI để tra cứu tài liệu, quản lý skill và thiết lập MCP. | [upstash/context7](https://github.com/upstash/context7/tree/master/skills/context7-cli) |
 | [docx](docx/SKILL.md) | Tạo, đọc, chỉnh sửa và xử lý tài liệu Word với định dạng, bình luận, tracked changes và cập nhật hình ảnh. | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/docx) |
