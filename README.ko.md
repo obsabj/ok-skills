@@ -4,7 +4,7 @@
 
 Codex, Claude Code, Cursor, OpenClaw, Trae 및 기타 `SKILL.md` 호환 도구를 위한 큐레이션된 AI 코딩 에이전트 스킬과 `AGENTS.md` 플레이북 저장소입니다.
 
-이 저장소에는 현재 **재사용 가능한 스킬 55개**가 포함되어 있습니다. 이 중 **29개는 루트 레벨 스킬**로 직접 관리되며, **18개의 벤더링된 디자인 스킬**은 [`impeccable/`](impeccable/README.md) 아래에, **8개의 벤더링된 GSAP 애니메이션 스킬**은 [`gsap-skills/`](gsap-skills/) 아래에 포함되어 있습니다. `~/.agents/skills/ok-skills`에 clone 하면 되고, 내부 디렉터리 구조는 이미 `AGENTS.md` 기반 워크플로가 기대하는 형태와 맞춰져 있습니다.
+이 저장소에는 현재 **재사용 가능한 스킬 56개**가 포함되어 있습니다. 이 중 **30개는 루트 레벨 스킬**로 직접 관리되며, **18개의 벤더링된 디자인 스킬**은 [`impeccable/`](impeccable/README.md) 아래에, **8개의 벤더링된 GSAP 애니메이션 스킬**은 [`gsap-skills/`](gsap-skills/) 아래에 포함되어 있습니다. `~/.agents/skills/ok-skills`에 clone 하면 되고, 내부 디렉터리 구조는 이미 `AGENTS.md` 기반 워크플로가 기대하는 형태와 맞춰져 있습니다.
 
 **Codex skills**, **Claude Code skills**, **Cursor skills**, **OpenClaw skills**, 재사용 가능한 **AGENTS.md** 플레이북, 바로 적용할 수 있는 **SKILL.md** 예제를 찾고 있다면 이 저장소는 검색성과 즉시 사용성을 모두 고려해 정리되어 있습니다.
 
@@ -100,6 +100,7 @@ clone 이후 저장소 경로는 `~/.agents/skills/ok-skills`가 되며, 내부 
 ### 프런트엔드 및 디자인
 
 - [ai-elements](ai-elements/SKILL.md): `ai-elements` 라이브러리를 위한 AI 채팅 UI 컴포넌트 제작.
+- [frontend-skill](frontend-skill/SKILL.md): 시각적으로 강한 랜딩 페이지, 웹사이트, 앱, 프로토타입, 데모, 게임 UI가 필요할 때 사용한다.
 - [better-icons](better-icons/SKILL.md): CLI 또는 MCP로 200개 이상의 Iconify 아이콘 라이브러리를 검색하고 SVG 아이콘을 가져옵니다.
 - [vercel-react-best-practices](vercel-react-best-practices/SKILL.md): Vercel Engineering이 정리한 React / Next.js 성능 가이드.
 - [remotion-best-practices](remotion-best-practices/SKILL.md): React 기반 영상 작업을 위한 Remotion 가이드.
@@ -168,6 +169,7 @@ clone 이후 저장소 경로는 `~/.agents/skills/ok-skills`가 되며, 내부 
 | [electron](electron/SKILL.md) | agent-browser와 Chrome DevTools Protocol을 통해 Electron 데스크톱 앱 자동화. | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/electron) |
 | [exa-search](exa-search/SKILL.md) | Exa를 사용해 웹, 코드, 회사 정보를 조사. | Custom |
 | [find-skills](find-skills/SKILL.md) | 사용자가 특정 기능을 필요로 할 때 기존 스킬을 탐색. | [vercel-labs/skills](https://github.com/vercel-labs/skills/tree/main/skills/find-skills) |
+| [frontend-skill](frontend-skill/SKILL.md) | 시각적으로 강한 랜딩 페이지, 웹사이트, 앱, 프로토타입, 데모, 게임 UI를 만든다. | [ok-skills/frontend-skill](frontend-skill/SKILL.md) |
 | [get-api-docs](get-api-docs/SKILL.md) | 코드를 작성하기 전에 최신 서드파티 API 또는 SDK 문서를 가져옴. | [andrewyng/context-hub](https://github.com/andrewyng/context-hub/tree/main/cli/skills/get-api-docs) |
 | [gh-address-comments](gh-address-comments/SKILL.md) | 현재 브랜치의 PR 리뷰 및 이슈 코멘트를 `gh`로 처리. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/gh-address-comments) |
 | [gh-fix-ci](gh-fix-ci/SKILL.md) | 실패한 GitHub Actions 체크를 확인하고 로그를 가져와 수정 계획을 세움. | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/gh-fix-ci) |
