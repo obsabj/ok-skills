@@ -75,7 +75,6 @@ clone 后仓库位于 `~/.agents/skills/ok-skills`，其内部目录已经符合
 
 ### 规划与提示工程
 
-- [brainstorming](brainstorming/SKILL.md)：在实现前澄清意图、需求和设计。
 - [planning-with-files](planning-with-files/SKILL.md)：通过 `task_plan.md`、`findings.md`、`progress.md` 管理复杂任务。
 - [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md)：生产环境可用的高级提示工程模式。
 - [subagent-driven-development](subagent-driven-development/SKILL.md)：在当前会话内执行彼此独立的实现任务，用全新 subagent 和分阶段评审推进计划。
@@ -101,6 +100,7 @@ clone 后仓库位于 `~/.agents/skills/ok-skills`，其内部目录已经符合
 
 - [ai-elements](ai-elements/SKILL.md)：为 `ai-elements` 组件库创建 AI 聊天界面组件。
 - [frontend-skill](frontend-skill/SKILL.md)：适用于需要强视觉表现的落地页、网站、应用、原型、演示或游戏 UI。
+- [shader-dev](shader-dev/SKILL.md)：覆盖 GLSL 着色器的系统化技巧，用于构建兼容 ShaderToy 的实时视觉效果。
 - [better-icons](better-icons/SKILL.md)：通过 CLI 或 MCP 搜索、浏览并获取 200+ Iconify 图标库中的 SVG 图标。
 - [vercel-react-best-practices](vercel-react-best-practices/SKILL.md)：来自 Vercel Engineering 的 React / Next.js 性能实践。
 - [remotion-best-practices](remotion-best-practices/SKILL.md)：基于 React 的 Remotion 视频开发实践。
@@ -109,10 +109,10 @@ clone 后仓库位于 `~/.agents/skills/ok-skills`，其内部目录已经符合
 
 ### 工具与内容生产
 
-- [docx](docx/SKILL.md)：创建、读取、编辑和处理 Word 文档，覆盖格式、批注与修订。
-- [pdf](pdf/SKILL.md)：读取、生成、审查 PDF，强调渲染后的视觉检查。
-- [pptx](pptx/SKILL.md)：创建、读取、编辑和处理演示文稿、模板与幻灯片内容。
-- [xlsx](xlsx/SKILL.md)：表格创建、编辑、公式、格式和分析。
+- [minimax-docx](minimax-docx/SKILL.md)：基于 OpenXML SDK（.NET）的专业 DOCX 创建、编辑与格式编排。
+- [minimax-pdf](minimax-pdf/SKILL.md)：使用 token 化设计系统生成、填写和重排 PDF 文档。
+- [pptx-generator](pptx-generator/SKILL.md)：使用 PptxGenJS、XML 工作流或 markitdown 生成、编辑和读取 PowerPoint 演示文稿。
+- [minimax-xlsx](minimax-xlsx/SKILL.md)：以低损 XML 工作流打开、创建、读取、分析、编辑和校验 Excel / 表格文件。
 - [skill-creator](skill-creator/SKILL.md)：创建或更新技能，补齐结构、文档和工具集成。
 
 ## Vendored Skill Packs
@@ -160,30 +160,30 @@ clone 后仓库位于 `~/.agents/skills/ok-skills`，其内部目录已经符合
 | [ai-elements](ai-elements/SKILL.md)                                 | 为 ai-elements 组件库创建新的 AI 聊天界面组件，遵循可组合模式与 shadcn/ui 约定。                                                               | [vercel/ai-elements](https://github.com/vercel/ai-elements/tree/main/skills/ai-elements)                                       |
 | [bb-browser](bb-browser/SKILL.md)                                   | 通过用户真实浏览器和登录态完成信息获取与浏览器自动化，覆盖公开页面、内部系统和登录后流程。                                                     | [epiral/bb-browser](https://github.com/epiral/bb-browser/tree/main/skills/bb-browser)                                          |
 | [better-icons](better-icons/SKILL.md)                               | 通过 CLI 或 MCP 工具搜索 200+ Iconify 图标库并获取 SVG 图标。                                                                                  | [better-auth/better-icons](https://github.com/better-auth/better-icons/tree/main/skills)                                       |
-| [brainstorming](brainstorming/SKILL.md)                             | 在任何实现前先澄清意图、需求与设计。                                                                                                           | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/brainstorming)                                         |
 | [browser-use](browser-use/SKILL.md)                                 | 持续式浏览器自动化 CLI，用于导航、页面状态检查、表单填写、截图和信息提取。                                                                     | [browser-use/browser-use](https://github.com/browser-use/browser-use/tree/main/skills/browser-use)                             |
 | [context7-cli](context7-cli/SKILL.md)                               | 使用 Context7 CLI 完成文档查询、skill 管理和 MCP 配置。                                                                                        | [upstash/context7](https://github.com/upstash/context7/tree/master/skills/context7-cli)                                        |
-| [docx](docx/SKILL.md)                                               | 创建、读取、编辑和处理 Word 文档，覆盖格式、批注、修订和图片替换。                                                                             | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/docx)                                                |
+| [minimax-docx](minimax-docx/SKILL.md) | 基于 OpenXML SDK（.NET）的专业 DOCX 创建、编辑与格式编排。 | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/minimax-docx) |
 | [dogfood](dogfood/SKILL.md)                                         | 系统化测试 Web 应用，并产出附截图和录屏的问题报告。                                                                                            | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/dogfood)                             |
 | [electron](electron/SKILL.md)                                       | 通过 agent-browser 和 Chrome DevTools Protocol 自动化 Electron 桌面应用。                                                                      | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/electron)                            |
 | [exa-search](exa-search/SKILL.md)                                   | 使用 Exa 做网页、代码和公司调研。                                                                                                              | 自制                                                                                                                           |
 | [find-skills](find-skills/SKILL.md)                                 | 当用户需要特定能力时，发现已有技能。                                                                                                           | [vercel-labs/skills](https://github.com/vercel-labs/skills/tree/main/skills/find-skills)                                       |
 | [frontend-skill](frontend-skill/SKILL.md)                           | 构建具有强视觉表现的落地页、网站、应用、原型、演示或游戏 UI。                                                                                  | [ok-skills/frontend-skill](frontend-skill/SKILL.md)                                                                            |
+| [shader-dev](shader-dev/SKILL.md) | 覆盖 GLSL 着色器的系统化技巧，用于构建兼容 ShaderToy 的实时视觉效果。 | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/shader-dev) |
 | [get-api-docs](get-api-docs/SKILL.md)                               | 在写第三方 API / SDK 代码前先抓当前文档。                                                                                                      | [andrewyng/context-hub](https://github.com/andrewyng/context-hub/tree/main/cli/skills/get-api-docs)                            |
 | [gh-address-comments](gh-address-comments/SKILL.md)                 | 用 `gh` 处理当前分支 PR 的评审和 issue 评论。                                                                                                  | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/gh-address-comments)                                |
 | [gh-fix-ci](gh-fix-ci/SKILL.md)                                     | 检查 GitHub Actions 失败项、提取日志并制定修复方案。                                                                                           | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/gh-fix-ci)                                          |
 | [opencli](opencli/SKILL.md)                                         | 将网站变成 CLI，复用浏览器登录态，支持公共 API 访问和 AI 生成适配器。                                                                          | [jackwener/opencli](https://github.com/jackwener/opencli)                                                                      |
-| [pdf](pdf/SKILL.md)                                                 | 处理 PDF 的读取、生成与审查，强调渲染后的视觉检查。                                                                                            | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/pdf)                                                |
+| [minimax-pdf](minimax-pdf/SKILL.md) | 使用 token 化设计系统生成、填写和重排 PDF 文档。 | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/minimax-pdf) |
 | [pinchtab](pinchtab/SKILL.md)                                       | 通过 Pinchtab 的 HTTP API 控制 headless 或 headed Chrome，用于网页自动化、抓取、表单填写、导航、截图和基于稳定 accessibility refs 的内容提取。 | [pinchtab/pinchtab](https://github.com/pinchtab/pinchtab/tree/main/skills/pinchtab)                                            |
 | [planning-with-files](planning-with-files/SKILL.md)                 | 用 `task_plan.md`、`findings.md`、`progress.md` 管理复杂任务。                                                                                 | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/skills/planning-with-files)       |
-| [pptx](pptx/SKILL.md)                                               | 创建、读取、编辑和处理 PowerPoint 演示文稿，覆盖模板、布局、备注和幻灯片内容。                                                                 | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/pptx)                                                |
+| [pptx-generator](pptx-generator/SKILL.md) | 使用 PptxGenJS、XML 工作流或 markitdown 生成、编辑和读取 PowerPoint 演示文稿。 | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/pptx-generator) |
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | 面向生产环境的高级提示工程模式。                                                                                                               | [wshobson/agents](https://github.com/wshobson/agents/tree/main/plugins/llm-application-dev/skills/prompt-engineering-patterns) |
 | [remotion-best-practices](remotion-best-practices/SKILL.md)         | 用于 React + Remotion 视频开发的最佳实践。                                                                                                     | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion)                                        |
 | [skill-creator](skill-creator/SKILL.md)                             | 创建或更新技能，补齐专业知识、工作流与工具集成。                                                                                               | [openai/skills](https://github.com/openai/skills/tree/main/skills/.system/skill-creator)                                       |
 | [subagent-driven-development](subagent-driven-development/SKILL.md) | 在当前会话内执行包含独立任务的实现计划，使用全新 subagent 和分阶段评审。                                                                       | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/subagent-driven-development)                           |
 | [test-driven-development](test-driven-development/SKILL.md)         | 实现任何功能或修复前先使用。                                                                                                                   | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/test-driven-development)                               |
 | [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | 来自 Vercel Engineering 的 React / Next.js 性能优化实践。                                                                                      | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices)                  |
-| [xlsx](xlsx/SKILL.md)                                               | 覆盖表格创建、编辑、公式、格式和分析。                                                                                                         | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/xlsx)                                                |
+| [minimax-xlsx](minimax-xlsx/SKILL.md) | 以低损 XML 工作流打开、创建、读取、分析、编辑和校验 Excel / 表格文件。 | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/minimax-xlsx) |
 | [yeet](yeet/SKILL.md)                                               | 仅在用户明确要求用 `gh` 一次性完成 stage、commit、push 并创建 GitHub PR 时使用。                                                               | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/yeet)                                               |
 
 ### Vendored `impeccable/` 技能
@@ -235,4 +235,4 @@ clone 后仓库位于 `~/.agents/skills/ok-skills`，其内部目录已经符合
 
 本仓库主许可证见 [LICENSE](LICENSE)。
 
-部分技能目录包含额外许可证或归属说明文件，包括 [`docx/`](docx/)、[`pptx/`](pptx/)、[`impeccable/`](impeccable/README.md)、[`gsap-skills/`](gsap-skills/)、[`skill-creator/`](skill-creator/) 和 [`xlsx/`](xlsx/)。
+部分技能目录包含额外许可证或归属说明文件，包括 [`minimax-docx/`](minimax-docx/)、[`impeccable/`](impeccable/README.md)、[`gsap-skills/`](gsap-skills/) 和 [`skill-creator/`](skill-creator/)。

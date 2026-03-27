@@ -75,7 +75,6 @@ clone 이후 저장소 경로는 `~/.agents/skills/ok-skills`가 되며, 내부 
 
 ### 계획 및 프롬프트
 
-- [brainstorming](brainstorming/SKILL.md): 구현 전에 의도, 요구사항, 설계를 명확히 함.
 - [planning-with-files](planning-with-files/SKILL.md): `task_plan.md`, `findings.md`, `progress.md`를 사용하는 지속형 마크다운 계획 수립.
 - [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md): 프로덕션 LLM 시스템을 위한 고급 프롬프트 설계 패턴.
 - [subagent-driven-development](subagent-driven-development/SKILL.md): 현재 세션에서 서로 독립적인 구현 작업 계획을 새 subagent와 단계별 리뷰로 실행.
@@ -101,6 +100,7 @@ clone 이후 저장소 경로는 `~/.agents/skills/ok-skills`가 되며, 내부 
 
 - [ai-elements](ai-elements/SKILL.md): `ai-elements` 라이브러리를 위한 AI 채팅 UI 컴포넌트 제작.
 - [frontend-skill](frontend-skill/SKILL.md): 시각적으로 강한 랜딩 페이지, 웹사이트, 앱, 프로토타입, 데모, 게임 UI가 필요할 때 사용한다.
+- [shader-dev](shader-dev/SKILL.md): ShaderToy 호환 실시간 비주얼을 위한 종합 GLSL 셰이더 기법.
 - [better-icons](better-icons/SKILL.md): CLI 또는 MCP로 200개 이상의 Iconify 아이콘 라이브러리를 검색하고 SVG 아이콘을 가져옵니다.
 - [vercel-react-best-practices](vercel-react-best-practices/SKILL.md): Vercel Engineering이 정리한 React / Next.js 성능 가이드.
 - [remotion-best-practices](remotion-best-practices/SKILL.md): React 기반 영상 작업을 위한 Remotion 가이드.
@@ -109,10 +109,10 @@ clone 이후 저장소 경로는 `~/.agents/skills/ok-skills`가 되며, 내부 
 
 ### 유틸리티 및 문서 작업
 
-- [docx](docx/SKILL.md): 서식, 댓글, 변경 내용 추적을 포함한 Word 문서 생성/읽기/편집/조작.
-- [pdf](pdf/SKILL.md): 렌더링 기준 검토를 포함한 PDF 읽기/생성/검토.
-- [pptx](pptx/SKILL.md): 슬라이드 덱, 템플릿, 프레젠테이션 콘텐츠 생성/읽기/편집/조작.
-- [xlsx](xlsx/SKILL.md): 스프레드시트 생성, 편집, 수식, 분석.
+- [minimax-docx](minimax-docx/SKILL.md): OpenXML SDK(.NET) 기반의 전문 DOCX 생성, 편집, 서식화.
+- [minimax-pdf](minimax-pdf/SKILL.md): 토큰 기반 디자인 시스템으로 PDF를 생성, 입력, 재구성.
+- [pptx-generator](pptx-generator/SKILL.md): PptxGenJS, XML 워크플로, markitdown으로 PowerPoint를 생성, 편집, 읽기.
+- [minimax-xlsx](minimax-xlsx/SKILL.md): 손실을 최소화한 XML 워크플로로 Excel/스프레드시트를 열고, 생성하고, 분석·편집·검증.
 - [skill-creator](skill-creator/SKILL.md): 더 구조적인 스킬과 도구 연동을 위한 스킬 생성/업데이트 가이드.
 
 ## 벤더링된 스킬 팩
@@ -160,30 +160,30 @@ clone 이후 저장소 경로는 `~/.agents/skills/ok-skills`가 되며, 내부 
 | [ai-elements](ai-elements/SKILL.md)                                 | 조합형 패턴과 shadcn/ui 관례를 따라 ai-elements 라이브러리용 AI 채팅 UI 컴포넌트를 생성.                                                         | [vercel/ai-elements](https://github.com/vercel/ai-elements/tree/main/skills/ai-elements)                                       |
 | [bb-browser](bb-browser/SKILL.md)                                   | 사용자의 실제 브라우저와 로그인 상태를 통해 공개 페이지, 내부 시스템, 로그인 후 워크플로까지 다루는 정보 수집 및 브라우저 자동화 스킬입니다.     | [epiral/bb-browser](https://github.com/epiral/bb-browser/tree/main/skills/bb-browser)                                          |
 | [better-icons](better-icons/SKILL.md)                               | CLI 또는 MCP 도구로 200개 이상의 Iconify 아이콘 라이브러리를 검색하고 SVG 아이콘을 가져옵니다.                                                   | [better-auth/better-icons](https://github.com/better-auth/better-icons/tree/main/skills)                                       |
-| [brainstorming](brainstorming/SKILL.md)                             | 구현 전에 의도, 요구사항, 설계를 명확히 한다.                                                                                                    | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/brainstorming)                                         |
 | [browser-use](browser-use/SKILL.md)                                 | 탐색, 페이지 상태 확인, 폼 입력, 스크린샷, 정보 추출을 위한 지속형 브라우저 자동화 CLI.                                                          | [browser-use/browser-use](https://github.com/browser-use/browser-use/tree/main/skills/browser-use)                             |
 | [context7-cli](context7-cli/SKILL.md)                               | Context7 CLI를 사용해 문서 조회, 스킬 관리, MCP 설정을 수행.                                                                                     | [upstash/context7](https://github.com/upstash/context7/tree/master/skills/context7-cli)                                        |
-| [docx](docx/SKILL.md)                                               | 서식, 댓글, 변경 내용 추적, 이미지 업데이트를 포함한 Word 문서 생성/읽기/편집/조작.                                                              | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/docx)                                                |
+| [minimax-docx](minimax-docx/SKILL.md) | OpenXML SDK(.NET) 기반의 전문 DOCX 생성, 편집, 서식화. | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/minimax-docx) |
 | [dogfood](dogfood/SKILL.md)                                         | 웹 앱을 체계적으로 테스트하고 스크린샷/영상과 함께 재현 가능한 이슈 리포트를 생성.                                                               | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/dogfood)                             |
 | [electron](electron/SKILL.md)                                       | agent-browser와 Chrome DevTools Protocol을 통해 Electron 데스크톱 앱 자동화.                                                                     | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser/tree/main/skills/electron)                            |
 | [exa-search](exa-search/SKILL.md)                                   | Exa를 사용해 웹, 코드, 회사 정보를 조사.                                                                                                         | Custom                                                                                                                         |
 | [find-skills](find-skills/SKILL.md)                                 | 사용자가 특정 기능을 필요로 할 때 기존 스킬을 탐색.                                                                                              | [vercel-labs/skills](https://github.com/vercel-labs/skills/tree/main/skills/find-skills)                                       |
 | [frontend-skill](frontend-skill/SKILL.md)                           | 시각적으로 강한 랜딩 페이지, 웹사이트, 앱, 프로토타입, 데모, 게임 UI를 만든다.                                                                   | [ok-skills/frontend-skill](frontend-skill/SKILL.md)                                                                            |
+| [shader-dev](shader-dev/SKILL.md) | ShaderToy 호환 실시간 비주얼을 위한 종합 GLSL 셰이더 기법. | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/shader-dev) |
 | [get-api-docs](get-api-docs/SKILL.md)                               | 코드를 작성하기 전에 최신 서드파티 API 또는 SDK 문서를 가져옴.                                                                                   | [andrewyng/context-hub](https://github.com/andrewyng/context-hub/tree/main/cli/skills/get-api-docs)                            |
 | [gh-address-comments](gh-address-comments/SKILL.md)                 | 현재 브랜치의 PR 리뷰 및 이슈 코멘트를 `gh`로 처리.                                                                                              | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/gh-address-comments)                                |
 | [gh-fix-ci](gh-fix-ci/SKILL.md)                                     | 실패한 GitHub Actions 체크를 확인하고 로그를 가져와 수정 계획을 세움.                                                                            | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/gh-fix-ci)                                          |
 | [opencli](opencli/SKILL.md)                                         | 브라우저 로그인 상태 재사용, 공개 API 접근, AI 생성 어댑터로 웹사이트를 CLI처럼 다루는 스킬입니다.                                               | [jackwener/opencli](https://github.com/jackwener/opencli)                                                                      |
-| [pdf](pdf/SKILL.md)                                                 | 렌더링 검토와 Python 도구를 포함해 PDF를 읽고, 생성하고, 검토.                                                                                   | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/pdf)                                                |
+| [minimax-pdf](minimax-pdf/SKILL.md) | 토큰 기반 디자인 시스템으로 PDF를 생성, 입력, 재구성. | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/minimax-pdf) |
 | [pinchtab](pinchtab/SKILL.md)                                       | 안정적인 접근성 참조를 사용해 Pinchtab의 HTTP API로 헤드리스/헤디드 Chrome을 제어하여 웹 자동화, 스크래핑, 폼 입력, 탐색, 스크린샷, 추출을 수행. | [pinchtab/pinchtab](https://github.com/pinchtab/pinchtab/tree/main/skills/pinchtab)                                            |
 | [planning-with-files](planning-with-files/SKILL.md)                 | `task_plan.md`, `findings.md`, `progress.md`를 활용해 복잡한 작업을 파일 기반으로 계획.                                                          | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/skills/planning-with-files)       |
-| [pptx](pptx/SKILL.md)                                               | PowerPoint 프레젠테이션, 템플릿, 레이아웃, 노트, 슬라이드 콘텐츠 생성/읽기/편집/조작.                                                            | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/pptx)                                                |
+| [pptx-generator](pptx-generator/SKILL.md) | PptxGenJS, XML 워크플로, markitdown으로 PowerPoint를 생성, 편집, 읽기. | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/pptx-generator) |
 | [prompt-engineering-patterns](prompt-engineering-patterns/SKILL.md) | 안정적인 프로덕션 LLM 워크플로를 위한 고급 프롬프트 엔지니어링 패턴.                                                                             | [wshobson/agents](https://github.com/wshobson/agents/tree/main/plugins/llm-application-dev/skills/prompt-engineering-patterns) |
 | [remotion-best-practices](remotion-best-practices/SKILL.md)         | React와 Remotion으로 영상을 만들기 위한 모범 사례.                                                                                               | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion)                                        |
 | [skill-creator](skill-creator/SKILL.md)                             | 전문 지식과 도구 연동을 갖춘 스킬을 만들거나 업데이트하는 가이드.                                                                                | [openai/skills](https://github.com/openai/skills/tree/main/skills/.system/skill-creator)                                       |
 | [subagent-driven-development](subagent-driven-development/SKILL.md) | 현재 세션에서 독립적인 작업으로 구성된 구현 계획을 새 subagent와 단계별 리뷰로 실행.                                                             | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/subagent-driven-development)                           |
 | [test-driven-development](test-driven-development/SKILL.md)         | 기능이나 버그 수정을 구현하기 전에 사용.                                                                                                         | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/test-driven-development)                               |
 | [vercel-react-best-practices](vercel-react-best-practices/SKILL.md) | Vercel Engineering이 정리한 React / Next.js 성능 최적화 가이드.                                                                                  | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices)                  |
-| [xlsx](xlsx/SKILL.md)                                               | 스프레드시트 생성, 편집, 수식, 서식, 분석.                                                                                                       | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/xlsx)                                                |
+| [minimax-xlsx](minimax-xlsx/SKILL.md) | 손실을 최소화한 XML 워크플로로 Excel/스프레드시트를 열고, 생성하고, 분석·편집·검증. | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/minimax-xlsx) |
 | [yeet](yeet/SKILL.md)                                               | 사용자가 명시적으로 요청한 경우에만 `gh`를 사용해 stage, commit, push, PR 생성을 한 번에 처리.                                                   | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/yeet)                                               |
 
 ### 벤더링된 `impeccable/` 스킬
@@ -235,4 +235,4 @@ clone 이후 저장소 경로는 `~/.agents/skills/ok-skills`가 되며, 내부 
 
 이 저장소는 [LICENSE](LICENSE) 하에 배포됩니다.
 
-일부 스킬은 디렉터리별 자산 및 출처 고지를 위한 추가 라이선스 파일이나 notice를 포함하며, 예시는 [`docx/`](docx/), [`pptx/`](pptx/), [`impeccable/`](impeccable/README.md), [`gsap-skills/`](gsap-skills/), [`skill-creator/`](skill-creator/), [`xlsx/`](xlsx/)입니다.
+일부 스킬은 디렉터리별 자산 및 출처 고지를 위한 추가 라이선스 파일이나 notice를 포함하며, 예시는 [`minimax-docx/`](minimax-docx/), [`impeccable/`](impeccable/README.md), [`gsap-skills/`](gsap-skills/), [`skill-creator/`](skill-creator/)입니다.
