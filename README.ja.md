@@ -2,6 +2,8 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | 日本語 | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Español](README.es.md) | [Tiếng Việt](README.vi.md) | [Русский](README.ru.md) | [हिन्दी](README.hi.md)
 
+[![Mentioned in Awesome Codex CLI](https://awesome.re/mentioned-badge.svg)](https://github.com/RoggeOhta/awesome-codex-cli)
+
 Codex、Claude Code、Cursor、OpenClaw、Trae、そのほか `SKILL.md` 互換ツール向けに厳選した AI coding agent skills と `AGENTS.md` プレイブックをまとめたリポジトリです。
 
 このリポジトリには現在 **55 個の再利用可能な skills** が含まれています。内訳は、このリポジトリで直接管理している **29 個のトップレベル skills** と、[`impeccable/`](impeccable/README.md) 配下に vendored bundle として収録されている **18 個のデザイン skills**、そして [`gsap-skills/`](gsap-skills/) 配下に vendored bundle として収録されている **8 個の GSAP アニメーション skills** です。`~/.agents/skills/ok-skills` に clone すれば、そのまま `AGENTS.md` ベースのワークフローで使えるディレクトリ構成になっています。
