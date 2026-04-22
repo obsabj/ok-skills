@@ -6,7 +6,7 @@
 
 这是一个面向 Codex、Claude Code、Cursor、OpenClaw、Trae 以及其他兼容 `SKILL.md` / `AGENTS.md` 工作流工具的技能仓库。
 
-当前仓库共收录 **58 个可复用技能**：其中 **27 个顶层技能** 由本仓直接维护，另有 **5 个 HyperFrames 视频技能** 以 vendored bundle 形式放在 [`hyperframes/`](hyperframes/README.md) 下，另有 **18 个前端设计技能** 以 vendored bundle 形式放在 [`impeccable/`](impeccable/README.md) 下，另有 **8 个 GSAP 动画技能** 以 vendored bundle 形式放在 [`gsap-skills/`](gsap-skills/) 下。把它 clone 到 `~/.agents/skills/ok-skills` 即可，仓库内部目录已经符合 `AGENTS.md` 所需的 skills 规范。
+当前仓库共收录 **57 个可复用技能**：其中 **26 个顶层技能** 由本仓直接维护，另有 **5 个 HyperFrames 视频技能** 以 vendored bundle 形式放在 [`hyperframes/`](hyperframes/README.md) 下，另有 **18 个前端设计技能** 以 vendored bundle 形式放在 [`impeccable/`](impeccable/README.md) 下，另有 **8 个 GSAP 动画技能** 以 vendored bundle 形式放在 [`gsap-skills/`](gsap-skills/) 下。把它 clone 到 `~/.agents/skills/ok-skills` 即可，仓库内部目录已经符合 `AGENTS.md` 所需的 skills 规范。
 
 如果你在找 **Codex skills**、**Claude Code skills**、**Cursor skills**、**OpenClaw skills**、可复用的 **AGENTS.md** 模板，或者一套能直接落地的 **SKILL.md** 示例仓库，这个项目就是为搜索可发现性和开箱即用而整理的。
 
@@ -121,7 +121,6 @@ clone 后仓库位于 `~/.agents/skills/ok-skills`，其内部目录已经符合
 - [minimax-pdf](minimax-pdf/SKILL.md)：使用 token 化设计系统生成、填写和重排 PDF 文档。
 - [pptx-generator](pptx-generator/SKILL.md)：使用 PptxGenJS、XML 工作流或 markitdown 生成、编辑和读取 PowerPoint 演示文稿。
 - [minimax-xlsx](minimax-xlsx/SKILL.md)：以低损 XML 工作流打开、创建、读取、分析、编辑和校验 Excel / 表格文件。
-- [skill-creator](skill-creator/SKILL.md)：创建或更新技能，补齐结构、文档和工具集成。
 
 ## Vendored Skill Packs
 
@@ -199,7 +198,6 @@ clone 后仓库位于 `~/.agents/skills/ok-skills`，其内部目录已经符合
 | [planning-with-files](planning-with-files/SKILL.md)                 | 用 `task_plan.md`、`findings.md`、`progress.md` 管理复杂任务。                                                                                 | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/skills/planning-with-files)       |
 | [pptx-generator](pptx-generator/SKILL.md) | 使用 PptxGenJS、XML 工作流或 markitdown 生成、编辑和读取 PowerPoint 演示文稿。 | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/pptx-generator) |
 | [remotion-best-practices](remotion-best-practices/SKILL.md)         | 用于 React + Remotion 视频开发的最佳实践。                                                                                                     | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion)                                        |
-| [skill-creator](skill-creator/SKILL.md)                             | 创建或更新技能，补齐专业知识、工作流与工具集成。                                                                                               | [openai/skills](https://github.com/openai/skills/tree/main/skills/.system/skill-creator)                                       |
 | [test-driven-development](test-driven-development/SKILL.md)         | 实现任何功能或修复前先使用。                                                                                                                   | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/test-driven-development)                               |
 | [minimax-xlsx](minimax-xlsx/SKILL.md) | 以低损 XML 工作流打开、创建、读取、分析、编辑和校验 Excel / 表格文件。 | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/minimax-xlsx) |
 | [yeet](yeet/SKILL.md)                                               | 仅在用户明确要求用 `gh` 一次性完成 stage、commit、push 并创建 GitHub PR 时使用。                                                               | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/yeet)                                               |
@@ -268,4 +266,4 @@ clone 后仓库位于 `~/.agents/skills/ok-skills`，其内部目录已经符合
 
 本仓库主许可证见 [LICENSE](LICENSE)。
 
-部分技能目录包含额外许可证或归属说明文件，包括 [`caveman/`](caveman/)、[`minimax-docx/`](minimax-docx/)、[`impeccable/`](impeccable/README.md)、[`gsap-skills/`](gsap-skills/) 和 [`skill-creator/`](skill-creator/)。
+部分技能目录包含额外许可证或归属说明文件，包括 [`caveman/`](caveman/)、[`minimax-docx/`](minimax-docx/)、[`impeccable/`](impeccable/README.md) 和 [`gsap-skills/`](gsap-skills/)。

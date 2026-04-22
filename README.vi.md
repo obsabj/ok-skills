@@ -6,7 +6,7 @@
 
 Bộ sưu tập AI coding agent skills và playbook `AGENTS.md` được tuyển chọn cho Codex, Claude Code, Cursor, OpenClaw, Trae và các công cụ khác tương thích với `SKILL.md`.
 
-Kho này hiện gồm **58 skill có thể tái sử dụng**: **27 skill cấp cao nhất** được duy trì trực tiếp trong repo này, cùng với **5 skill video HyperFrames được vendored** dưới [`hyperframes/`](hyperframes/README.md), **18 skill thiết kế được vendored** dưới [`impeccable/`](impeccable/README.md) và **8 skill animation GSAP được vendored** dưới [`gsap-skills/`](gsap-skills/). Chỉ cần clone vào `~/.agents/skills/ok-skills`; các thư mục bên trong đã khớp với bố cục mà workflow dựa trên `AGENTS.md` mong đợi.
+Kho này hiện gồm **57 skill có thể tái sử dụng**: **26 skill cấp cao nhất** được duy trì trực tiếp trong repo này, cùng với **5 skill video HyperFrames được vendored** dưới [`hyperframes/`](hyperframes/README.md), **18 skill thiết kế được vendored** dưới [`impeccable/`](impeccable/README.md) và **8 skill animation GSAP được vendored** dưới [`gsap-skills/`](gsap-skills/). Chỉ cần clone vào `~/.agents/skills/ok-skills`; các thư mục bên trong đã khớp với bố cục mà workflow dựa trên `AGENTS.md` mong đợi.
 
 It includes:
 
@@ -134,7 +134,6 @@ Sau đó bạn có thể yêu cầu một cách tự nhiên:
 - [minimax-pdf](minimax-pdf/SKILL.md): tạo, điền và tái định dạng tài liệu PDF bằng hệ thiết kế token.
 - [pptx-generator](pptx-generator/SKILL.md): tạo, chỉnh sửa và đọc bản trình bày PowerPoint bằng PptxGenJS, luồng XML hoặc markitdown.
 - [minimax-xlsx](minimax-xlsx/SKILL.md): mở, tạo, đọc, phân tích, chỉnh sửa và kiểm tra tệp Excel/bảng tính với quy trình XML ít mất mát.
-- [skill-creator](skill-creator/SKILL.md): tạo mới hoặc cập nhật skill với cấu trúc và tích hợp công cụ tốt hơn.
 
 ## Gói skill vendored
 
@@ -200,7 +199,6 @@ Cột `Source URL` trỏ tới upstream chính thức khi một skill được v
 | [planning-with-files](planning-with-files/SKILL.md)                 | Lập kế hoạch dựa trên file cho các tác vụ phức tạp bằng `task_plan.md`, `findings.md` và `progress.md`.                                                                                    | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/skills/planning-with-files)       |
 | [pptx-generator](pptx-generator/SKILL.md) | Tạo, chỉnh sửa và đọc bản trình bày PowerPoint bằng PptxGenJS, luồng XML hoặc markitdown. | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/pptx-generator) |
 | [remotion-best-practices](remotion-best-practices/SKILL.md)         | Best practices để xây dựng video trong React với Remotion.                                                                                                                                 | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion)                                        |
-| [skill-creator](skill-creator/SKILL.md)                             | Hướng dẫn tạo mới hoặc cập nhật skill với tri thức chuyên biệt và tích hợp công cụ.                                                                                                        | [openai/skills](https://github.com/openai/skills/tree/main/skills/.system/skill-creator)                                       |
 | [test-driven-development](test-driven-development/SKILL.md)         | Dùng trước khi triển khai bất kỳ tính năng hay bugfix nào.                                                                                                                                 | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/test-driven-development)                               |
 | [minimax-xlsx](minimax-xlsx/SKILL.md) | Mở, tạo, đọc, phân tích, chỉnh sửa và kiểm tra tệp Excel/bảng tính với quy trình XML ít mất mát. | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/minimax-xlsx) |
 | [yeet](yeet/SKILL.md)                                               | Chỉ dùng khi người dùng yêu cầu rõ ràng việc stage, commit, push và mở GitHub pull request trong một luồng dùng `gh`.                                                                      | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/yeet)                                               |
@@ -269,4 +267,4 @@ Chúng tôi hoan nghênh đóng góp cho các skill mới hoặc cải tiến sk
 
 Repo này được cấp phép theo [LICENSE](LICENSE).
 
-Một số skill có thêm file giấy phép hoặc ghi nhận nguồn cho tài sản và attribution riêng, bao gồm [`minimax-docx/`](minimax-docx/), [`impeccable/`](impeccable/README.md), [`gsap-skills/`](gsap-skills/), và [`skill-creator/`](skill-creator/).
+Một số skill có thêm file giấy phép hoặc ghi nhận nguồn cho tài sản và attribution riêng, bao gồm [`minimax-docx/`](minimax-docx/), [`impeccable/`](impeccable/README.md) và [`gsap-skills/`](gsap-skills/).

@@ -6,7 +6,7 @@
 
 Codex, Claude Code, Cursor, OpenClaw, Trae और अन्य `SKILL.md`-compatible टूल्स के लिए चुनी हुई AI coding agent skills और `AGENTS.md` playbooks का यह curated repository है।
 
-इस repo में अभी **58 reusable skills** शामिल हैं: **27 top-level skills** सीधे इसी repo में maintain की जाती हैं, [`hyperframes/`](hyperframes/README.md) के अंतर्गत **5 vendored HyperFrames video skills** शामिल हैं, [`impeccable/`](impeccable/README.md) के अंतर्गत **18 vendored design skills** शामिल हैं, और [`gsap-skills/`](gsap-skills/) के अंतर्गत **8 vendored GSAP animation skills** शामिल हैं। इसे `~/.agents/skills/ok-skills` में clone करें; अंदर की directories पहले से ही `AGENTS.md`-driven workflows के अपेक्षित layout के अनुसार हैं।
+इस repo में अभी **57 reusable skills** शामिल हैं: **26 top-level skills** सीधे इसी repo में maintain की जाती हैं, [`hyperframes/`](hyperframes/README.md) के अंतर्गत **5 vendored HyperFrames video skills** शामिल हैं, [`impeccable/`](impeccable/README.md) के अंतर्गत **18 vendored design skills** शामिल हैं, और [`gsap-skills/`](gsap-skills/) के अंतर्गत **8 vendored GSAP animation skills** शामिल हैं। इसे `~/.agents/skills/ok-skills` में clone करें; अंदर की directories पहले से ही `AGENTS.md`-driven workflows के अपेक्षित layout के अनुसार हैं।
 
 It includes:
 
@@ -134,7 +134,6 @@ Clone करने के बाद repo `~/.agents/skills/ok-skills` पर र
 - [minimax-pdf](minimax-pdf/SKILL.md): token-based design system ke saath PDF documents generate, fill, aur reformat karein.
 - [pptx-generator](pptx-generator/SKILL.md): PptxGenJS, XML workflows, ya markitdown ke saath PowerPoint presentations generate, edit, aur read karein.
 - [minimax-xlsx](minimax-xlsx/SKILL.md): low-loss XML workflow ke saath Excel/spreadsheet files open, create, read, analyze, edit, aur validate karein.
-- [skill-creator](skill-creator/SKILL.md): बेहतर structure और tool integrations के साथ skills create या update करें।
 
 ## Vendored Skill Packs
 
@@ -212,7 +211,6 @@ Attribution और legal files [`gsap-skills/NOTICE.md`](gsap-skills/NOTICE.md) 
 | [planning-with-files](planning-with-files/SKILL.md)                 | `task_plan.md`, `findings.md`, और `progress.md` का उपयोग करके complex tasks के लिए file-based planning.                                                                                      | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/skills/planning-with-files)       |
 | [pptx-generator](pptx-generator/SKILL.md) | PptxGenJS, XML workflows, ya markitdown ke saath PowerPoint presentations generate, edit, aur read karein. | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/pptx-generator) |
 | [remotion-best-practices](remotion-best-practices/SKILL.md)         | React के साथ videos बनाने के लिए Remotion best practices.                                                                                                                                    | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion)                                        |
-| [skill-creator](skill-creator/SKILL.md)                             | specialized knowledge और tool integrations के साथ skills create या update करने की guide.                                                                                                     | [openai/skills](https://github.com/openai/skills/tree/main/skills/.system/skill-creator)                                       |
 | [test-driven-development](test-driven-development/SKILL.md)         | किसी भी feature या bugfix को implement करने से पहले उपयोग करें।                                                                                                                              | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/test-driven-development)                               |
 | [minimax-xlsx](minimax-xlsx/SKILL.md) | Low-loss XML workflow ke saath Excel/spreadsheet files open, create, read, analyze, edit, aur validate karein. | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/minimax-xlsx) |
 | [yeet](yeet/SKILL.md)                                               | केवल तब उपयोग करें जब user explicitly `gh` के साथ stage, commit, push, और GitHub pull request खोलने को कहे।                                                                                  | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/yeet)                                               |
@@ -281,4 +279,4 @@ Attribution और legal files [`gsap-skills/NOTICE.md`](gsap-skills/NOTICE.md) 
 
 यह repository [LICENSE](LICENSE) के अंतर्गत licensed है।
 
-कुछ skills में skill-specific assets और attribution के लिए अतिरिक्त license files या notices शामिल हैं, जिनमें [`minimax-docx/`](minimax-docx/), [`impeccable/`](impeccable/README.md), [`gsap-skills/`](gsap-skills/), और [`skill-creator/`](skill-creator/) शामिल हैं।
+कुछ skills में skill-specific assets और attribution के लिए अतिरिक्त license files या notices शामिल हैं, जिनमें [`minimax-docx/`](minimax-docx/), [`impeccable/`](impeccable/README.md), और [`gsap-skills/`](gsap-skills/) शामिल हैं।

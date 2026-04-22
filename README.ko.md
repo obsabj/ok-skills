@@ -6,7 +6,7 @@
 
 Codex, Claude Code, Cursor, OpenClaw, Trae 및 기타 `SKILL.md` 호환 도구를 위한 큐레이션된 AI 코딩 에이전트 스킬과 `AGENTS.md` 플레이북 저장소입니다.
 
-이 저장소에는 현재 **재사용 가능한 스킬 58개**가 포함되어 있습니다. 이 중 **27개는 루트 레벨 스킬**로 직접 관리되며, **5개의 벤더링된 HyperFrames 비디오 스킬**은 [`hyperframes/`](hyperframes/README.md) 아래에, **18개의 벤더링된 디자인 스킬**은 [`impeccable/`](impeccable/README.md) 아래에, **8개의 벤더링된 GSAP 애니메이션 스킬**은 [`gsap-skills/`](gsap-skills/) 아래에 포함되어 있습니다. `~/.agents/skills/ok-skills`에 clone 하면 되고, 내부 디렉터리 구조는 이미 `AGENTS.md` 기반 워크플로가 기대하는 형태와 맞춰져 있습니다.
+이 저장소에는 현재 **재사용 가능한 스킬 57개**가 포함되어 있습니다. 이 중 **26개는 루트 레벨 스킬**로 직접 관리되며, **5개의 벤더링된 HyperFrames 비디오 스킬**은 [`hyperframes/`](hyperframes/README.md) 아래에, **18개의 벤더링된 디자인 스킬**은 [`impeccable/`](impeccable/README.md) 아래에, **8개의 벤더링된 GSAP 애니메이션 스킬**은 [`gsap-skills/`](gsap-skills/) 아래에 포함되어 있습니다. `~/.agents/skills/ok-skills`에 clone 하면 되고, 내부 디렉터리 구조는 이미 `AGENTS.md` 기반 워크플로가 기대하는 형태와 맞춰져 있습니다.
 
 It includes:
 
@@ -134,7 +134,6 @@ clone 이후 저장소 경로는 `~/.agents/skills/ok-skills`가 되며, 내부 
 - [minimax-pdf](minimax-pdf/SKILL.md): 토큰 기반 디자인 시스템으로 PDF를 생성, 입력, 재구성.
 - [pptx-generator](pptx-generator/SKILL.md): PptxGenJS, XML 워크플로, markitdown으로 PowerPoint를 생성, 편집, 읽기.
 - [minimax-xlsx](minimax-xlsx/SKILL.md): 손실을 최소화한 XML 워크플로로 Excel/스프레드시트를 열고, 생성하고, 분석·편집·검증.
-- [skill-creator](skill-creator/SKILL.md): 더 구조적인 스킬과 도구 연동을 위한 스킬 생성/업데이트 가이드.
 
 ## 벤더링된 스킬 팩
 
@@ -200,7 +199,6 @@ clone 이후 저장소 경로는 `~/.agents/skills/ok-skills`가 되며, 내부 
 | [planning-with-files](planning-with-files/SKILL.md)                 | `task_plan.md`, `findings.md`, `progress.md`를 활용해 복잡한 작업을 파일 기반으로 계획.                                                          | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/skills/planning-with-files)       |
 | [pptx-generator](pptx-generator/SKILL.md) | PptxGenJS, XML 워크플로, markitdown으로 PowerPoint를 생성, 편집, 읽기. | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/pptx-generator) |
 | [remotion-best-practices](remotion-best-practices/SKILL.md)         | React와 Remotion으로 영상을 만들기 위한 모범 사례.                                                                                               | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion)                                        |
-| [skill-creator](skill-creator/SKILL.md)                             | 전문 지식과 도구 연동을 갖춘 스킬을 만들거나 업데이트하는 가이드.                                                                                | [openai/skills](https://github.com/openai/skills/tree/main/skills/.system/skill-creator)                                       |
 | [test-driven-development](test-driven-development/SKILL.md)         | 기능이나 버그 수정을 구현하기 전에 사용.                                                                                                         | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/test-driven-development)                               |
 | [minimax-xlsx](minimax-xlsx/SKILL.md) | 손실을 최소화한 XML 워크플로로 Excel/스프레드시트를 열고, 생성하고, 분석·편집·검증. | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/minimax-xlsx) |
 | [yeet](yeet/SKILL.md)                                               | 사용자가 명시적으로 요청한 경우에만 `gh`를 사용해 stage, commit, push, PR 생성을 한 번에 처리.                                                   | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/yeet)                                               |
@@ -269,4 +267,4 @@ clone 이후 저장소 경로는 `~/.agents/skills/ok-skills`가 되며, 내부 
 
 이 저장소는 [LICENSE](LICENSE) 하에 배포됩니다.
 
-일부 스킬은 디렉터리별 자산 및 출처 고지를 위한 추가 라이선스 파일이나 notice를 포함하며, 예시는 [`minimax-docx/`](minimax-docx/), [`impeccable/`](impeccable/README.md), [`gsap-skills/`](gsap-skills/), [`skill-creator/`](skill-creator/)입니다.
+일부 스킬은 디렉터리별 자산 및 출처 고지를 위한 추가 라이선스 파일이나 notice를 포함하며, 예시는 [`minimax-docx/`](minimax-docx/), [`impeccable/`](impeccable/README.md), [`gsap-skills/`](gsap-skills/)입니다.

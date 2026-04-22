@@ -6,7 +6,7 @@
 
 Coleccion curada de skills para agentes de programacion con IA y playbooks de `AGENTS.md` para Codex, Claude Code, Cursor, OpenClaw, Trae y otras herramientas compatibles con `SKILL.md`.
 
-Este repositorio incluye actualmente **58 skills reutilizables**: **27 skills de nivel superior** mantenidos directamente aqui, ademas de **5 skills de video HyperFrames** integradas como paquete vendorizado en [`hyperframes/`](hyperframes/README.md), **18 skills de diseno** integradas como paquete vendorizado en [`impeccable/`](impeccable/README.md), y **8 skills de animacion GSAP** integradas como paquete vendorizado en [`gsap-skills/`](gsap-skills/). Clonalo en `~/.agents/skills/ok-skills`; los directorios internos ya siguen la estructura esperada por los flujos basados en `AGENTS.md`.
+Este repositorio incluye actualmente **57 skills reutilizables**: **26 skills de nivel superior** mantenidos directamente aqui, ademas de **5 skills de video HyperFrames** integradas como paquete vendorizado en [`hyperframes/`](hyperframes/README.md), **18 skills de diseno** integradas como paquete vendorizado en [`impeccable/`](impeccable/README.md), y **8 skills de animacion GSAP** integradas como paquete vendorizado en [`gsap-skills/`](gsap-skills/). Clonalo en `~/.agents/skills/ok-skills`; los directorios internos ya siguen la estructura esperada por los flujos basados en `AGENTS.md`.
 
 It includes:
 
@@ -134,7 +134,6 @@ Despues puedes pedirlo de forma natural:
 - [minimax-pdf](minimax-pdf/SKILL.md): genera, rellena y remaqueta documentos PDF con un sistema de diseno basado en tokens.
 - [pptx-generator](pptx-generator/SKILL.md): genera, edita y lee presentaciones PowerPoint con PptxGenJS, flujos XML o markitdown.
 - [minimax-xlsx](minimax-xlsx/SKILL.md): abre, crea, lee, analiza, edita y valida archivos Excel/hojas de calculo con un flujo XML de baja perdida.
-- [skill-creator](skill-creator/SKILL.md): crea o actualiza skills con mejor estructura e integraciones de herramientas.
 
 ## Paquetes De Skills Vendorizados
 
@@ -200,7 +199,6 @@ La atribucion y los archivos legales se conservan en [`gsap-skills/NOTICE.md`](g
 | [planning-with-files](planning-with-files/SKILL.md)                 | Planificacion basada en archivos para tareas complejas mediante `task_plan.md`, `findings.md` y `progress.md`.                                                                                                      | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master/skills/planning-with-files)       |
 | [pptx-generator](pptx-generator/SKILL.md) | Genera, edita y lee presentaciones PowerPoint con PptxGenJS, flujos XML o markitdown. | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/pptx-generator) |
 | [remotion-best-practices](remotion-best-practices/SKILL.md)         | Buenas practicas para crear videos en React con Remotion.                                                                                                                                                           | [remotion-dev/skills](https://github.com/remotion-dev/skills/tree/main/skills/remotion)                                        |
-| [skill-creator](skill-creator/SKILL.md)                             | Guia para crear o actualizar skills con conocimiento especializado e integraciones de herramientas.                                                                                                                 | [openai/skills](https://github.com/openai/skills/tree/main/skills/.system/skill-creator)                                       |
 | [test-driven-development](test-driven-development/SKILL.md)         | Usala antes de implementar cualquier funcionalidad o correccion.                                                                                                                                                    | [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills/test-driven-development)                               |
 | [minimax-xlsx](minimax-xlsx/SKILL.md) | Abre, crea, lee, analiza, edita y valida archivos Excel/hojas de calculo con un flujo XML de baja perdida. | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills/tree/main/skills/minimax-xlsx) |
 | [yeet](yeet/SKILL.md)                                               | Usala solo cuando el usuario pida explicitamente hacer stage, commit, push y abrir una pull request en un unico flujo con `gh`.                                                                                     | [openai/skills](https://github.com/openai/skills/tree/main/skills/.curated/yeet)                                               |
@@ -269,4 +267,4 @@ Se aceptan contribuciones para nuevas skills o para mejorar las existentes.
 
 Este repositorio esta licenciado bajo [LICENSE](LICENSE).
 
-Algunas skills incluyen archivos adicionales de licencia o avisos de atribucion para activos especificos, incluidos [`minimax-docx/`](minimax-docx/), [`impeccable/`](impeccable/README.md), [`gsap-skills/`](gsap-skills/), y [`skill-creator/`](skill-creator/).
+Algunas skills incluyen archivos adicionales de licencia o avisos de atribucion para activos especificos, incluidos [`minimax-docx/`](minimax-docx/), [`impeccable/`](impeccable/README.md) y [`gsap-skills/`](gsap-skills/).
